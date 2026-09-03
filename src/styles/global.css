@@ -4,9 +4,9 @@
   font-family: 'Saira';
   src:
     local('Saira'),
-    url('Saira') format('woff2');
+    url('/fonts/Saira-VariableFont.woff2') format('woff2');
   font-display: swap;
-  font-weight: 400 800;
+  font-weight: 300 800;
   font-style: normal;
 }
 
@@ -16,4 +16,24 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+}
+
+h1 {
+  @apply font-bold text-4xl sm:text-5xl md:text-6xl
+}
+
+h2 {
+  @apply text-2xl sm:text-3xl md:text-4xl
+}
+
+p {
+  @apply font-light
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: medium
 }
