@@ -14,6 +14,10 @@ export const en: Record<TranslationKeys, string | string[]> = {
   'cart.empty': 'Cart is empty',
   'cart.total': 'Total',
   'nav.home': 'Home',
+  'product.rating': 'Rating',
+  'product.color': 'color',
+  'product.colors': 'colors',
+  'product.outOfStock': 'Out of stock',
 
   'login.google': 'Continue with Google'
 }

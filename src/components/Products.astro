@@ -1,0 +1,91 @@
+---
+import { Image } from 'astro:assets'
+import { getCollection, type CollectionEntry } from 'astro:content'
+import { getRelativeLocaleUrl } from 'astro:i18n'
+
+import { es } from '@i18n/locales/es'
+import { en } from '@i18n/locales/en'
+
+type Product = CollectionEntry<'products'>['data'][number]
+
+interface Props {
+  lang: 'es' | 'en'
+  products?: Product[]
+}
+
+const { lang, products: providedProducts } = Astro.props
+const t = lang === 'es' ? es : en
+const products =
+  providedProducts ?? (await getCollection('products')).flatMap(entry => entry.data)
+---
+
+<section
+  class='grid gap-8 sm:grid-cols-2 lg:grid-cols-3'
+  aria-label={lang === 'es' ? 'Productos' : 'Products'}
+>
+  {products.map(product => {
+    const url = product.id.split('_')[0]
+    const colorCount = product.colors?.length ?? 0
+    const colorLabel = colorCount === 1 ? t['product.color'] : t['product.colors']
+
+    return (
+      <article class='group flex max-w-sm flex-col'>
+        <a
+          class='block'
+          href={getRelativeLocaleUrl(lang, `catalog/${url}/${product.id}`)}
+        >
+          <div class='relative mb-3 aspect-square overflow-hidden bg-zinc-100'>
+            <Image
+              src={product.image}
+              alt={product.description[lang]}
+              class='h-full w-full object-contain object-center transition-transform duration-300 group-hover:scale-105'
+              fit='contain'
+              position='center'
+              loading='lazy'
+              decoding='async'
+            />
+            {!product.inStock ? (
+              <span
+                class='absolute right-3 top-3 bg-rose-600 px-2.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-white'
+                role='alert'
+              >
+                {t['product.outOfStock']}
+              </span>
+            ) : null}
+          </div>
+          <h3
+            class='line-clamp-2 min-h-[2.75rem] text-lg font-medium leading-tight group-hover:underline'
+            title={product.name[lang]}
+          >
+            {product.name[lang]}
+          </h3>
+        </a>
+
+        <div class='mt-3 border-2 border-zinc-950 bg-zinc-950 p-3 text-white'>
+          <div class='flex items-start justify-between gap-4'>
+            <span class='text-2xl font-semibold tracking-tight'>${product.price.toFixed(2)}</span>
+            <span class='text-right text-xs font-medium uppercase tracking-[0.16em] text-zinc-400'>
+              {product.category}
+            </span>
+          </div>
+
+          <div class='mt-3 flex items-center justify-between border-t border-zinc-700 pt-2 text-xs text-zinc-300'>
+            <span>{t['product.rating']} {product.rating.toFixed(1)}</span>
+            <span>{colorCount} {colorLabel}</span>
+          </div>
+
+          {product.tags?.length ? (
+            <div class='mt-3 flex flex-wrap gap-1.5'>
+              {product.tags.slice(0, 3).map(tag => (
+                <span class='border border-zinc-700 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wider text-zinc-400'>
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          ) : null}
+
+        </div>
+      </article>
+    )
+  })}
+</section>

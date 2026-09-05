@@ -1,12 +1,12 @@
 ---
 import Layout from '@layouts/Layout.astro'
-import { Image } from 'astro:assets'
-
-import { useTranslations } from '@i18n/utils'
+import { getRelativeLocaleUrl } from 'astro:i18n'
 
 import { es } from '@i18n/locales/es'
 import { en } from '@i18n/locales/en'
 import AnnouncementsBar from '@components/AnnouncementsBar.astro'
+import Products from '@components/Products.astro'
+import { ArrowUpRight } from 'lucide-preact'
 
 interface Props {
   lang: 'es' | 'en'
@@ -15,39 +15,28 @@ interface Props {
 const { lang = 'es' } = Astro.props
 const t = lang === 'es' ? es : en
 const announcements = t['header.announcements']
-
-import { getRelativeLocaleUrl } from 'astro:i18n';
-
-import { getCollection } from 'astro:content'
-const rawProducts = await getCollection('products')
-const products = rawProducts.flatMap(entry => entry.data)
 ---
 
 <Layout>
   <div>
-    <h2 class='text-5xl'>{t['header.slogan']}</h2>
-
-    <section class='flex space-x-2'>
-      <a href={getRelativeLocaleUrl(lang, 'catalog')}>{t['nav.catalog']}</a>
-    </section>
+    <h2 class='text-center text-5xl sm:text-left'>{t['header.slogan']}</h2>
 
     <AnnouncementsBar
       announcements={Array.isArray(announcements) ? announcements : [announcements]}
     />
 
-    {products.map(product => (
-      <article>
-        <h2>{product.name[lang]}</h2>
-        <Image 
-           src={product.image} 
-           alt={product.description[lang]} 
-           width='200' 
-           height='200'  
-           loading='lazy' 
-           decoding='async'
-         />
-        <p>${product.price}</p>
-      </article>
-    ))}
+    <div class='mb-8'>
+      <a
+        class='group inline-flex items-center gap-1.5 font-medium hover:underline'
+        href={getRelativeLocaleUrl(lang, 'catalog')}
+      >
+        {t['nav.catalog']}
+        <span class='transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5'>
+          <ArrowUpRight size={18} strokeWidth={2.5} aria-hidden='true' />
+        </span>
+      </a>
+    </div>
+
+    <Products lang={lang} />
   </div>
 </Layout>
