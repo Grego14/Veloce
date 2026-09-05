@@ -11,4 +11,9 @@ export default defineConfig({
   },
 
   integrations: [preact()],
+
+  i18n: {
+    locales: ['es', 'en'],
+    defaultLocale: 'es'
+  }
 })
