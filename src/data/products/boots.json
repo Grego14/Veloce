@@ -1,0 +1,105 @@
+[
+  {
+    "id": "boots_001",
+    "name": {
+      "es": "Bota Táctica Militar de Cuero con Cremallera",
+      "en": "Tactical Military Leather Zip Boot"
+    },
+    "description": {
+      "es": "Bota de alto rendimiento diseñada para entornos exigentes. Cuenta con cremallera lateral para fácil calce, suela antideslizante y refuerzo de caña alta.",
+      "en": "High-performance boot designed for demanding environments. Features a side zipper for easy wear, slip-resistant sole, and high-ankle support."
+    },
+    "price": 115.00,
+    "image": "../../assets/images/boots/boots_001.png",
+    "inStock": true,
+    "category": "boots",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "tactical",
+      "leather",
+      "work",
+      "heavy-duty"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "boots_002",
+    "name": {
+      "es": "Bota Clásica de Nubuck Marrón / Wheat",
+      "en": "Classic Wheat Nubuck Work Boot"
+    },
+    "description": {
+      "es": "El icónico diseño urbano de caña media en cuero nubuck resistente al agua. Incluye cuello acolchado en contraste y suela de goma con tracción profunda.",
+      "en": "Iconic mid-cut urban design in waterproof nubuck leather. Features a contrasting padded collar and deep-traction rubber lug sole."
+    },
+    "price": 180.00,
+    "image": "../../assets/images/boots/boots_002.png",
+    "inStock": true,
+    "category": "boots",
+    "colors": [
+      "yellow",
+      "brown"
+    ],
+    "tags": [
+      "casual",
+      "urban",
+      "waterproof",
+      "classic"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "boots_003",
+    "name": {
+      "es": "Bota de Trabajo de Seguridad con Puntera de Acero",
+      "en": "Heavy-Duty Steel Toe Work Boot"
+    },
+    "description": {
+      "es": "Bota de protección industrial robusta con puntera de acero reforzada, diseño ergonómico para largas jornadas y protección contra impactos.",
+      "en": "Heavy-duty industrial safety boot featuring a reinforced steel toe, ergonomic fit for long shifts, and impact protection."
+    },
+    "price": 145.50,
+    "image": "../../assets/images/boots/boots_003.png",
+    "inStock": true,
+    "category": "boots",
+    "colors": [
+      "brown",
+      "beige"
+    ],
+    "tags": [
+      "work",
+      "safety",
+      "steel-toe",
+      "industrial"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "boots_004",
+    "name": {
+      "es": "Botines de Vestir con Cremallera en Cuero Negro",
+      "en": "Black Leather Dress Ankle Boots"
+    },
+    "description": {
+      "es": "Botines elegantes de perfil estilizado elaborados en cuero brillante con cremallera lateral y forro interior rojo de contraste.",
+      "en": "Sleek dress ankle boots crafted in polished leather featuring a side zipper and contrasting red inner lining."
+    },
+    "price": 130.00,
+    "image": "../../assets/images/boots/boots_004.png",
+    "inStock": true,
+    "category": "boots",
+    "colors": [
+      "black",
+      "red"
+    ],
+    "tags": [
+      "dress",
+      "leather",
+      "casual",
+      "fashion"
+    ],
+    "rating": 4.4
+  }
+]

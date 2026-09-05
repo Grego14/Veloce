@@ -1,0 +1,254 @@
+[
+  {
+    "id": "men_shoes_001",
+    "name": {
+      "es": "Zapato de Baile de Salón en Charol Negro",
+      "en": "Black Patent Leather Ballroom Dance Shoe"
+    },
+    "description": {
+      "es": "Zapato clásico de baile de salón y gala en charol negro con tacón bajo y cordones.",
+      "en": "Classic black patent leather ballroom dance shoe featuring a low cuban heel and lace-up closure."
+    },
+    "price": 145.0,
+    "image": "../../assets/images/men_shoes/men_shoes_001.png",
+    "inStock": true,
+    "category": "men_shoes",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "dance",
+      "patent-leather",
+      "formal",
+      "lace-up"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "men_shoes_002",
+    "name": {
+      "es": "Zapato Derby Casual en Cuero Granulado Marrón",
+      "en": "Brown Textured Leather Casual Derby Shoe"
+    },
+    "description": {
+      "es": "Zapato derby casual confeccionado en cuero granulado marrón con costuras visibles y suela de goma.",
+      "en": "Casual derby shoe crafted from pebbled brown leather with contrast stitching and a durable rubber sole."
+    },
+    "price": 120.0,
+    "image": "../../assets/images/men_shoes/men_shoes_002.png",
+    "inStock": true,
+    "category": "men_shoes",
+    "colors": [
+      "brown"
+    ],
+    "tags": [
+      "derby",
+      "casual",
+      "textured-leather",
+      "everyday"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "men_shoes_003",
+    "name": {
+      "es": "Zapato Oxford Brogue Elegante en Cuero Marrón",
+      "en": "Elegant Brown Leather Oxford Brogue"
+    },
+    "description": {
+      "es": "Zapato oxford de vestir en cuero de ternero marrón con detalles calados brogue y acabado pátina artesanal.",
+      "en": "Dress oxford shoe in burnished brown calfskin with classic brogue perforations and hand-finished patina."
+    },
+    "price": 320.0,
+    "image": "../../assets/images/men_shoes/men_shoes_003.png",
+    "inStock": true,
+    "category": "men_shoes",
+    "colors": [
+      "brown"
+    ],
+    "tags": [
+      "oxford",
+      "brogue",
+      "formal",
+      "leather"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "men_shoes_004",
+    "name": {
+      "es": "Mocasín Slip-On en Cuero Negro Abrillantado",
+      "en": "Black Polished Leather Slip-On Loafer"
+    },
+    "description": {
+      "es": "Mocasín formal de diseño estilizado sin cordones, elaborado en cuero negro pulido con elásticos laterales.",
+      "en": "Sleek formal slip-on shoe crafted in polished black leather with subtle side goring."
+    },
+    "price": 180.0,
+    "image": "../../assets/images/men_shoes/men_shoes_004.png",
+    "inStock": true,
+    "category": "men_shoes",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "slip-on",
+      "loafer",
+      "formal",
+      "minimalist"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "men_shoes_005",
+    "name": {
+      "es": "Botín Chukka de Vestir en Cuero Marrón",
+      "en": "Brown Leather Dress Chukka Boot"
+    },
+    "description": {
+      "es": "Botín de vestir estilo chukka en cuero marrón suave con detalles calados y puntera recta.",
+      "en": "Dress chukka boot crafted in rich brown leather featuring subtle brogue details and a cap-toe."
+    },
+    "price": 210.0,
+    "image": "../../assets/images/men_shoes/men_shoes_005.png",
+    "inStock": false,
+    "category": "men_shoes",
+    "colors": [
+      "brown"
+    ],
+    "tags": [
+      "boots",
+      "chukka",
+      "dress-boots",
+      "leather"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "men_shoes_006",
+    "name": {
+      "es": "Zapato Blücher en Cuero Marrón Oscuro",
+      "en": "Dark Brown Leather Blucher Shoe"
+    },
+    "description": {
+      "es": "Zapato blücher clásico en cuero tono marrón oscuro con suela de madera y cuero de perfil delgado.",
+      "en": "Classic blucher shoe in dark brown leather with a slim leather and welted heel profile."
+    },
+    "price": 250.0,
+    "image": "../../assets/images/men_shoes/men_shoes_006.png",
+    "inStock": true,
+    "category": "men_shoes",
+    "colors": [
+      "brown"
+    ],
+    "tags": [
+      "blucher",
+      "smart-casual",
+      "leather",
+      "classic"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "men_shoes_007",
+    "name": {
+      "es": "Mocasín Driver en Piel de Pelo Sintético Negro",
+      "en": "Black Pony-Hair Leather Driver Loafer"
+    },
+    "description": {
+      "es": "Mocasín de estilo conducido (driver) con acabado de piel con pelo negro y detalle de lazo de cuero.",
+      "en": "Luxury driving loafer crafted in black pony-hair leather with a tonal leather tie detail."
+    },
+    "price": 290.0,
+    "image": "../../assets/images/men_shoes/men_shoes_007.png",
+    "inStock": true,
+    "category": "men_shoes",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "driver",
+      "loafer",
+      "textured",
+      "luxury"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": "men_shoes_008",
+    "name": {
+      "es": "Zapato de Vestir Cocon en Cuero Cognac y Espadrille",
+      "en": "Cognac Leather Square-Toe Lace-Up Shoe"
+    },
+    "description": {
+      "es": "Zapato artesanal de puntera cuadrada en cuero cognac de pátina envejecida y cerco de yute cosido.",
+      "en": "Artisanal square-toe shoe in burnished cognac leather with a woven jute welt detail."
+    },
+    "price": 340.0,
+    "image": "../../assets/images/men_shoes/men_shoes_008.png",
+    "inStock": true,
+    "category": "men_shoes",
+    "colors": [
+      "brown",
+      "cognac"
+    ],
+    "tags": [
+      "artisanal",
+      "square-toe",
+      "cognac",
+      "vintage"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "men_shoes_009",
+    "name": {
+      "es": "Zapato Blücher Minimalista en Cuero Cognac",
+      "en": "Cognac Leather Minimalist Blucher Shoe"
+    },
+    "description": {
+      "es": "Zapato blücher de líneas limpias en cuero vacuno cognac con sutiles perforaciones decorativas.",
+      "en": "Sleek blucher shoe in cognac leather featuring minimal stitching and subtle laser perforations."
+    },
+    "price": 230.0,
+    "image": "../../assets/images/men_shoes/men_shoes_009.png",
+    "inStock": true,
+    "category": "men_shoes",
+    "colors": [
+      "brown",
+      "cognac"
+    ],
+    "tags": [
+      "blucher",
+      "minimalist",
+      "cognac",
+      "dress"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "men_shoes_010",
+    "name": {
+      "es": "Mocasín Náutico en Ante Rojo",
+      "en": "Red Suede Boat Shoe"
+    },
+    "description": {
+      "es": "Zapato náutico clásico en ante rojo intenso con cordones blancos, ojetes metálicos y suela de goma blanca.",
+      "en": "Classic boat shoe crafted in bold red suede featuring white laces, silver eyelets, and a rubber white sole."
+    },
+    "price": 110.0,
+    "image": "../../assets/images/men_shoes/men_shoes_010.png",
+    "inStock": true,
+    "category": "men_shoes",
+    "colors": [
+      "red"
+    ],
+    "tags": [
+      "boat-shoe",
+      "suede",
+      "casual",
+      "nautical"
+    ],
+    "rating": 4.5
+  }
+]

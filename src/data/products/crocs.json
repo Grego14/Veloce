@@ -1,0 +1,231 @@
+[
+  {
+    "id": "crocs_001",
+    "name": {
+      "es": "Crocs Classic Clog Green",
+      "en": "Crocs Classic Clog Green"
+    },
+    "description": {
+      "es": "Zueco clásico de resina Croslite en color verde brillante con correa abatible en el talón para un ajuste seguro.",
+      "en": "Classic Croslite foam clog in bright green featuring a pivoting heel strap for a secure fit."
+    },
+    "price": 50.00,
+    "image": "../../assets/images/crocs/crocs_001.png",
+    "inStock": true,
+    "category": "crocs",
+    "colors": [
+      "green"
+    ],
+    "tags": [
+      "clogs",
+      "croslite",
+      "comfortable",
+      "waterproof"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "crocs_002",
+    "name": {
+      "es": "Crocs Classic Clog Mint Green",
+      "en": "Crocs Classic Clog Mint Green"
+    },
+    "description": {
+      "es": "Zueco ligero y resistente al agua en tono verde menta pastel con puertos de ventilación transpirables.",
+      "en": "Lightweight and water-friendly clog in pastel mint green with breathable ventilation ports."
+    },
+    "price": 50.00,
+    "image": "../../assets/images/crocs/crocs_002.png",
+    "inStock": true,
+    "category": "crocs",
+    "colors": [
+      "mint",
+      "green"
+    ],
+    "tags": [
+      "clogs",
+      "croslite",
+      "pastel",
+      "casual"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "crocs_003",
+    "name": {
+      "es": "Crocs Classic Clog Red",
+      "en": "Crocs Classic Clog Red"
+    },
+    "description": {
+      "es": "Zuecos emblemáticos en vibrante color rojo con plantilla anatómica y textura de gran confort.",
+      "en": "Signature clogs in vibrant red featuring contoured footbeds and textured comfort pattern."
+    },
+    "price": 50.00,
+    "image": "../../assets/images/crocs/crocs_003.png",
+    "inStock": true,
+    "category": "crocs",
+    "colors": [
+      "red"
+    ],
+    "tags": [
+      "clogs",
+      "croslite",
+      "red",
+      "outdoor"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "crocs_004",
+    "name": {
+      "es": "Crocs Classic Clog Orange",
+      "en": "Crocs Classic Clog Orange"
+    },
+    "description": {
+      "es": "Diseño ergonómico de secado rápido en llamativo color naranja con suela antideslizante.",
+      "en": "Quick-drying ergonomic design in eye-catching orange with non-marking slip-resistant soles."
+    },
+    "price": 50.00,
+    "image": "../../assets/images/crocs/crocs_004.png",
+    "inStock": true,
+    "category": "crocs",
+    "colors": [
+      "orange"
+    ],
+    "tags": [
+      "clogs",
+      "croslite",
+      "orange",
+      "beach"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "crocs_005",
+    "name": {
+      "es": "Crocs Classic Clog Dark Green",
+      "en": "Crocs Classic Clog Dark Green"
+    },
+    "description": {
+      "es": "Zuecos en tono verde oscuro forestal, de material ultra ligero y fácil limpieza.",
+      "en": "Dark forest green clogs made of ultra-lightweight, easy-to-clean Croslite material."
+    },
+    "price": 50.00,
+    "image": "../../assets/images/crocs/crocs_005.png",
+    "inStock": true,
+    "category": "crocs",
+    "colors": [
+      "dark green",
+      "green"
+    ],
+    "tags": [
+      "clogs",
+      "croslite",
+      "outdoor"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "crocs_006",
+    "name": {
+      "es": "Crocs Classic Clog Khaki / Tan",
+      "en": "Crocs Classic Clog Khaki / Tan"
+    },
+    "description": {
+      "es": "Zueco versátil en tono café caqui neutro, ideal para uso diario en interiores o exteriores.",
+      "en": "Versatile clog in neutral khaki tan tone, ideal for all-day indoor and outdoor wear."
+    },
+    "price": 50.00,
+    "image": "../../assets/images/crocs/crocs_006.png",
+    "inStock": true,
+    "category": "crocs",
+    "colors": [
+      "brown",
+      "khaki",
+      "tan"
+    ],
+    "tags": [
+      "clogs",
+      "croslite",
+      "neutral"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "crocs_007",
+    "name": {
+      "es": "Crocs Classic Clog Black",
+      "en": "Crocs Classic Clog Black"
+    },
+    "description": {
+      "es": "El modelo imprescindible en color negro total, máximo confort y durabilidad para cualquier ocasión.",
+      "en": "Essential solid black clog providing maximum comfort and durability for any occasion."
+    },
+    "price": 50.00,
+    "image": "../../assets/images/crocs/crocs_007.png",
+    "inStock": true,
+    "category": "crocs",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "clogs",
+      "croslite",
+      "black",
+      "workwear"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "crocs_008.png",
+    "name": {
+      "es": "Crocs Classic Clog White",
+      "en": "Crocs Classic Clog White"
+    },
+    "description": {
+      "es": "Zueco blanco pulcro y fresco, ideal para personal médico, de cocina o uso casual urbano.",
+      "en": "Clean and crisp white clog, ideal for healthcare, service professionals, or casual streetwear."
+    },
+    "price": 50.00,
+    "image": "../../assets/images/crocs/crocs_008.png",
+    "inStock": true,
+    "category": "crocs",
+    "colors": [
+      "white"
+    ],
+    "tags": [
+      "clogs",
+      "croslite",
+      "white",
+      "professional"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "crocs_009.png",
+    "name": {
+      "es": "Crocs Classic Lined Clog Brown",
+      "en": "Crocs Classic Lined Clog Brown"
+    },
+    "description": {
+      "es": "Edición especial para clima frío con forro interior de felpa suave en tono marrón chocolate.",
+      "en": "Cold-weather edition featuring soft fuzzy fleece lining in chocolate brown."
+    },
+    "price": 60.00,
+    "image": "../../assets/images/crocs/crocs_009.png",
+    "inStock": true,
+    "category": "crocs",
+    "colors": [
+      "brown",
+      "beige"
+    ],
+    "tags": [
+      "clogs",
+      "lined",
+      "fleece",
+      "winter",
+      "cozy"
+    ],
+    "rating": 4.9
+  }
+]

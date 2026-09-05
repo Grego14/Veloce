@@ -1,0 +1,359 @@
+[
+  {
+    "id": "sandals_001",
+    "name": {
+      "es": "Sandalia Deportiva de Senderismo Gris y Violeta",
+      "en": "Grey and Purple Sport Hiking Sandal"
+    },
+    "description": {
+      "es": "Sandalia de senderismo ajustable con tiras de velcro, detalles en tono violeta y suela todoterreno.",
+      "en": "Adjustable outdoor hiking sandal with velcro straps, purple accents, and a rugged all-terrain sole."
+    },
+    "price": 65.0,
+    "image": "../../assets/images/sandals/sandals_001.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "grey",
+      "purple"
+    ],
+    "tags": [
+      "hiking",
+      "outdoor",
+      "adjustable",
+      "sport"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "sandals_002",
+    "name": {
+      "es": "Sandalia Deportiva Beige y Negra",
+      "en": "Beige and Black Sport Sandal"
+    },
+    "description": {
+      "es": "Sandalia deportiva liviana con correas de tejido resistente en tono beige y negro con cierre de velcro.",
+      "en": "Lightweight sport sandal featuring durable beige and black webbing straps with hook-and-loop closure."
+    },
+    "price": 55.0,
+    "image": "../../assets/images/sandals/sandals_002.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "beige",
+      "black"
+    ],
+    "tags": [
+      "sport",
+      "casual",
+      "outdoor",
+      "strappy"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": "sandals_003",
+    "name": {
+      "es": "Chancleta Casual de Cuero Marrón",
+      "en": "Brown Leather Casual Flip-Flop"
+    },
+    "description": {
+      "es": "Chancleta de dedo elaborada en cuero marrón con plantilla suave y plantilla anatómica ligera.",
+      "en": "Classic thong sandal made with brown leather straps and a smooth cushioned footbed."
+    },
+    "price": 45.0,
+    "image": "../../assets/images/sandals/sandals_003.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "brown"
+    ],
+    "tags": [
+      "flip-flop",
+      "thong",
+      "leather",
+      "casual"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "sandals_004",
+    "name": {
+      "es": "Chancleta Deportiva Negra y Verde Lima",
+      "en": "Black and Lime Green Sport Flip-Flop"
+    },
+    "description": {
+      "es": "Chancleta de playa deportiva con tira superior sintética negra y suela de alta tracción verde lima.",
+      "en": "Sporty beach flip-flop with a black molded synthetic upper and a vibrant lime green high-traction sole."
+    },
+    "price": 35.0,
+    "image": "../../assets/images/sandals/sandals_004.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "black",
+      "green"
+    ],
+    "tags": [
+      "flip-flop",
+      "beach",
+      "sport",
+      "synthetic"
+    ],
+    "rating": 4.3
+  },
+  {
+    "id": "sandals_005",
+    "name": {
+      "es": "Sandalia Cerrada de Agua y Senderismo Café",
+      "en": "Brown Closed-Toe Water Hiking Sandal"
+    },
+    "description": {
+      "es": "Sandalia híbrida de senderismo con puntera protegida, cordones elásticos ajustables y ventilación lateral.",
+      "en": "Hybrid hiking sandal featuring a protective closed toe, quick-lace bungee system, and breathable side cutouts."
+    },
+    "price": 85.0,
+    "image": "../../assets/images/sandals/sandals_005.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "brown"
+    ],
+    "tags": [
+      "closed-toe",
+      "hiking",
+      "water-shoe",
+      "outdoor"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "sandals_006",
+    "name": {
+      "es": "Sandalia de Cuero Rojo con Hebilla",
+      "en": "Red Leather Strappy Buckle Sandal"
+    },
+    "description": {
+      "es": "Sandalia plana artesanal en cuero rojo con diseño de tiras cruzadas y hebilla metálica de ajuste.",
+      "en": "Artisanal flat sandal in rich red leather featuring crisscross straps and an adjustable ankle buckle."
+    },
+    "price": 75.0,
+    "image": "../../assets/images/sandals/sandals_006.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "red"
+    ],
+    "tags": [
+      "leather",
+      "strappy",
+      "artisanal",
+      "casual"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "sandals_007",
+    "name": {
+      "es": "Sandalia de Tiras Cruzadas en Ante Tan",
+      "en": "Tan Suede Cross-Strap Sandal"
+    },
+    "description": {
+      "es": "Sandalia con tiras ancha cruzadas en ante tono tan y plantilla acolchada para máximo confort.",
+      "en": "Comfort-focused sandal featuring wide crossed tan suede straps and a padded footbed."
+    },
+    "price": 60.0,
+    "image": "../../assets/images/sandals/sandals_007.png",
+    "inStock": false,
+    "category": "sandals",
+    "colors": [
+      "tan",
+      "brown"
+    ],
+    "tags": [
+      "comfort",
+      "suede",
+      "cross-strap",
+      "casual"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "sandals_008",
+    "name": {
+      "es": "Mule Sandalia de Piel de Croco Negra con Hebillas",
+      "en": "Black Crocodile-Embossed Double-Buckle Slide"
+    },
+    "description": {
+      "es": "Sandalia tipo slide con textura efecto cocodrilo en color negro y dos hebillas plateadas ajustables.",
+      "en": "Slide sandal in black crocodile-embossed leather featuring two adjustable silver buckles."
+    },
+    "price": 130.0,
+    "image": "../../assets/images/sandals/sandals_008.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "slide",
+      "crocodile-embossed",
+      "buckle",
+      "luxury"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "sandals_009",
+    "name": {
+      "es": "Sandalia Destalonada de Cuero Marrón con Hebillas",
+      "en": "Brown Leather Double-Buckle Slide Sandal"
+    },
+    "description": {
+      "es": "Sandalia artesanal de cuero marrón oscuro con dos tiras con hebilla y suela anatómica de cuero.",
+      "en": "Handcrafted dark brown leather slide sandal with double buckle closure and a contoured footbed."
+    },
+    "price": 95.0,
+    "image": "../../assets/images/sandals/sandals_009.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "brown"
+    ],
+    "tags": [
+      "leather",
+      "artisanal",
+      "slide",
+      "classic"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "sandals_010",
+    "name": {
+      "es": "Chancleta Clásica en Ante Beige",
+      "en": "Beige Suede Classic Flip-Flop"
+    },
+    "description": {
+      "es": "Chancleta playera de diseño atemporal en ante beige suave con suela multicapa resistente.",
+      "en": "Timeless thong flip-flop made with soft beige suede and a durable multi-layer sole."
+    },
+    "price": 50.0,
+    "image": "../../assets/images/sandals/sandals_010.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "beige"
+    ],
+    "tags": [
+      "flip-flop",
+      "suede",
+      "casual",
+      "beach"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "sandals_011",
+    "name": {
+      "es": "Sandalia Deportiva Merrell Gris Toupe",
+      "en": "Merrell Taupe Sport Sandal"
+    },
+    "description": {
+      "es": "Sandalia de senderismo y exterior con tiras ajustables de velcro, forro acolchado y suela de agarre Vibram.",
+      "en": "Outdoor trail sandal with dual adjustable hook-and-loop straps, padded lining, and a high-traction Vibram outsole."
+    },
+    "price": 80.0,
+    "image": "../../assets/images/sandals/sandals_011.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "grey",
+      "taupe"
+    ],
+    "tags": [
+      "hiking",
+      "outdoor",
+      "merrell",
+      "vibram"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "sandals_012",
+    "name": {
+      "es": "Sandalia de Senderismo Teva Café y Coral",
+      "en": "Teva Brown and Coral Hiking Sandal"
+    },
+    "description": {
+      "es": "Sandalia deportiva para terreno mixto con correas textiles ajustables en tono café y acentos color coral.",
+      "en": "Mixed-terrain sport sandal featuring adjustable brown webbing straps with coral pink accents."
+    },
+    "price": 70.0,
+    "image": "../../assets/images/sandals/sandals_012.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "brown",
+      "pink"
+    ],
+    "tags": [
+      "hiking",
+      "teva",
+      "sport",
+      "water-friendly"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "sandals_013",
+    "name": {
+      "es": "Sandalia Chaco con Tiras Cruzadas y Anillo de Dedo",
+      "en": "Chaco Strappy Toe-Loop Sandal"
+    },
+    "description": {
+      "es": "Sandalia todoterreno de correas continuas cruzadas con agarre para el dedo gordo y hebilla de ajuste.",
+      "en": "All-terrain sandal with continuous crisscross polyester straps, a toe-loop for security, and a ladder lock buckle."
+    },
+    "price": 90.0,
+    "image": "../../assets/images/sandals/sandals_013.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "brown"
+    ],
+    "tags": [
+      "chaco",
+      "toe-loop",
+      "hiking",
+      "strappy"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "sandals_014",
+    "name": {
+      "es": "Sandalia Estilo Huarache / Pescador en Cuero Tan",
+      "en": "Tan Leather Fisherman Huarache Sandal"
+    },
+    "description": {
+      "es": "Sandalia clásica estilo pescador en cuero granulado color tan con hebilla lateral ajustables y costuras visibles.",
+      "en": "Classic fisherman-style sandal crafted in pebbled tan leather with a side buckle closure and contrast stitching."
+    },
+    "price": 85.0,
+    "image": "../../assets/images/sandals/sandals_014.png",
+    "inStock": true,
+    "category": "sandals",
+    "colors": [
+      "tan",
+      "brown"
+    ],
+    "tags": [
+      "fisherman",
+      "leather",
+      "huarache",
+      "casual"
+    ],
+    "rating": 4.5
+  }
+]

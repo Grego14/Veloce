@@ -1,0 +1,351 @@
+[
+  {
+    "id": "vans_001",
+    "name": {
+      "es": "Vans Era Polka Dots Verde y Azul",
+      "en": "Vans Era Polka Dots Green and Blue"
+    },
+    "description": {
+      "es": "Zapatillas urbanas corte bajo con estampado de lunares en tonos verde y azul con suela negra vulcanizada.",
+      "en": "Low-top sneakers featuring a green and blue polka dot canvas upper with a solid black vulcanized sole."
+    },
+    "price": 65.0,
+    "image": "../../assets/images/vans/vans_001.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "green",
+      "blue",
+      "black"
+    ],
+    "tags": [
+      "era",
+      "polka-dots",
+      "skate",
+      "casual",
+      "canvas"
+    ],
+    "rating": 4.1
+  },
+  {
+    "id": "vans_002",
+    "name": {
+      "es": "Vans Authentic Floral Negro y Rosa",
+      "en": "Vans Authentic Floral Black and Pink"
+    },
+    "description": {
+      "es": "Zapatillas de lona con estampado floral en tonos rosa sobre fondo negro y suela blanca clásica.",
+      "en": "Classic canvas sneakers with a delicate pink floral pattern on a black backdrop with a white rubber sole."
+    },
+    "price": 60.0,
+    "image": "../../assets/images/vans/vans_002.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "black",
+      "pink",
+      "white"
+    ],
+    "tags": [
+      "authentic",
+      "floral",
+      "low-top",
+      "canvas"
+    ],
+    "rating": 3.2
+  },
+  {
+    "id": "vans_003",
+    "name": {
+      "es": "Vans Old Skool Turquesa",
+      "en": "Vans Old Skool Teal"
+    },
+    "description": {
+      "es": "Zapatillas icónicas Old Skool en color turquesa con la emblemática Sidestripe blanca.",
+      "en": "Iconic Old Skool silhouette featuring a teal canvas and suede upper with signature white Sidestripe."
+    },
+    "price": 70.0,
+    "image": "../../assets/images/vans/vans_003.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "tags": [
+      "old-skool",
+      "sidestripe",
+      "suede",
+      "teal"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "vans_004",
+    "name": {
+      "es": "Vans Old Skool Azul Royo",
+      "en": "Vans Old Skool Royal Blue"
+    },
+    "description": {
+      "es": "Zapatillas Old Skool en vibrante azul rey con franja lateral de cuero blanco y costuras a contraste.",
+      "en": "Classic Old Skool low-top sneakers in electric royal blue with iconic white Sidestripe."
+    },
+    "price": 70.0,
+    "image": "../../assets/images/vans/vans_004.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "tags": [
+      "old-skool",
+      "royal-blue",
+      "skate",
+      "classic"
+    ],
+    "rating": 2.7
+  },
+  {
+    "id": "vans_005",
+    "name": {
+      "es": "Revenge x Storm Rojo Lightning Bolt",
+      "en": "Revenge x Storm Red Lightning Bolt"
+    },
+    "description": {
+      "es": "Zapatillas estilo skate de ante rojo con el icónico rayo de cuero blanco en el lateral.",
+      "en": "Red suede skate-style sneakers featuring the signature white leather lightning bolt detail."
+    },
+    "price": 200.0,
+    "image": "../../assets/images/vans/vans_005.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "tags": [
+      "revenge-x-storm",
+      "lightning",
+      "red",
+      "streetwear"
+    ],
+    "rating": 4.3
+  },
+  {
+    "id": "vans_006",
+    "name": {
+      "es": "Vans Old Skool Blanco con Sidestripe Roja",
+      "en": "Vans Old Skool White Red Sidestripe"
+    },
+    "description": {
+      "es": "Zapatillas de cuero blanco con la franja Sidestripe en contraste de color rojo brillante.",
+      "en": "Clean white leather Old Skool sneakers accented with a bold red Sidestripe."
+    },
+    "price": 75.0,
+    "image": "../../assets/images/vans/vans_006.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "tags": [
+      "old-skool",
+      "leather",
+      "white",
+      "red"
+    ],
+    "rating": 3.9
+  },
+  {
+    "id": "vans_007",
+    "name": {
+      "es": "Vans Authentic Pro 50th Anniversary Azul Navy",
+      "en": "Vans Authentic Pro 50th Anniversary Navy"
+    },
+    "description": {
+      "es": "Edición especial de aniversario en lona azul marino con plantilla UltraCush para mayor amortiguación.",
+      "en": "50th Anniversary edition Authentic Pro in navy canvas featuring UltraCush cushioning insole."
+    },
+    "price": 68.0,
+    "image": "../../assets/images/vans/vans_007.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "tags": [
+      "authentic",
+      "pro",
+      "50th-anniversary",
+      "ultracush",
+      "navy"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "vans_008",
+    "name": {
+      "es": "Vans Era Pro 50th Anniversary Azul y Rojo",
+      "en": "Vans Era Pro 50th Anniversary Two-Tone"
+    },
+    "description": {
+      "es": "Zapatillas Era Pro bicolores en azul marino y rojo brillante, edición especial de aniversario.",
+      "en": "Two-tone 50th Anniversary Era Pro sneakers featuring navy blue and bright red suede and canvas panels."
+    },
+    "price": 72.0,
+    "image": "../../assets/images/vans/vans_008.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "blue",
+      "red",
+      "white"
+    ],
+    "tags": [
+      "era",
+      "pro",
+      "bicolor",
+      "50th-anniversary",
+      "ultracush"
+    ],
+    "rating": 2.4
+  },
+  {
+    "id": "vans_009",
+    "name": {
+      "es": "Vans Mid Skool Pro 50th Anniversary Azul",
+      "en": "Vans Mid Skool Pro 50th Anniversary Blue"
+    },
+    "description": {
+      "es": "Zapatillas de caña media en ante y lona azul brillante con soporte de tobillo y suela Pro.",
+      "en": "Mid-top Pro skate shoes in bright blue featuring padded collar support and UltraCush insoles."
+    },
+    "price": 80.0,
+    "image": "../../assets/images/vans/vans_009.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "tags": [
+      "mid-skool",
+      "mid-top",
+      "pro",
+      "50th-anniversary",
+      "blue"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "vans_010",
+    "name": {
+      "es": "Vans Style 36 Negro y Blanco",
+      "en": "Vans Style 36 Black and White"
+    },
+    "description": {
+      "es": "Diseño retro precursora de las Old Skool en lona negra con puntera corta de ante y Sidestripe blanca.",
+      "en": "Retro Style 36 sneakers featuring a shorter toe cap in black canvas and suede with white Sidestripe."
+    },
+    "price": 65.0,
+    "image": "../../assets/images/vans/vans_010.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "tags": [
+      "style-36",
+      "retro",
+      "black",
+      "suede",
+      "canvas"
+    ],
+    "rating": 3.4
+  },
+  {
+    "id": "vans_011",
+    "name": {
+      "es": "Vans Sk8-Hi Checkerboard Negro y Blanco",
+      "en": "Vans Sk8-Hi Checkerboard Black and White"
+    },
+    "description": {
+      "es": "Zapatillas de caña alta con patrón a cuadros checkerboard, paneles de ante negro y suela vulcanizada.",
+      "en": "High-top sneakers featuring iconic checkerboard canvas side panels, black suede toe and heel, and white Sidestripe."
+    },
+    "price": 85.0,
+    "image": "../../assets/images/vans/vans_011.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "tags": [
+      "sk8-hi",
+      "high-top",
+      "checkerboard",
+      "suede",
+      "canvas"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "vans_012",
+    "name": {
+      "es": "Vans Old Skool Core Black/White",
+      "en": "Vans Old Skool Core Black/White"
+    },
+    "description": {
+      "es": "El modelo clásico atemporal Old Skool en combinación de ante y lona negra con Sidestripe blanca.",
+      "en": "The iconic timeless Old Skool classic silhouette in black canvas and suede with white Sidestripe."
+    },
+    "price": 70.0,
+    "image": "../../assets/images/vans/vans_012.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "tags": [
+      "old-skool",
+      "classic",
+      "black",
+      "white",
+      "skate"
+    ],
+    "rating": 2.8
+  },
+  {
+    "id": "vans_013",
+    "name": {
+      "es": "Vans Old Skool Azul Marino",
+      "en": "Vans Old Skool Navy"
+    },
+    "description": {
+      "es": "Zapatillas de skate bajas en lona y ante azul marino oscuro con la icónica franja Sidestripe blanca.",
+      "en": "Classic low-top skate shoes in deep navy blue canvas and suede with contrasting white Sidestripe."
+    },
+    "price": 70.0,
+    "image": "../../assets/images/vans/vans_013.png",
+    "inStock": true,
+    "category": "sneakers",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "tags": [
+      "old-skool",
+      "navy",
+      "blue",
+      "suede",
+      "classic"
+    ],
+    "rating": 3.6
+  }
+]
