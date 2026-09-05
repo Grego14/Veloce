@@ -24,35 +24,26 @@ const { announcements } = Astro.props
 
 <style>
   .announcements-bar {
-    position: relative;
     overflow: hidden;
     width: 100%;
     border-block: 1px solid currentColor;
     margin-block: 1.5rem;
     cursor: pointer;
     outline: none;
-  }
-
-  .announcements-bar::before,
-  .announcements-bar::after {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    width: 3rem;
-    pointer-events: none;
-    content: '';
-    backdrop-filter: blur(3px);
-  }
-
-  .announcements-bar::before {
-    left: 0;
-    background: linear-gradient(to right, white, transparent);
-  }
-
-  .announcements-bar::after {
-    right: 0;
-    background: linear-gradient(to left, white, transparent);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 4rem,
+      black calc(100% - 4rem),
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 4rem,
+      black calc(100% - 4rem),
+      transparent
+    );
   }
 
   .announcements-bar:focus-visible {
