@@ -4,10 +4,10 @@ export const en: Record<TranslationKeys, string | string[]> = {
   'nav.catalog': 'Catalog',
   'header.slogan': 'Minimal design. Maximum speed.',
   'header.announcements': [
-    'Envío gratis en compras superiores a $120.',
-    'Devoluciones gratis durante 30 días.',
-    '15% OFF en tu primer pedido con el código: VELOCE26',
-    'Soporte al cliente 24/7 disponible.'
+    'Free worldwide shipping on orders over $120.',
+    'Free 30-day returns on all orders.',
+    'Get 15% off your first order with code: VELOCE26',
+    '24/7 customer support available.'
   ],
   'cart.add': 'Add to Cart',
   'cart.title': 'Your Cart',

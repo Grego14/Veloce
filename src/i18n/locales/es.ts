@@ -1,10 +1,10 @@
 export const es = {
   'header.slogan': 'Diseño minimalista. Máxima velocidad.',
   'header.announcements': [
-    'Free worldwide shipping on orders over $120.',
-    'Free 30-day returns on all orders.',
-    'Get 15% off your first order with code: VELOCE26',
-    '24/7 customer support available.'
+    'Envío gratis en compras superiores a $120.',
+    'Devoluciones gratis durante 30 días.',
+    '15% OFF en tu primer pedido con el código: VELOCE26',
+    'Soporte al cliente 24/7 disponible.'
   ],
   'nav.catalog': 'Catálogo',
   'cart.add': 'Agregar al Carrito',
