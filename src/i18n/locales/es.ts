@@ -12,6 +12,9 @@ export const es = {
   'cart.empty': 'El carrito está vacío',
   'cart.total': 'Total',
   'nav.home': 'Inicio',
+  'product.rating': 'Valoración',
+  'product.colors': 'colores',
+  'product.outOfStock': 'Sin stock',
 
   'login.google': 'Continuar con Google'
 }
