@@ -10,7 +10,7 @@
       "en": "High-performance boot designed for demanding environments. Features a side zipper for easy wear, slip-resistant sole, and high-ankle support."
     },
     "price": 115.00,
-    "image": "/images/boots/boots_001.png",
+    "image": "../../assets/images/boots/boots_001.png",
     "inStock": true,
     "category": "boots",
     "colors": [
@@ -35,7 +35,7 @@
       "en": "Iconic mid-cut urban design in waterproof nubuck leather. Features a contrasting padded collar and deep-traction rubber lug sole."
     },
     "price": 180.00,
-    "image": "/images/boots/boots_002.png",
+    "image": "../../assets/images/boots/boots_002.png",
     "inStock": true,
     "category": "boots",
     "colors": [
@@ -61,7 +61,7 @@
       "en": "Heavy-duty industrial safety boot featuring a reinforced steel toe, ergonomic fit for long shifts, and impact protection."
     },
     "price": 145.50,
-    "image": "/images/boots/boots_003.png",
+    "image": "../../assets/images/boots/boots_003.png",
     "inStock": true,
     "category": "boots",
     "colors": [
@@ -87,7 +87,7 @@
       "en": "Sleek dress ankle boots crafted in polished leather featuring a side zipper and contrasting red inner lining."
     },
     "price": 130.00,
-    "image": "/images/boots/boots_004.png",
+    "image": "../../assets/images/boots/boots_004.png",
     "inStock": true,
     "category": "boots",
     "colors": [

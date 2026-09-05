@@ -10,7 +10,7 @@
       "en": "Low-top sneakers featuring a green and blue polka dot canvas upper with a solid black vulcanized sole."
     },
     "price": 65.0,
-    "image": "/images/vans/vans_001.png",
+    "image": "../../assets/images/vans/vans_001.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -38,7 +38,7 @@
       "en": "Classic canvas sneakers with a delicate pink floral pattern on a black backdrop with a white rubber sole."
     },
     "price": 60.0,
-    "image": "/images/vans/vans_002.png",
+    "image": "../../assets/images/vans/vans_002.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -65,7 +65,7 @@
       "en": "Iconic Old Skool silhouette featuring a teal canvas and suede upper with signature white Sidestripe."
     },
     "price": 70.0,
-    "image": "/images/vans/vans_003.png",
+    "image": "../../assets/images/vans/vans_003.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -91,7 +91,7 @@
       "en": "Classic Old Skool low-top sneakers in electric royal blue with iconic white Sidestripe."
     },
     "price": 70.0,
-    "image": "/images/vans/vans_004.png",
+    "image": "../../assets/images/vans/vans_004.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -117,7 +117,7 @@
       "en": "Red suede skate-style sneakers featuring the signature white leather lightning bolt detail."
     },
     "price": 200.0,
-    "image": "/images/vans/vans_005.png",
+    "image": "../../assets/images/vans/vans_005.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -143,7 +143,7 @@
       "en": "Clean white leather Old Skool sneakers accented with a bold red Sidestripe."
     },
     "price": 75.0,
-    "image": "/images/vans/vans_006.png",
+    "image": "../../assets/images/vans/vans_006.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -169,7 +169,7 @@
       "en": "50th Anniversary edition Authentic Pro in navy canvas featuring UltraCush cushioning insole."
     },
     "price": 68.0,
-    "image": "/images/vans/vans_007.png",
+    "image": "../../assets/images/vans/vans_007.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -196,7 +196,7 @@
       "en": "Two-tone 50th Anniversary Era Pro sneakers featuring navy blue and bright red suede and canvas panels."
     },
     "price": 72.0,
-    "image": "/images/vans/vans_008.png",
+    "image": "../../assets/images/vans/vans_008.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -224,7 +224,7 @@
       "en": "Mid-top Pro skate shoes in bright blue featuring padded collar support and UltraCush insoles."
     },
     "price": 80.0,
-    "image": "/images/vans/vans_009.png",
+    "image": "../../assets/images/vans/vans_009.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -251,7 +251,7 @@
       "en": "Retro Style 36 sneakers featuring a shorter toe cap in black canvas and suede with white Sidestripe."
     },
     "price": 65.0,
-    "image": "/images/vans/vans_010.png",
+    "image": "../../assets/images/vans/vans_010.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -278,7 +278,7 @@
       "en": "High-top sneakers featuring iconic checkerboard canvas side panels, black suede toe and heel, and white Sidestripe."
     },
     "price": 85.0,
-    "image": "/images/vans/vans_011.png",
+    "image": "../../assets/images/vans/vans_011.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -305,7 +305,7 @@
       "en": "The iconic timeless Old Skool classic silhouette in black canvas and suede with white Sidestripe."
     },
     "price": 70.0,
-    "image": "/images/vans/vans_012.png",
+    "image": "../../assets/images/vans/vans_012.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [
@@ -332,7 +332,7 @@
       "en": "Classic low-top skate shoes in deep navy blue canvas and suede with contrasting white Sidestripe."
     },
     "price": 70.0,
-    "image": "/images/vans/vans_013.png",
+    "image": "../../assets/images/vans/vans_013.png",
     "inStock": true,
     "category": "sneakers",
     "colors": [

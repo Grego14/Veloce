@@ -10,7 +10,7 @@
       "en": "Classic Croslite foam clog in bright green featuring a pivoting heel strap for a secure fit."
     },
     "price": 50.00,
-    "image": "/images/crocs/crocs_001.png",
+    "image": "../../assets/images/crocs/crocs_001.png",
     "inStock": true,
     "category": "crocs",
     "colors": [
@@ -35,7 +35,7 @@
       "en": "Lightweight and water-friendly clog in pastel mint green with breathable ventilation ports."
     },
     "price": 50.00,
-    "image": "/images/crocs/crocs_002.png",
+    "image": "../../assets/images/crocs/crocs_002.png",
     "inStock": true,
     "category": "crocs",
     "colors": [
@@ -61,7 +61,7 @@
       "en": "Signature clogs in vibrant red featuring contoured footbeds and textured comfort pattern."
     },
     "price": 50.00,
-    "image": "/images/crocs/crocs_003.png",
+    "image": "../../assets/images/crocs/crocs_003.png",
     "inStock": true,
     "category": "crocs",
     "colors": [
@@ -86,7 +86,7 @@
       "en": "Quick-drying ergonomic design in eye-catching orange with non-marking slip-resistant soles."
     },
     "price": 50.00,
-    "image": "/images/crocs/crocs_004.png",
+    "image": "../../assets/images/crocs/crocs_004.png",
     "inStock": true,
     "category": "crocs",
     "colors": [
@@ -111,7 +111,7 @@
       "en": "Dark forest green clogs made of ultra-lightweight, easy-to-clean Croslite material."
     },
     "price": 50.00,
-    "image": "/images/crocs/crocs_005.png",
+    "image": "../../assets/images/crocs/crocs_005.png",
     "inStock": true,
     "category": "crocs",
     "colors": [
@@ -136,7 +136,7 @@
       "en": "Versatile clog in neutral khaki tan tone, ideal for all-day indoor and outdoor wear."
     },
     "price": 50.00,
-    "image": "/images/crocs/crocs_006.png",
+    "image": "../../assets/images/crocs/crocs_006.png",
     "inStock": true,
     "category": "crocs",
     "colors": [
@@ -162,7 +162,7 @@
       "en": "Essential solid black clog providing maximum comfort and durability for any occasion."
     },
     "price": 50.00,
-    "image": "/images/crocs/crocs_007.png",
+    "image": "../../assets/images/crocs/crocs_007.png",
     "inStock": true,
     "category": "crocs",
     "colors": [
@@ -187,7 +187,7 @@
       "en": "Clean and crisp white clog, ideal for healthcare, service professionals, or casual streetwear."
     },
     "price": 50.00,
-    "image": "/images/crocs/crocs_008.png",
+    "image": "../../assets/images/crocs/crocs_008.png",
     "inStock": true,
     "category": "crocs",
     "colors": [
@@ -212,7 +212,7 @@
       "en": "Cold-weather edition featuring soft fuzzy fleece lining in chocolate brown."
     },
     "price": 60.00,
-    "image": "/images/crocs/crocs_009.png",
+    "image": "../../assets/images/crocs/crocs_009.png",
     "inStock": true,
     "category": "crocs",
     "colors": [

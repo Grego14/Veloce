@@ -10,7 +10,7 @@
       "en": "High platform heel featuring a peeptoe cut and sleek black patent leather finish."
     },
     "price": 895.00,
-    "image": "/images/louboutin/louboutin_001.png",
+    "image": "../../assets/images/louboutin/louboutin_001.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -35,7 +35,7 @@
       "en": "Stiletto heel fully covered in signature black metal spikes for an edgy luxury statement."
     },
     "price": 1295.00,
-    "image": "/images/louboutin/louboutin_002.png",
+    "image": "../../assets/images/louboutin/louboutin_002.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -60,7 +60,7 @@
       "en": "Pointed-toe heel featuring delicate adjustable straps across the instep and ankle."
     },
     "price": 845.00,
-    "image": "/images/louboutin/louboutin_003.png",
+    "image": "../../assets/images/louboutin/louboutin_003.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -85,7 +85,7 @@
       "en": "Classic closed-toe stiletto crafted from soft black leather with a high concealed platform."
     },
     "price": 945.00,
-    "image": "/images/louboutin/louboutin_004.png",
+    "image": "../../assets/images/louboutin/louboutin_004.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -110,7 +110,7 @@
       "en": "Platform heel designed with crisscross instep straps and a secure ankle buckle closure."
     },
     "price": 895.00,
-    "image": "/images/louboutin/louboutin_005.png",
+    "image": "../../assets/images/louboutin/louboutin_005.png",
     "inStock": false,
     "category": "louboutin",
     "colors": [
@@ -135,7 +135,7 @@
       "en": "Pointed-toe stiletto featuring sheer mesh adorned with sparkling crystal embellishments."
     },
     "price": 1195.00,
-    "image": "/images/louboutin/louboutin_006.png",
+    "image": "../../assets/images/louboutin/louboutin_006.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -160,7 +160,7 @@
       "en": "Black suede heel designed with a high-cut asymmetric vamp side detail."
     },
     "price": 795.00,
-    "image": "/images/louboutin/louboutin_007.png",
+    "image": "../../assets/images/louboutin/louboutin_007.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -185,7 +185,7 @@
       "en": "High platform pump with a peeptoe opening, finished in premium matte black leather."
     },
     "price": 875.00,
-    "image": "/images/louboutin/louboutin_008.png",
+    "image": "../../assets/images/louboutin/louboutin_008.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -210,7 +210,7 @@
       "en": "High platform pumps in high-shine patent leather featuring an open peeptoe front."
     },
     "price": 895.00,
-    "image": "/images/louboutin/louboutin_009.png",
+    "image": "../../assets/images/louboutin/louboutin_009.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -235,7 +235,7 @@
       "en": "Mixed patent and suede leather heel adorned with metallic spikes clustered on the toe."
     },
     "price": 995.00,
-    "image": "/images/louboutin/louboutin_010.png",
+    "image": "../../assets/images/louboutin/louboutin_010.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -260,7 +260,7 @@
       "en": "High platform heel featuring a peeptoe cut and glossy black patent leather finish."
     },
     "price": 895.00,
-    "image": "/images/louboutin/louboutin_011.png",
+    "image": "../../assets/images/louboutin/louboutin_011.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -285,7 +285,7 @@
       "en": "Blue mesh slingback heel fully encrusted with shimmering blue crystals and a peeptoe front."
     },
     "price": 1295.00,
-    "image": "/images/louboutin/louboutin_012.png",
+    "image": "../../assets/images/louboutin/louboutin_012.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -310,7 +310,7 @@
       "en": "High stiletto platform pump crafted from vibrant red patent leather with a peeptoe cut."
     },
     "price": 895.00,
-    "image": "/images/louboutin/louboutin_013.png",
+    "image": "../../assets/images/louboutin/louboutin_013.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -335,7 +335,7 @@
       "en": "Classic pointed-toe stiletto pump featuring high-shine red patent leather."
     },
     "price": 795.00,
-    "image": "/images/louboutin/louboutin_014.png",
+    "image": "../../assets/images/louboutin/louboutin_014.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -360,7 +360,7 @@
       "en": "Black leather ankle boot featuring crisscross straps, an adjustable top buckle, and zip closure."
     },
     "price": 1095.00,
-    "image": "/images/louboutin/louboutin_015.png",
+    "image": "../../assets/images/louboutin/louboutin_015.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [
@@ -385,7 +385,7 @@
       "en": "Nude leather platform pump embellished with silver-tone metallic spikes throughout."
     },
     "price": 1250.00,
-    "image": "/images/louboutin/louboutin_016.png",
+    "image": "../../assets/images/louboutin/louboutin_016.png",
     "inStock": false,
     "category": "louboutin",
     "colors": [
@@ -411,7 +411,7 @@
       "en": "Sky-high platform pump crafted in pleated black velvet featuring a peeptoe front."
     },
     "price": 925.00,
-    "image": "/images/louboutin/louboutin_017.png",
+    "image": "../../assets/images/louboutin/louboutin_017.png",
     "inStock": true,
     "category": "louboutin",
     "colors": [

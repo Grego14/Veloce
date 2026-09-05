@@ -10,7 +10,7 @@
       "en": "Open-toe slip-on bath slippers made of plush beige terry cloth."
     },
     "price": 12.0,
-    "image": "/images/slippers/slippers_001.png",
+    "image": "../../assets/images/slippers/slippers_001.png",
     "inStock": true,
     "category": "slippers",
     "colors": [
@@ -35,7 +35,7 @@
       "en": "Classic closed-toe house slippers made with soft grey cotton fabric."
     },
     "price": 15.0,
-    "image": "/images/slippers/slippers_002.png",
+    "image": "../../assets/images/slippers/slippers_002.png",
     "inStock": true,
     "category": "slippers",
     "colors": [
@@ -60,7 +60,7 @@
       "en": "Soft white fleece spa slippers with a lightweight cushioned sole."
     },
     "price": 10.0,
-    "image": "/images/slippers/slippers_003.png",
+    "image": "../../assets/images/slippers/slippers_003.png",
     "inStock": true,
     "category": "slippers",
     "colors": [
@@ -85,7 +85,7 @@
       "en": "Cozy slippers featuring a green tartan plaid pattern and fluffy faux-fur trim."
     },
     "price": 22.0,
-    "image": "/images/slippers/slippers_004.png",
+    "image": "../../assets/images/slippers/slippers_004.png",
     "inStock": true,
     "category": "slippers",
     "colors": [
@@ -110,7 +110,7 @@
       "en": "Pastel light green slip-on slippers with a contrasting light blue footbed and rubber sole."
     },
     "price": 18.0,
-    "image": "/images/slippers/slippers_005.png",
+    "image": "../../assets/images/slippers/slippers_005.png",
     "inStock": true,
     "category": "slippers",
     "colors": [
@@ -136,7 +136,7 @@
       "en": "Lightweight cotton slip-on slippers in a grey and white gingham check pattern."
     },
     "price": 14.0,
-    "image": "/images/slippers/slippers_006.png",
+    "image": "../../assets/images/slippers/slippers_006.png",
     "inStock": true,
     "category": "slippers",
     "colors": [
@@ -162,7 +162,7 @@
       "en": "Clog-style slippers with a brown felt upper, warm faux-shearling lining, and decorative cross-stitching."
     },
     "price": 25.0,
-    "image": "/images/slippers/slippers_007.png",
+    "image": "../../assets/images/slippers/slippers_007.png",
     "inStock": true,
     "category": "slippers",
     "colors": [
@@ -187,7 +187,7 @@
       "en": "Plush grey faux-fur slide slippers featuring a breathable central sweater-knit panel."
     },
     "price": 19.0,
-    "image": "/images/slippers/slippers_008.png",
+    "image": "../../assets/images/slippers/slippers_008.png",
     "inStock": true,
     "category": "slippers",
     "colors": [
@@ -212,7 +212,7 @@
       "en": "Ultra-soft closed-toe slippers in a dusty rose mauve fluffy plush material."
     },
     "price": 20.0,
-    "image": "/images/slippers/slippers_009.png",
+    "image": "../../assets/images/slippers/slippers_009.png",
     "inStock": true,
     "category": "slippers",
     "colors": [
@@ -238,7 +238,7 @@
       "en": "Dark brown suede slip-on moccasin slippers with a plush cream shearling cuff and lining."
     },
     "price": 32.0,
-    "image": "/images/slippers/slippers_010.png",
+    "image": "../../assets/images/slippers/slippers_010.png",
     "inStock": true,
     "category": "slippers",
     "colors": [
@@ -264,7 +264,7 @@
       "en": "Cozy Cable-knit upper slippers in heather grey featuring a soft faux-shearling lining."
     },
     "price": 18.0,
-    "image": "/images/slippers/slippers_011.png",
+    "image": "../../assets/images/slippers/slippers_011.png",
     "inStock": true,
     "category": "slippers",
     "colors": [
@@ -291,7 +291,7 @@
       "en": "Men's closed-toe slippers with a dark grey textured felt upper, padded collar, and durable rubber outsole."
     },
     "price": 24.0,
-    "image": "/images/slippers/slippers_012.png",
+    "image": "../../assets/images/slippers/slippers_012.png",
     "inStock": true,
     "category": "slippers",
     "colors": [

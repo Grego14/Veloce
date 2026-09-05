@@ -10,7 +10,7 @@
       "en": "Classic canvas high-top sneakers in vibrant royal blue featuring iconic ankle patches and white laces."
     },
     "price": 65.00,
-    "image": "/images/converse/converse_001.png",
+    "image": "../../assets/images/converse/converse_001.png",
     "inStock": true,
     "category": "converse",
     "colors": [
@@ -36,7 +36,7 @@
       "en": "High-top canvas sneakers in bold orange hue with contrasting stitching and black laces."
     },
     "price": 65.00,
-    "image": "/images/converse/converse_002.png",
+    "image": "../../assets/images/converse/converse_002.png",
     "inStock": true,
     "category": "converse",
     "colors": [
@@ -62,7 +62,7 @@
       "en": "Timeless high-top design in durable black canvas featuring signature rubber toe cap and white laces."
     },
     "price": 70.00,
-    "image": "/images/converse/converse_003.png",
+    "image": "../../assets/images/converse/converse_003.png",
     "inStock": true,
     "category": "converse",
     "colors": [
@@ -88,7 +88,7 @@
       "en": "Urban style high-top sneakers in navy blue canvas with metal eyelets and vulcanized rubber sole."
     },
     "price": 68.00,
-    "image": "/images/converse/converse_004.png",
+    "image": "../../assets/images/converse/converse_004.png",
     "inStock": true,
     "category": "converse",
     "colors": [
@@ -114,7 +114,7 @@
       "en": "Classic silhouette in deep black canvas featuring subtle red stripe accents along the midsole."
     },
     "price": 72.00,
-    "image": "/images/converse/converse_005.png",
+    "image": "../../assets/images/converse/converse_005.png",
     "inStock": true,
     "category": "converse",
     "colors": [
@@ -140,7 +140,7 @@
       "en": "Low-top Ox sneakers in monochromatic grey canvas featuring tonal eyelets and a sleek profile."
     },
     "price": 60.00,
-    "image": "/images/converse/converse_006.png",
+    "image": "../../assets/images/converse/converse_006.png",
     "inStock": true,
     "category": "converse",
     "colors": [
@@ -166,7 +166,7 @@
       "en": "Iconic high-top sneakers crafted in high-contrast crimson red canvas with signature All Star patch."
     },
     "price": 65.00,
-    "image": "/images/converse/converse_007.png",
+    "image": "../../assets/images/converse/converse_007.png",
     "inStock": true,
     "category": "converse",
     "colors": [

@@ -10,7 +10,7 @@
       "en": "Classic black patent leather ballroom dance shoe featuring a low cuban heel and lace-up closure."
     },
     "price": 145.0,
-    "image": "/images/men_shoes/men_shoes_001.png",
+    "image": "../../assets/images/men_shoes/men_shoes_001.png",
     "inStock": true,
     "category": "men_shoes",
     "colors": [
@@ -35,7 +35,7 @@
       "en": "Casual derby shoe crafted from pebbled brown leather with contrast stitching and a durable rubber sole."
     },
     "price": 120.0,
-    "image": "/images/men_shoes/men_shoes_002.png",
+    "image": "../../assets/images/men_shoes/men_shoes_002.png",
     "inStock": true,
     "category": "men_shoes",
     "colors": [
@@ -60,7 +60,7 @@
       "en": "Dress oxford shoe in burnished brown calfskin with classic brogue perforations and hand-finished patina."
     },
     "price": 320.0,
-    "image": "/images/men_shoes/men_shoes_003.png",
+    "image": "../../assets/images/men_shoes/men_shoes_003.png",
     "inStock": true,
     "category": "men_shoes",
     "colors": [
@@ -85,7 +85,7 @@
       "en": "Sleek formal slip-on shoe crafted in polished black leather with subtle side goring."
     },
     "price": 180.0,
-    "image": "/images/men_shoes/men_shoes_004.png",
+    "image": "../../assets/images/men_shoes/men_shoes_004.png",
     "inStock": true,
     "category": "men_shoes",
     "colors": [
@@ -110,7 +110,7 @@
       "en": "Dress chukka boot crafted in rich brown leather featuring subtle brogue details and a cap-toe."
     },
     "price": 210.0,
-    "image": "/images/men_shoes/men_shoes_005.png",
+    "image": "../../assets/images/men_shoes/men_shoes_005.png",
     "inStock": false,
     "category": "men_shoes",
     "colors": [
@@ -135,7 +135,7 @@
       "en": "Classic blucher shoe in dark brown leather with a slim leather and welted heel profile."
     },
     "price": 250.0,
-    "image": "/images/men_shoes/men_shoes_006.png",
+    "image": "../../assets/images/men_shoes/men_shoes_006.png",
     "inStock": true,
     "category": "men_shoes",
     "colors": [
@@ -160,7 +160,7 @@
       "en": "Luxury driving loafer crafted in black pony-hair leather with a tonal leather tie detail."
     },
     "price": 290.0,
-    "image": "/images/men_shoes/men_shoes_007.png",
+    "image": "../../assets/images/men_shoes/men_shoes_007.png",
     "inStock": true,
     "category": "men_shoes",
     "colors": [
@@ -185,7 +185,7 @@
       "en": "Artisanal square-toe shoe in burnished cognac leather with a woven jute welt detail."
     },
     "price": 340.0,
-    "image": "/images/men_shoes/men_shoes_008.png",
+    "image": "../../assets/images/men_shoes/men_shoes_008.png",
     "inStock": true,
     "category": "men_shoes",
     "colors": [
@@ -211,7 +211,7 @@
       "en": "Sleek blucher shoe in cognac leather featuring minimal stitching and subtle laser perforations."
     },
     "price": 230.0,
-    "image": "/images/men_shoes/men_shoes_009.png",
+    "image": "../../assets/images/men_shoes/men_shoes_009.png",
     "inStock": true,
     "category": "men_shoes",
     "colors": [
@@ -237,7 +237,7 @@
       "en": "Classic boat shoe crafted in bold red suede featuring white laces, silver eyelets, and a rubber white sole."
     },
     "price": 110.0,
-    "image": "/images/men_shoes/men_shoes_010.png",
+    "image": "../../assets/images/men_shoes/men_shoes_010.png",
     "inStock": true,
     "category": "men_shoes",
     "colors": [

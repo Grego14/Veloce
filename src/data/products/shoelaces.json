@@ -10,7 +10,7 @@
       "en": "Thin round black shoelaces with plastic aglets, ideal for dress shoes or lightweight sneakers."
     },
     "price": 5.0,
-    "image": "/images/shoelaces/shoelaces_001.png",
+    "image": "../../assets/images/shoelaces/shoelaces_001.png",
     "inStock": true,
     "category": "shoelaces",
     "colors": [
@@ -35,7 +35,7 @@
       "en": "Classic flat white cotton shoelaces designed for sneakers and casual shoes."
     },
     "price": 5.0,
-    "image": "/images/shoelaces/shoelaces_002.png",
+    "image": "../../assets/images/shoelaces/shoelaces_002.png",
     "inStock": true,
     "category": "shoelaces",
     "colors": [
@@ -60,7 +60,7 @@
       "en": "Flat shoelaces in a natural beige tone, made from soft woven cotton."
     },
     "price": 5.5,
-    "image": "/images/shoelaces/shoelaces_003.png",
+    "image": "../../assets/images/shoelaces/shoelaces_003.png",
     "inStock": true,
     "category": "shoelaces",
     "colors": [
@@ -85,7 +85,7 @@
       "en": "Durable thick round black shoelaces with metallic/plastic tips, ideal for boots and outdoor footwear."
     },
     "price": 6.0,
-    "image": "/images/shoelaces/shoelaces_004.png",
+    "image": "../../assets/images/shoelaces/shoelaces_004.png",
     "inStock": true,
     "category": "shoelaces",
     "colors": [
@@ -110,7 +110,7 @@
       "en": "Heavy-duty braided round boot laces in dark brown, built for hiking and work boots."
     },
     "price": 7.0,
-    "image": "/images/shoelaces/shoelaces_005.png",
+    "image": "../../assets/images/shoelaces/shoelaces_005.png",
     "inStock": true,
     "category": "shoelaces",
     "colors": [

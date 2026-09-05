@@ -10,7 +10,7 @@
       "en": "Adjustable outdoor hiking sandal with velcro straps, purple accents, and a rugged all-terrain sole."
     },
     "price": 65.0,
-    "image": "/images/sandals/sandals_001.png",
+    "image": "../../assets/images/sandals/sandals_001.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -36,7 +36,7 @@
       "en": "Lightweight sport sandal featuring durable beige and black webbing straps with hook-and-loop closure."
     },
     "price": 55.0,
-    "image": "/images/sandals/sandals_002.png",
+    "image": "../../assets/images/sandals/sandals_002.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -62,7 +62,7 @@
       "en": "Classic thong sandal made with brown leather straps and a smooth cushioned footbed."
     },
     "price": 45.0,
-    "image": "/images/sandals/sandals_003.png",
+    "image": "../../assets/images/sandals/sandals_003.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -87,7 +87,7 @@
       "en": "Sporty beach flip-flop with a black molded synthetic upper and a vibrant lime green high-traction sole."
     },
     "price": 35.0,
-    "image": "/images/sandals/sandals_004.png",
+    "image": "../../assets/images/sandals/sandals_004.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -113,7 +113,7 @@
       "en": "Hybrid hiking sandal featuring a protective closed toe, quick-lace bungee system, and breathable side cutouts."
     },
     "price": 85.0,
-    "image": "/images/sandals/sandals_005.png",
+    "image": "../../assets/images/sandals/sandals_005.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -138,7 +138,7 @@
       "en": "Artisanal flat sandal in rich red leather featuring crisscross straps and an adjustable ankle buckle."
     },
     "price": 75.0,
-    "image": "/images/sandals/sandals_006.png",
+    "image": "../../assets/images/sandals/sandals_006.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -163,7 +163,7 @@
       "en": "Comfort-focused sandal featuring wide crossed tan suede straps and a padded footbed."
     },
     "price": 60.0,
-    "image": "/images/sandals/sandals_007.png",
+    "image": "../../assets/images/sandals/sandals_007.png",
     "inStock": false,
     "category": "sandals",
     "colors": [
@@ -189,7 +189,7 @@
       "en": "Slide sandal in black crocodile-embossed leather featuring two adjustable silver buckles."
     },
     "price": 130.0,
-    "image": "/images/sandals/sandals_008.png",
+    "image": "../../assets/images/sandals/sandals_008.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -214,7 +214,7 @@
       "en": "Handcrafted dark brown leather slide sandal with double buckle closure and a contoured footbed."
     },
     "price": 95.0,
-    "image": "/images/sandals/sandals_009.png",
+    "image": "../../assets/images/sandals/sandals_009.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -239,7 +239,7 @@
       "en": "Timeless thong flip-flop made with soft beige suede and a durable multi-layer sole."
     },
     "price": 50.0,
-    "image": "/images/sandals/sandals_010.png",
+    "image": "../../assets/images/sandals/sandals_010.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -264,7 +264,7 @@
       "en": "Outdoor trail sandal with dual adjustable hook-and-loop straps, padded lining, and a high-traction Vibram outsole."
     },
     "price": 80.0,
-    "image": "/images/sandals/sandals_011.png",
+    "image": "../../assets/images/sandals/sandals_011.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -290,7 +290,7 @@
       "en": "Mixed-terrain sport sandal featuring adjustable brown webbing straps with coral pink accents."
     },
     "price": 70.0,
-    "image": "/images/sandals/sandals_012.png",
+    "image": "../../assets/images/sandals/sandals_012.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -316,7 +316,7 @@
       "en": "All-terrain sandal with continuous crisscross polyester straps, a toe-loop for security, and a ladder lock buckle."
     },
     "price": 90.0,
-    "image": "/images/sandals/sandals_013.png",
+    "image": "../../assets/images/sandals/sandals_013.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
@@ -341,7 +341,7 @@
       "en": "Classic fisherman-style sandal crafted in pebbled tan leather with a side buckle closure and contrast stitching."
     },
     "price": 85.0,
-    "image": "/images/sandals/sandals_014.png",
+    "image": "../../assets/images/sandals/sandals_014.png",
     "inStock": true,
     "category": "sandals",
     "colors": [
