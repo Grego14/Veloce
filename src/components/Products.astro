@@ -26,6 +26,8 @@ const products =
 >
   {products.map(product => {
     const url = product.id.split('_')[0]
+    const colorCount = product.colors?.length ?? 0
+    const colorLabel = colorCount === 1 ? t['product.color'] : t['product.colors']
 
     return (
       <article class='group flex max-w-sm flex-col'>
@@ -44,7 +46,10 @@ const products =
               decoding='async'
             />
           </div>
-          <h3 class='text-lg font-medium leading-tight group-hover:underline'>
+          <h3
+            class='line-clamp-2 min-h-[2.75rem] text-lg font-medium leading-tight group-hover:underline'
+            title={product.name[lang]}
+          >
             {product.name[lang]}
           </h3>
         </a>
@@ -59,7 +64,7 @@ const products =
 
           <div class='mt-3 flex items-center justify-between border-t border-zinc-700 pt-2 text-xs text-zinc-300'>
             <span>{t['product.rating']} {product.rating.toFixed(1)}</span>
-            <span>{product.colors?.length ?? 0} {t['product.colors']}</span>
+            <span>{colorCount} {colorLabel}</span>
           </div>
 
           {product.tags?.length ? (

@@ -13,6 +13,7 @@ export const es = {
   'cart.total': 'Total',
   'nav.home': 'Inicio',
   'product.rating': 'Valoración',
+  'product.color': 'color',
   'product.colors': 'colores',
   'product.outOfStock': 'Sin stock',
 

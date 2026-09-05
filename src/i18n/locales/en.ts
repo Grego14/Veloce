@@ -15,6 +15,7 @@ export const en: Record<TranslationKeys, string | string[]> = {
   'cart.total': 'Total',
   'nav.home': 'Home',
   'product.rating': 'Rating',
+  'product.color': 'color',
   'product.colors': 'colors',
   'product.outOfStock': 'Out of stock',
 
