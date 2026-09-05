@@ -1,0 +1,127 @@
+[
+  {
+    "id": "shoelaces_001",
+    "name": {
+      "es": "Cordones Redondos Delgados Negros",
+      "en": "Thin Black Round Shoelaces"
+    },
+    "description": {
+      "es": "Cordones redondos y delgados de color negro con herretes de plástico, ideales para calzado formal o deportivo liviano.",
+      "en": "Thin round black shoelaces with plastic aglets, ideal for dress shoes or lightweight sneakers."
+    },
+    "price": 5.0,
+    "image": "/images/shoelaces/shoelaces_001.png",
+    "inStock": true,
+    "category": "shoelaces",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "round",
+      "thin",
+      "black",
+      "classic"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "shoelaces_002",
+    "name": {
+      "es": "Cordones Planos Blancos Clásicos",
+      "en": "Classic White Flat Shoelaces"
+    },
+    "description": {
+      "es": "Cordones planos de algodón de color blanco para calzado deportivo y casual.",
+      "en": "Classic flat white cotton shoelaces designed for sneakers and casual shoes."
+    },
+    "price": 5.0,
+    "image": "/images/shoelaces/shoelaces_002.png",
+    "inStock": true,
+    "category": "shoelaces",
+    "colors": [
+      "white"
+    ],
+    "tags": [
+      "flat",
+      "white",
+      "sneaker",
+      "cotton"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "shoelaces_003",
+    "name": {
+      "es": "Cordones Planos de Algodón Beige",
+      "en": "Beige Flat Cotton Shoelaces"
+    },
+    "description": {
+      "es": "Cordones planos en tono beige o crema natural, de tejido suave de algodón.",
+      "en": "Flat shoelaces in a natural beige tone, made from soft woven cotton."
+    },
+    "price": 5.5,
+    "image": "/images/shoelaces/shoelaces_003.png",
+    "inStock": true,
+    "category": "shoelaces",
+    "colors": [
+      "beige"
+    ],
+    "tags": [
+      "flat",
+      "beige",
+      "natural",
+      "cotton"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": "shoelaces_004",
+    "name": {
+      "es": "Cordones Redondos Gruesos Negros",
+      "en": "Thick Black Round Shoelaces"
+    },
+    "description": {
+      "es": "Cordones redondos de textura resistente en color negro, ideales para botas o calzado de trabajo.",
+      "en": "Durable thick round black shoelaces with metallic/plastic tips, ideal for boots and outdoor footwear."
+    },
+    "price": 6.0,
+    "image": "/images/shoelaces/shoelaces_004.png",
+    "inStock": true,
+    "category": "shoelaces",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "round",
+      "thick",
+      "black",
+      "boots"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "shoelaces_005",
+    "name": {
+      "es": "Cordones Gruesos para Botas Café",
+      "en": "Heavy-Duty Brown Boot Laces"
+    },
+    "description": {
+      "es": "Cordones redondos trenzados de alta resistencia en color café, diseñados para botas de montaña o senderismo.",
+      "en": "Heavy-duty braided round boot laces in dark brown, built for hiking and work boots."
+    },
+    "price": 7.0,
+    "image": "/images/shoelaces/shoelaces_005.png",
+    "inStock": true,
+    "category": "shoelaces",
+    "colors": [
+      "brown"
+    ],
+    "tags": [
+      "heavy-duty",
+      "brown",
+      "hiking",
+      "boots"
+    ],
+    "rating": 4.8
+  }
+]

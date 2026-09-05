@@ -1,0 +1,184 @@
+[
+  {
+    "id": "converse_001",
+    "name": {
+      "es": "Converse Chuck Taylor All Star High Blue",
+      "en": "Converse Chuck Taylor All Star High Blue"
+    },
+    "description": {
+      "es": "Zapatillas altas clásicas de lona en color azul vibrante con parches icónicos en los tobillos y cordones blancos.",
+      "en": "Classic canvas high-top sneakers in vibrant royal blue featuring iconic ankle patches and white laces."
+    },
+    "price": 65.00,
+    "image": "/images/converse/converse_001.png",
+    "inStock": true,
+    "category": "converse",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "tags": [
+      "sneakers",
+      "canvas",
+      "high-top",
+      "casual"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "converse_002",
+    "name": {
+      "es": "Converse Chuck Taylor All Star High Orange",
+      "en": "Converse Chuck Taylor All Star High Orange"
+    },
+    "description": {
+      "es": "Zapatillas de caña alta en tono naranja intenso con detalles de costura en contraste y cordones negros.",
+      "en": "High-top canvas sneakers in bold orange hue with contrasting stitching and black laces."
+    },
+    "price": 65.00,
+    "image": "/images/converse/converse_002.png",
+    "inStock": true,
+    "category": "converse",
+    "colors": [
+      "orange",
+      "black"
+    ],
+    "tags": [
+      "sneakers",
+      "canvas",
+      "high-top",
+      "streetwear"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "converse_003",
+    "name": {
+      "es": "Converse Chuck Taylor All Star High Black Classic",
+      "en": "Converse Chuck Taylor All Star High Black Classic"
+    },
+    "description": {
+      "es": "El modelo atemporal en lona negra de alta durabilidad, suela de goma blanca y diseño de botín clásico.",
+      "en": "Timeless high-top design in durable black canvas featuring signature rubber toe cap and white laces."
+    },
+    "price": 70.00,
+    "image": "/images/converse/converse_003.png",
+    "inStock": true,
+    "category": "converse",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "tags": [
+      "sneakers",
+      "classic",
+      "high-top",
+      "essential"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "converse_004",
+    "name": {
+      "es": "Converse Chuck Taylor All Star High Navy",
+      "en": "Converse Chuck Taylor All Star High Navy"
+    },
+    "description": {
+      "es": "Zapatillas altas de estilo urbano en lona azul marino con ojales metálicos y suela de vulcanizado.",
+      "en": "Urban style high-top sneakers in navy blue canvas with metal eyelets and vulcanized rubber sole."
+    },
+    "price": 68.00,
+    "image": "/images/converse/converse_004.png",
+    "inStock": true,
+    "category": "converse",
+    "colors": [
+      "navy",
+      "white"
+    ],
+    "tags": [
+      "sneakers",
+      "canvas",
+      "high-top",
+      "casual"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "converse_005",
+    "name": {
+      "es": "Converse Chuck Taylor High Black Perspective",
+      "en": "Converse Chuck Taylor High Black Perspective"
+    },
+    "description": {
+      "es": "Edición clásica en tono negro profundo con líneas rojas de acento en la entresuela y silueta anatómica.",
+      "en": "Classic silhouette in deep black canvas featuring subtle red stripe accents along the midsole."
+    },
+    "price": 72.00,
+    "image": "/images/converse/converse_005.png",
+    "inStock": true,
+    "category": "converse",
+    "colors": [
+      "black",
+      "red",
+      "white"
+    ],
+    "tags": [
+      "sneakers",
+      "canvas",
+      "high-top"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "converse_006",
+    "name": {
+      "es": "Converse Chuck Taylor All Star Low Grey Monochrome",
+      "en": "Converse Chuck Taylor All Star Low Grey Monochrome"
+    },
+    "description": {
+      "es": "Zapatillas de corte bajo (Ox) en lona gris monocromática con ojales al tono y perfil minimalista.",
+      "en": "Low-top Ox sneakers in monochromatic grey canvas featuring tonal eyelets and a sleek profile."
+    },
+    "price": 60.00,
+    "image": "/images/converse/converse_006.png",
+    "inStock": true,
+    "category": "converse",
+    "colors": [
+      "grey",
+      "white"
+    ],
+    "tags": [
+      "sneakers",
+      "low-top",
+      "monochrome",
+      "casual"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "converse_007",
+    "name": {
+      "es": "Converse Chuck Taylor All Star High Crimson Red",
+      "en": "Converse Chuck Taylor All Star High Crimson Red"
+    },
+    "description": {
+      "es": "Icónicas zapatillas de lona roja de alta intensidad con el sello clásico All Star y cordones blancos.",
+      "en": "Iconic high-top sneakers crafted in high-contrast crimson red canvas with signature All Star patch."
+    },
+    "price": 65.00,
+    "image": "/images/converse/converse_007.png",
+    "inStock": true,
+    "category": "converse",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "tags": [
+      "sneakers",
+      "canvas",
+      "high-top",
+      "red"
+    ],
+    "rating": 4.8
+  }
+]

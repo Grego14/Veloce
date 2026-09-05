@@ -1,0 +1,310 @@
+[
+  {
+    "id": "slippers_001",
+    "name": {
+      "es": "Pantuflas Destalonadas de Toalla Beige",
+      "en": "Beige Open-Toe Terry Slippers"
+    },
+    "description": {
+      "es": "Pantuflas de baño destalonadas y destapadas en tejido tipo toalla color beige.",
+      "en": "Open-toe slip-on bath slippers made of plush beige terry cloth."
+    },
+    "price": 12.0,
+    "image": "/images/slippers/slippers_001.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "beige"
+    ],
+    "tags": [
+      "bath",
+      "terry",
+      "open-toe",
+      "beige"
+    ],
+    "rating": 4.2
+  },
+  {
+    "id": "slippers_002",
+    "name": {
+      "es": "Pantuflas Cerradas de Algodón Gris",
+      "en": "Grey Closed-Toe Cotton Slippers"
+    },
+    "description": {
+      "es": "Pantuflas clásicas de casa con diseño cerrado en tono gris neutro y tela suave.",
+      "en": "Classic closed-toe house slippers made with soft grey cotton fabric."
+    },
+    "price": 15.0,
+    "image": "/images/slippers/slippers_002.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "grey"
+    ],
+    "tags": [
+      "closed-toe",
+      "grey",
+      "cotton",
+      "house"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": "slippers_003",
+    "name": {
+      "es": "Pantuflas de Felpa Blancas Tipo Hotel",
+      "en": "White Plush Spa Slippers"
+    },
+    "description": {
+      "es": "Pantuflas de felpa blanca suave con suela ligera, ideales para spa o descanso en casa.",
+      "en": "Soft white fleece spa slippers with a lightweight cushioned sole."
+    },
+    "price": 10.0,
+    "image": "/images/slippers/slippers_003.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "white"
+    ],
+    "tags": [
+      "spa",
+      "plush",
+      "white",
+      "fleece"
+    ],
+    "rating": 4.3
+  },
+  {
+    "id": "slippers_004",
+    "name": {
+      "es": "Pantuflas de Cuadros A cuadros Verde con Pelo Sintético",
+      "en": "Green Plaid Faux-Fur Slippers"
+    },
+    "description": {
+      "es": "Pantuflas calientitas con diseño escocés a cuadros verdes y ribete de pelo sintético.",
+      "en": "Cozy slippers featuring a green tartan plaid pattern and fluffy faux-fur trim."
+    },
+    "price": 22.0,
+    "image": "/images/slippers/slippers_004.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "green"
+    ],
+    "tags": [
+      "plaid",
+      "faux-fur",
+      "cozy",
+      "winter"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "slippers_005",
+    "name": {
+      "es": "Pantuflas Bicolores Verde Claro y Azul",
+      "en": "Light Green & Blue Slip-On Slippers"
+    },
+    "description": {
+      "es": "Pantuflas destalonadas en combinación de tonos verde pastel y plantilla azul con suela de goma.",
+      "en": "Pastel light green slip-on slippers with a contrasting light blue footbed and rubber sole."
+    },
+    "price": 18.0,
+    "image": "/images/slippers/slippers_005.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "green",
+      "blue"
+    ],
+    "tags": [
+      "bicolor",
+      "pastel",
+      "rubber-sole",
+      "casual"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "slippers_006",
+    "name": {
+      "es": "Pantuflas de Tela a Cuadros Gris y Blanco",
+      "en": "Grey Gingham Plaid Slippers"
+    },
+    "description": {
+      "es": "Pantuflas livianas de algodón con patrón a cuadros gingham en color gris y blanco.",
+      "en": "Lightweight cotton slip-on slippers in a grey and white gingham check pattern."
+    },
+    "price": 14.0,
+    "image": "/images/slippers/slippers_006.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "grey",
+      "white"
+    ],
+    "tags": [
+      "gingham",
+      "plaid",
+      "cotton",
+      "lightweight"
+    ],
+    "rating": 4.1
+  },
+  {
+    "id": "slippers_007",
+    "name": {
+      "es": "Pantuflas de Fieltro Café con Forro Borreguito",
+      "en": "Brown Felt Fleece-Lined Clog Slippers"
+    },
+    "description": {
+      "es": "Pantuflas tipo zueco en tejido exterior tipo fieltro café con forro de lana de imitación cálido y detalles bordados.",
+      "en": "Clog-style slippers with a brown felt upper, warm faux-shearling lining, and decorative cross-stitching."
+    },
+    "price": 25.0,
+    "image": "/images/slippers/slippers_007.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "brown"
+    ],
+    "tags": [
+      "felt",
+      "shearling",
+      "warm",
+      "clog"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "slippers_008",
+    "name": {
+      "es": "Sandalia de Peluche Gris con Banda Tejida",
+      "en": "Grey Plush Slide with Knit Band"
+    },
+    "description": {
+      "es": "Sandalia de descanso acolchada de peluche gris con franja central de tejido de punto.",
+      "en": "Plush grey faux-fur slide slippers featuring a breathable central sweater-knit panel."
+    },
+    "price": 19.0,
+    "image": "/images/slippers/slippers_008.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "grey"
+    ],
+    "tags": [
+      "fur",
+      "knit",
+      "slide",
+      "grey"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "slippers_009",
+    "name": {
+      "es": "Pantuflas de Peluche Mullido Color Rosa Viejo",
+      "en": "Dusty Rose Fluffy Plush Slippers"
+    },
+    "description": {
+      "es": "Pantuflas cerradas ultra suaves en peluche de color rosa viejo o malva con textura acolchada.",
+      "en": "Ultra-soft closed-toe slippers in a dusty rose mauve fluffy plush material."
+    },
+    "price": 20.0,
+    "image": "/images/slippers/slippers_009.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "pink",
+      "brown"
+    ],
+    "tags": [
+      "fluffy",
+      "plush",
+      "dusty-rose",
+      "soft"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "slippers_010",
+    "name": {
+      "es": "Mocasín de Gamuza Marrón con Forro de Borrego",
+      "en": "Brown Suede Shearling Moccasin Slippers"
+    },
+    "description": {
+      "es": "Pantuflas de gamuza café oscuro estilo mocasín destalonado con forro abrigador de lana de oveja imitación.",
+      "en": "Dark brown suede slip-on moccasin slippers with a plush cream shearling cuff and lining."
+    },
+    "price": 32.0,
+    "image": "/images/slippers/slippers_010.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "brown",
+      "beige"
+    ],
+    "tags": [
+      "suede",
+      "shearling",
+      "moccasin",
+      "premium"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "slippers_011",
+    "name": {
+      "es": "Pantuflas de Punto Trenzado Gris con Borreguito",
+      "en": "Grey Cable-Knit Fleece-Lined Slippers"
+    },
+    "description": {
+      "es": "Pantuflas de tejido de punto trenzado exterior en tono gris con forro interior de lana sintética suave y acogedora.",
+      "en": "Cozy Cable-knit upper slippers in heather grey featuring a soft faux-shearling lining."
+    },
+    "price": 18.0,
+    "image": "/images/slippers/slippers_011.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "grey",
+      "white"
+    ],
+    "tags": [
+      "knit",
+      "fleece",
+      "cozy",
+      "winter",
+      "grey"
+    ],
+    "rating": 3.8
+  },
+  {
+    "id": "slippers_012",
+    "name": {
+      "es": "Pantuflas Cerradas de Fieltro Oscuro y Suela Rígida",
+      "en": "Dark Grey Felt House Slippers with Rubber Sole"
+    },
+    "description": {
+      "es": "Pantuflas cerradas para hombre en fieltro texturizado gris oscuro con ribete acolchado y suela antideslizante.",
+      "en": "Men's closed-toe slippers with a dark grey textured felt upper, padded collar, and durable rubber outsole."
+    },
+    "price": 24.0,
+    "image": "/images/slippers/slippers_012.png",
+    "inStock": true,
+    "category": "slippers",
+    "colors": [
+      "grey",
+      "black"
+    ],
+    "tags": [
+      "felt",
+      "rubber-sole",
+      "closed-toe",
+      "black",
+      "grey"
+    ],
+    "rating": 2.9
+  }
+]

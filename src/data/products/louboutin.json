@@ -1,0 +1,428 @@
+[
+  {
+    "id": "louboutin_001",
+    "name": {
+      "es": "Tacón de Plataforma Peeptoe en Charol",
+      "en": "Patent Leather Peeptoe Platform Heel"
+    },
+    "description": {
+      "es": "Tacón de plataforma alta con peeptoe y acabado en charol negro.",
+      "en": "High platform heel featuring a peeptoe cut and sleek black patent leather finish."
+    },
+    "price": 895.00,
+    "image": "/images/louboutin/louboutin_001.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "platform",
+      "peeptoe",
+      "patent-leather",
+      "glamour"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "louboutin_002",
+    "name": {
+      "es": "Stiletto con Púas Metálicas",
+      "en": "All-Over Spike Stiletto"
+    },
+    "description": {
+      "es": "Tacón stiletto recubierto completamente con remaches/púas metálicas negras (spikes).",
+      "en": "Stiletto heel fully covered in signature black metal spikes for an edgy luxury statement."
+    },
+    "price": 1295.00,
+    "image": "/images/louboutin/louboutin_002.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "stiletto",
+      "spikes",
+      "edgy",
+      "leather"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "louboutin_003",
+    "name": {
+      "es": "Tacón de Punta Fina con Tiras y Hebillas",
+      "en": "Strappy Pointed-Toe Buckling Heel"
+    },
+    "description": {
+      "es": "Tacón de punta fina con correas finas en el empeine y tobillo ajustables con hebillas.",
+      "en": "Pointed-toe heel featuring delicate adjustable straps across the instep and ankle."
+    },
+    "price": 845.00,
+    "image": "/images/louboutin/louboutin_003.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "pointed-toe",
+      "strappy",
+      "buckle",
+      "elegant"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "louboutin_004",
+    "name": {
+      "es": "Stiletto con Plataforma Oculta",
+      "en": "Hidden Platform Leather Stiletto"
+    },
+    "description": {
+      "es": "Stiletto con plataforma frontal oculta alta, punta cerrada y cuero suave negro.",
+      "en": "Classic closed-toe stiletto crafted from soft black leather with a high concealed platform."
+    },
+    "price": 945.00,
+    "image": "/images/louboutin/louboutin_004.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "stiletto",
+      "hidden-platform",
+      "smooth-leather",
+      "classic"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "louboutin_005",
+    "name": {
+      "es": "Tacón de Plataforma con Tiras Cruzadas",
+      "en": "Cross-Strap Ankle-Buckle Platform"
+    },
+    "description": {
+      "es": "Tacón de plataforma con tiras cruzadas en el empeine que se abrochan en el tobillo.",
+      "en": "Platform heel designed with crisscross instep straps and a secure ankle buckle closure."
+    },
+    "price": 895.00,
+    "image": "/images/louboutin/louboutin_005.png",
+    "inStock": false,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "platform",
+      "cross-strap",
+      "ankle-strap",
+      "party"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "louboutin_006",
+    "name": {
+      "es": "Stiletto de Malla con Cristales",
+      "en": "Mesh Crystal-Embellished Stiletto"
+    },
+    "description": {
+      "es": "Stiletto con malla transparente, incrustaciones de pedrería/cristales brillantes y punta fina.",
+      "en": "Pointed-toe stiletto featuring sheer mesh adorned with sparkling crystal embellishments."
+    },
+    "price": 1195.00,
+    "image": "/images/louboutin/louboutin_006.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "mesh",
+      "crystals",
+      "stiletto",
+      "evening"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "louboutin_007",
+    "name": {
+      "es": "Tacón de Ante con Escote Asimétrico",
+      "en": "Asymmetric Cutout Suede Heel"
+    },
+    "description": {
+      "es": "Zapato de tacón en ante/gamuza negra con escote asimétrico de corte alto en los laterales.",
+      "en": "Black suede heel designed with a high-cut asymmetric vamp side detail."
+    },
+    "price": 795.00,
+    "image": "/images/louboutin/louboutin_007.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "suede",
+      "asymmetric",
+      "high-cut",
+      "chic"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "louboutin_008",
+    "name": {
+      "es": "Tacón con Plataforma Peeptoe Mate",
+      "en": "Matte Leather Peeptoe Platform"
+    },
+    "description": {
+      "es": "Tacón alto con plataforma e abertura peeptoe en cuero de acabado mate.",
+      "en": "High platform pump with a peeptoe opening, finished in premium matte black leather."
+    },
+    "price": 875.00,
+    "image": "/images/louboutin/louboutin_008.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "matte",
+      "peeptoe",
+      "platform",
+      "minimalist"
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": "louboutin_009",
+    "name": {
+      "es": "Tacón Peeptoe en Charol Brillante",
+      "en": "Glossy Patent Peeptoe Pump"
+    },
+    "description": {
+      "es": "Par de tacones de charol brillante con plataforma alta y punta descubierta (peeptoe).",
+      "en": "High platform pumps in high-shine patent leather featuring an open peeptoe front."
+    },
+    "price": 895.00,
+    "image": "/images/louboutin/louboutin_009.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "patent-leather",
+      "peeptoe",
+      "glossy",
+      "platform"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "louboutin_010",
+    "name": {
+      "es": "Tacón Combinado con Púas en la Punta",
+      "en": "Spiked Toe Mixed-Media Heel"
+    },
+    "description": {
+      "es": "Tacón de charol y ante negro con tachuelas/púas metálicas concentradas en la punta.",
+      "en": "Mixed patent and suede leather heel adorned with metallic spikes clustered on the toe."
+    },
+    "price": 995.00,
+    "image": "/images/louboutin/louboutin_010.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "mixed-media",
+      "spikes",
+      "toe-detail",
+      "suede"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "louboutin_011",
+    "name": {
+      "es": "Tacón de Plataforma Peeptoe en Charol Negro",
+      "en": "Black Patent Leather Peeptoe Platform Heel"
+    },
+    "description": {
+      "es": "Tacón de plataforma alta con peeptoe y acabado en charol negro brillante.",
+      "en": "High platform heel featuring a peeptoe cut and glossy black patent leather finish."
+    },
+    "price": 895.00,
+    "image": "/images/louboutin/louboutin_011.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "platform",
+      "peeptoe",
+      "patent-leather",
+      "glamour"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "louboutin_012",
+    "name": {
+      "es": "Tacón Destalonado de Malla Azul con Cristales",
+      "en": "Blue Crystal Slingback Peeptoe Heel"
+    },
+    "description": {
+      "es": "Tacón destalonado (slingback) de malla azul recubierto completamente con cristales brillantes y abertura peeptoe.",
+      "en": "Blue mesh slingback heel fully encrusted with shimmering blue crystals and a peeptoe front."
+    },
+    "price": 1295.00,
+    "image": "/images/louboutin/louboutin_012.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "blue"
+    ],
+    "tags": [
+      "slingback",
+      "crystals",
+      "peeptoe",
+      "evening"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "louboutin_013",
+    "name": {
+      "es": "Tacón de Plataforma Peeptoe en Charol Rojo",
+      "en": "Red Patent Leather Peeptoe Platform Heel"
+    },
+    "description": {
+      "es": "Tacón de plataforma alta y stiletto en charol rojo brillante con abertura en la punta.",
+      "en": "High stiletto platform pump crafted from vibrant red patent leather with a peeptoe cut."
+    },
+    "price": 895.00,
+    "image": "/images/louboutin/louboutin_013.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "red"
+    ],
+    "tags": [
+      "platform",
+      "peeptoe",
+      "patent-leather",
+      "bold"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "louboutin_014",
+    "name": {
+      "es": "Stiletto de Punta Fina en Charol Rojo",
+      "en": "Red Patent Pointed-Toe Stiletto"
+    },
+    "description": {
+      "es": "Stiletto clásico de punta fina en charol rojo brillante y tacón de aguja elevado.",
+      "en": "Classic pointed-toe stiletto pump featuring high-shine red patent leather."
+    },
+    "price": 795.00,
+    "image": "/images/louboutin/louboutin_014.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "red"
+    ],
+    "tags": [
+      "stiletto",
+      "pointed-toe",
+      "patent-leather",
+      "classic"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "louboutin_015",
+    "name": {
+      "es": "Botín de Tacón con Correa y Hebilla en Cuero Negro",
+      "en": "Black Leather Buckle Strap Ankle Boot"
+    },
+    "description": {
+      "es": "Botín de cuero negro con correas cruzadas, hebilla superior ajustable y cierre de cremallera.",
+      "en": "Black leather ankle boot featuring crisscross straps, an adjustable top buckle, and zip closure."
+    },
+    "price": 1095.00,
+    "image": "/images/louboutin/louboutin_015.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "boots",
+      "leather",
+      "buckle",
+      "chunky-heel"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": "louboutin_016",
+    "name": {
+      "es": "Tacón de Plataforma Nude con Tachuelas",
+      "en": "Nude Spiked Platform Heel"
+    },
+    "description": {
+      "es": "Tacón de plataforma en tono nude/beige recubierto con tachuelas y púas metálicas plateadas.",
+      "en": "Nude leather platform pump embellished with silver-tone metallic spikes throughout."
+    },
+    "price": 1250.00,
+    "image": "/images/louboutin/louboutin_016.png",
+    "inStock": false,
+    "category": "louboutin",
+    "colors": [
+      "nude",
+      "beige"
+    ],
+    "tags": [
+      "platform",
+      "spikes",
+      "nude",
+      "edgy"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "louboutin_017",
+    "name": {
+      "es": "Tacón de Plataforma Peeptoe en Terciopelo Negro",
+      "en": "Black Velvet Peeptoe Platform Heel"
+    },
+    "description": {
+      "es": "Tacón de plataforma ultra alta en terciopelo negro con textura plisada y abertura peeptoe.",
+      "en": "Sky-high platform pump crafted in pleated black velvet featuring a peeptoe front."
+    },
+    "price": 925.00,
+    "image": "/images/louboutin/louboutin_017.png",
+    "inStock": true,
+    "category": "louboutin",
+    "colors": [
+      "black"
+    ],
+    "tags": [
+      "platform",
+      "velvet",
+      "peeptoe",
+      "luxurious"
+    ],
+    "rating": 4.7
+  }
+]
