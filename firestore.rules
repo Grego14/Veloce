@@ -1,0 +1,31 @@
+rules_version='2'
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // users carts
+    match /users/{userId}/cart/{document=**} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // users orders
+    match /users/{userId}/orders/{orderId} {
+      allow read, create: if isOwner(userId);
+
+      // users can't modify or delete orders when created
+      allow update, delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
