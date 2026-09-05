@@ -1,23 +1,42 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import '../styles/global.css'
+import Logo from '@components/icons/VeloceLogo'
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { appName, getLangFromUrl } from '@i18n/utils'
+
+import { es } from '@i18n/locales/es'
+import { en } from '@i18n/locales/en'
+
+const lang = getLangFromUrl(Astro.url)
+const dict = lang === 'es' ? es : en
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{appName}</title>
+  </head>
+  <body class='p-4 flex-col items-center'>
+    <header class='mb-4 flex justify-center sm:justify-start'>
+      <a href={lang === 'es' ? '/' : '/en/'} class="flex items-center max-w-fit">
+        <Logo class='w-7 h-7 sm:w-10 sm:h-10 md:w-12 md:h-12' />
+        <h1 class='ml-2 tracking-[0.12em] uppercase'>{appName}</h1>
+      </a>
+    </header>
+
+    <slot />
+
+    <script>
+      import { setLanguage } from '@stores/i18nStore'
+
+      const currentLang = document.documentElement.lang as 'es' | 'en'
+      setLanguage(currentLang || 'es')
+    </script>
+  </body>
+</html>

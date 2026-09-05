@@ -1,0 +1,48 @@
+---
+import Layout from '@layouts/Layout.astro'
+import { Image } from 'astro:assets'
+
+import { useTranslations } from '@i18n/utils'
+
+import { es } from '@i18n/locales/es'
+import { en } from '@i18n/locales/en'
+
+interface Props {
+  lang: 'es' | 'en'
+}
+
+const { lang = 'es' } = Astro.props
+const t = lang === 'es' ? es : en
+
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+import { getCollection } from 'astro:content'
+const rawProducts = await getCollection('products')
+const products = rawProducts.flatMap(entry => entry.data)
+---
+
+<Layout>
+  <div>
+    <h2 class='text-5xl'>{t['header.slogan']}</h2>
+    <div>{t['header.announcement']}</div>
+
+    <section class='flex space-x-2'>
+      <a href={getRelativeLocaleUrl(lang, 'catalog')}>{t['nav.catalog']}</a>
+    </section>
+
+    {products.map(product => (
+      <article>
+        <h2>{product.name[lang]}</h2>
+        <Image 
+           src={product.image} 
+           alt={product.description[lang]} 
+           width='200' 
+           height='200'  
+           loading='lazy' 
+           decoding='async'
+         />
+        <p>${product.price}</p>
+      </article>
+    ))}
+  </div>
+</Layout>
