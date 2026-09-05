@@ -1,0 +1,94 @@
+---
+interface Props {
+  announcements: string[]
+}
+
+const { announcements } = Astro.props
+---
+
+<div
+  class='announcements-bar'
+  tabindex='0'
+  aria-label='Announcements'
+  role='region'
+>
+  <div class='announcements-bar__track'>
+    <div class='announcements-bar__group' aria-hidden='false'>
+      {announcements.map(announcement => <span>{announcement}</span>)}
+    </div>
+    <div class='announcements-bar__group' aria-hidden='true'>
+      {announcements.map(announcement => <span>{announcement}</span>)}
+    </div>
+  </div>
+</div>
+
+<style>
+  .announcements-bar {
+    overflow: hidden;
+    width: 100%;
+    border-block: 1px solid currentColor;
+    margin-block: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 4rem,
+      black calc(100% - 4rem),
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 4rem,
+      black calc(100% - 4rem),
+      transparent
+    );
+  }
+
+  .announcements-bar:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+
+  .announcements-bar__track {
+    display: flex;
+    width: max-content;
+    animation: announcements-scroll 28s linear infinite;
+  }
+
+  .announcements-bar__group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 3rem;
+    padding: 0.75rem 3rem 0.75rem 0;
+  }
+
+  .announcements-bar__group span {
+    white-space: nowrap;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .announcements-bar:hover .announcements-bar__track,
+  .announcements-bar:focus .announcements-bar__track,
+  .announcements-bar:active .announcements-bar__track {
+    animation-play-state: paused;
+  }
+
+  @keyframes announcements-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .announcements-bar__track {
+      animation: none;
+    }
+  }
+</style>

@@ -6,6 +6,7 @@ import { useTranslations } from '@i18n/utils'
 
 import { es } from '@i18n/locales/es'
 import { en } from '@i18n/locales/en'
+import AnnouncementsBar from '@components/AnnouncementsBar.astro'
 
 interface Props {
   lang: 'es' | 'en'
@@ -13,6 +14,7 @@ interface Props {
 
 const { lang = 'es' } = Astro.props
 const t = lang === 'es' ? es : en
+const announcements = t['header.announcements']
 
 import { getRelativeLocaleUrl } from 'astro:i18n';
 
@@ -24,11 +26,14 @@ const products = rawProducts.flatMap(entry => entry.data)
 <Layout>
   <div>
     <h2 class='text-5xl'>{t['header.slogan']}</h2>
-    <div>{t['header.announcement']}</div>
 
     <section class='flex space-x-2'>
       <a href={getRelativeLocaleUrl(lang, 'catalog')}>{t['nav.catalog']}</a>
     </section>
+
+    <AnnouncementsBar
+      announcements={Array.isArray(announcements) ? announcements : [announcements]}
+    />
 
     {products.map(product => (
       <article>
