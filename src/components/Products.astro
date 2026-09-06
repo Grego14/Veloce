@@ -5,6 +5,7 @@ import { getRelativeLocaleUrl } from 'astro:i18n'
 
 import { es } from '@i18n/locales/es'
 import { en } from '@i18n/locales/en'
+import { ShoppingCart } from 'lucide-preact'
 
 type Product = CollectionEntry<'products'>['data'][number]
 
@@ -84,8 +85,29 @@ const products =
             </div>
           ) : null}
 
+          <button
+            type='button'
+            class='mt-4 flex w-full items-center justify-center gap-2 border-2 border-white px-3 py-2 text-sm font-semibold uppercase tracking-wide transition-colors hover:bg-white hover:text-zinc-950 disabled:cursor-not-allowed disabled:border-zinc-600 disabled:text-zinc-500'
+            disabled={!product.inStock}
+            data-add-to-cart={JSON.stringify(product)}
+          >
+            <ShoppingCart size={17} strokeWidth={2} aria-hidden='true' />
+            {t['cart.add']}
+          </button>
         </div>
       </article>
     )
   })}
 </section>
+
+<script>
+  import { addToCart } from '@stores/cartStore'
+
+  document.querySelectorAll<HTMLButtonElement>('[data-add-to-cart]').forEach(button => {
+    button.addEventListener('click', () => {
+      const product = button.dataset.addToCart
+      if (!product) throw new Error('Product data is missing')
+      addToCart(JSON.parse(product))
+    })
+  })
+</script>
