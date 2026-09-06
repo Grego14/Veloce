@@ -1,8 +1,8 @@
 ---
 import '../styles/global.css'
 import Logo from '@components/icons/VeloceLogo'
+import MenuDrawer from '@components/MenuDrawer.astro'
 
-import { getRelativeLocaleUrl } from 'astro:i18n';
 import { appName, getLangFromUrl } from '@i18n/utils'
 
 import { es } from '@i18n/locales/es'
@@ -10,6 +10,12 @@ import { en } from '@i18n/locales/en'
 
 const lang = getLangFromUrl(Astro.url)
 const dict = lang === 'es' ? es : en
+const otherLang = lang === 'es' ? 'en' : 'es'
+const currentPath = Astro.url.pathname.replace(/^\/en(?=\/|$)/, '') || '/'
+const languageHref =
+  otherLang === 'en'
+    ? `/en${currentPath === '/' ? '/' : currentPath}`
+    : currentPath
 ---
 
 <!doctype html>
@@ -23,11 +29,22 @@ const dict = lang === 'es' ? es : en
     <title>{appName}</title>
   </head>
   <body class='p-4 flex-col items-center'>
-    <header class='mb-4 flex justify-center sm:justify-start'>
+    <header class='mb-4 flex items-center'>
       <a href={lang === 'es' ? '/' : '/en/'} class="flex items-center max-w-fit">
         <Logo class='w-7 h-7 sm:w-10 sm:h-10 md:w-12 md:h-12' />
         <h1 class='ml-2 tracking-[0.12em] uppercase'>{appName}</h1>
       </a>
+
+      <div class='ml-auto flex items-center gap-2'>
+        <a
+          href={languageHref}
+          class='px-2 py-1 text-sm font-semibold uppercase tracking-wider transition-colors hover:bg-zinc-100'
+          aria-label={`${dict['nav.language']}: ${otherLang === 'es' ? 'Español' : 'English'}`}
+        >
+          {otherLang}
+        </a>
+        <MenuDrawer />
+      </div>
     </header>
 
     <slot />

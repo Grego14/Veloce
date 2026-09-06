@@ -5,6 +5,17 @@ export const languages = {
 
 export const defaultLang = 'es'
 export const appName = 'Veloce'
+export const categories = [
+  'boots',
+  'converse',
+  'crocs',
+  'louboutin',
+  'men_shoes',
+  'sandals',
+  'shoelaces',
+  'slippers',
+  'vans',
+] as const
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/')
