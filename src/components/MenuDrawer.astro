@@ -25,7 +25,7 @@ const dict = lang === 'es' ? es : en
 
 <aside
   id='site-drawer'
-  class='drawer fixed right-0 top-0 z-50 flex h-full w-[min(24rem,calc(100%-1rem))] translate-x-full flex-col bg-white p-6 shadow-2xl sm:p-8'
+  class='drawer fixed right-0 top-0 z-50 flex h-full w-[min(24rem,calc(100%-1rem))] flex-col bg-white p-6 shadow-2xl transition-transform duration-300 sm:p-8'
   aria-label={dict['nav.catalog']}
   aria-hidden='true'
 >
@@ -116,7 +116,11 @@ const dict = lang === 'es' ? es : en
 
 <style>
   .drawer.is-open {
-    transform: translateX(0);
+    transform: translateX(0) !important;
+  }
+
+  .drawer:not(.is-open) {
+    transform: translateX(100%);
   }
 
   .drawer-overlay.is-open {
