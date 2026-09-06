@@ -2,6 +2,7 @@
 import '../styles/global.css'
 import Logo from '@components/icons/VeloceLogo'
 import MenuDrawer from '@components/MenuDrawer.astro'
+import CartDrawer from '@components/CartDrawer.astro'
 
 import { appName, getLangFromUrl } from '@i18n/utils'
 
@@ -58,6 +59,7 @@ const languageHref =
     </header>
 
     <slot />
+    <CartDrawer />
 
     <script>
       import { setLanguage } from '@stores/i18nStore'
