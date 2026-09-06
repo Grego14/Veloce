@@ -29,13 +29,13 @@ const languageHref =
     <title>{appName}</title>
   </head>
   <body class='p-4 flex-col items-center'>
-    <header class='mb-4 flex items-center'>
+    <header class='mb-4 flex items-center px-4 py-2 sm:px-6 md:px-8'>
       <a href={lang === 'es' ? '/' : '/en/'} class="flex items-center max-w-fit">
         <Logo class='w-7 h-7 sm:w-10 sm:h-10 md:w-12 md:h-12' />
         <h1 class='ml-2 tracking-[0.12em] uppercase'>{appName}</h1>
       </a>
 
-      <div class='ml-auto flex items-center gap-2'>
+      <div class='ml-auto flex items-center gap-4'>
         <a
           href={languageHref}
           class='px-2 py-1 text-sm font-semibold uppercase tracking-wider transition-colors hover:bg-zinc-100'
