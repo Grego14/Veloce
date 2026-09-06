@@ -17,10 +17,8 @@ const t = lang === 'es' ? es : en
 const announcements = t['header.announcements']
 ---
 
-<Layout>
+<Layout slogan={t['header.slogan']}>
   <div>
-    <h2 class='text-center text-5xl sm:text-left'>{t['header.slogan']}</h2>
-
     <AnnouncementsBar
       announcements={Array.isArray(announcements) ? announcements : [announcements]}
     />
