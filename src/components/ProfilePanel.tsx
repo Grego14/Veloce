@@ -8,11 +8,7 @@ import {
   logout,
   updateUserProfile,
 } from '@stores/authStore'
-import { $dictionary, setLanguage } from '@stores/i18nStore'
-
-interface Props {
-  lang: 'es' | 'en'
-}
+import { $dictionary } from '@stores/i18nStore'
 
 interface State {
   email: string
@@ -50,15 +46,11 @@ function reducer(state: State, action: Action): State {
   return { ...state, loading: action.loading }
 }
 
-export default function ProfilePanel({ lang }: Props) {
+export default function ProfilePanel() {
   const user = useStore($user)
   const dictionary = useStore($dictionary)
   const [state, dispatch] = useReducer(reducer, initialState)
   const signedIn = Boolean(user && !user.isAnonymous)
-
-  useEffect(() => {
-    if (!$dictionary.get()) setLanguage(lang)
-  }, [lang])
 
   useEffect(() => {
     if (user)
@@ -76,11 +68,13 @@ export default function ProfilePanel({ lang }: Props) {
 
   const submitEmail = async (createAccount: boolean) => {
     dispatch({ type: 'loading', loading: true })
+
     const result = await loginWithEmail(
       state.email,
       state.loginPassword,
       createAccount
     )
+
     dispatch({ type: 'loading', loading: false })
     if (!result)
       dispatch({
@@ -93,8 +87,10 @@ export default function ProfilePanel({ lang }: Props) {
   const saveProfile = async (event: Event) => {
     event.preventDefault()
     dispatch({ type: 'loading', loading: true })
+
     try {
       await updateUserProfile(state.name, state.password)
+
       dispatch({ type: 'field', field: 'password', value: '' })
       dispatch({
         type: 'message',
@@ -102,6 +98,7 @@ export default function ProfilePanel({ lang }: Props) {
       })
     } catch (error) {
       console.error('Unable to update profile:', error)
+
       dispatch({
         type: 'message',
         message: dictionary['profile.updateError'] as string,
@@ -114,22 +111,27 @@ export default function ProfilePanel({ lang }: Props) {
 
   return (
     <section class="min-h-[34rem] border-2 border-zinc-950 p-6 sm:p-8">
-      <h2>{dictionary['profile.title']}</h2>
-      <p class="mt-3 text-lg">{dictionary['profile.loginPrompt']}</p>
-      {state.loading ? (
-        <p class="mt-4 text-sm font-semibold uppercase">
-          {dictionary['profile.loading']}
-        </p>
-      ) : null}
+      <h2>{dictionary[user ? 'profile.config' : 'profile.title']}</h2>
+
+      {!user && <p class="mt-3 text-lg">{dictionary['profile.loginPrompt']}</p>}
+
+      <p
+        class="mt-4 text-sm font-semibold uppercase"
+        aria-live="polite"
+        role="status"
+      >
+        {state.loading ? dictionary['profile.loading'] : null}
+      </p>
 
       {!signedIn ? (
         <>
           <button
             type="button"
-            class="mt-8 w-full bg-zinc-950 px-4 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-zinc-950"
+            class="mt-8 btn-primary"
             onClick={async () => {
               await loginWithGoogle()
             }}
+            disabled={state.loading}
           >
             {dictionary['login.google']}
           </button>
@@ -172,16 +174,18 @@ export default function ProfilePanel({ lang }: Props) {
             <div class="flex gap-3">
               <button
                 type="submit"
-                class="flex-1 border-2 border-zinc-950 px-3 py-3 text-sm font-semibold uppercase transition-colors hover:bg-zinc-950 hover:text-white"
+                class="btn-secondary"
+                disabled={state.loading}
               >
                 {dictionary['login.emailAction']}
               </button>
               <button
                 type="button"
-                class="flex-1 border-2 border-zinc-950 px-3 py-3 text-sm font-semibold uppercase transition-colors hover:bg-zinc-950 hover:text-white"
+                class="btn-secondary"
                 onClick={async () => {
                   await submitEmail(true)
                 }}
+                disabled={state.loading}
               >
                 {dictionary['login.createAccount']}
               </button>

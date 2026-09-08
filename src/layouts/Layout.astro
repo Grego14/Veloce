@@ -46,14 +46,14 @@ const languageHref =
         <div class='ml-auto flex items-center gap-4'>
           <a
             href={languageHref}
-            class='px-2 py-1 text-sm font-semibold uppercase tracking-wider transition-colors hover:bg-zinc-100'
+            class='px-2 py-1 text-sm font-semibold uppercase tracking-wider transition-colors hover:bg-zinc-100 hidden sm:block'
             aria-label={`${dict['nav.language']}: ${otherLang === 'es' ? 'Español' : 'English'}`}
           >
             {otherLang}
           </a>
           <a
             href={lang === 'es' ? '/profile' : '/en/profile'}
-            class='px-2 py-1 text-sm font-semibold uppercase tracking-wider transition-colors hover:bg-zinc-100'
+            class='px-2 py-1 text-sm font-semibold uppercase tracking-wider transition-colors hover:bg-zinc-100 hidden sm:block'
             aria-label={dict['profile.title']}
           >
             {dict['nav.profile']}
@@ -62,7 +62,7 @@ const languageHref =
         </div>
       </div>
 
-      <h2 class='mt-4 text-center text-5xl sm:text-left'>{headerSlogan}</h2>
+      <h2 class='mt-4 text-5xl text-left'>{headerSlogan}</h2>
     </header>
 
     <slot />

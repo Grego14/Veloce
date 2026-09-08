@@ -8,7 +8,7 @@ import {
   removeFromCart,
   type CartItem,
 } from '@stores/cartStore'
-import { $dictionary, setLanguage, type Dictionary } from '@stores/i18nStore'
+import { $dictionary } from '@stores/i18nStore'
 
 interface Props {
   lang: 'es' | 'en'
@@ -35,23 +35,26 @@ export default function CartDrawer({ lang }: Props) {
   )
 
   useEffect(() => {
-    if (!$dictionary.get()) setLanguage(lang)
     document.body.classList.toggle('overflow-hidden', open)
+
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') isCartOpen.set(false)
     }
+
     document.addEventListener('keydown', closeOnEscape)
+
     return () => {
       document.body.classList.remove('overflow-hidden')
       document.removeEventListener('keydown', closeOnEscape)
     }
   }, [open])
 
-  if (!dictionary) {
+  const removeItem = async (item: CartItem) => await removeFromCart(item.id)
+
+  if (!dictionary)
     return (
       <div class="fixed bottom-6 right-6 z-30 h-14 w-14 animate-pulse bg-zinc-200" />
     )
-  }
 
   return (
     <>
@@ -84,7 +87,7 @@ export default function CartDrawer({ lang }: Props) {
           <h2 class="text-2xl font-medium">{dictionary['cart.title']}</h2>
           <button
             type="button"
-            class="flex h-10 w-10 items-center justify-center border-2 border-zinc-950 transition-colors hover:bg-white hover:text-zinc-950"
+            class="btn-secondary flex-0 px-2 flex h-10 w-10 items-center justify-center"
             aria-label={dictionary['cart.close']}
             onClick={() => isCartOpen.set(false)}
           >
@@ -110,9 +113,7 @@ export default function CartDrawer({ lang }: Props) {
                       type="button"
                       class="shrink-0 text-zinc-500 transition-colors hover:text-rose-600"
                       aria-label={`${dictionary['cart.remove']} ${item.name[lang]}`}
-                      onClick={async () => {
-                        await removeFromCart(item.id)
-                      }}
+                      onClick={() => removeItem(item)}
                     >
                       <Trash2 size={19} strokeWidth={2} aria-hidden="true" />
                     </button>
@@ -131,10 +132,7 @@ export default function CartDrawer({ lang }: Props) {
           <span>{dictionary['cart.total']}</span>
           <span>${summary.total.toFixed(2)}</span>
         </div>
-        <a
-          href={lang === 'en' ? '/en/buy' : '/buy'}
-          class="mt-4 block bg-zinc-950 px-4 py-3 text-center text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-zinc-950"
-        >
+        <a href={lang === 'en' ? '/en/buy' : '/buy'} class="btn-primary mt-4">
           {dictionary['buy.purchase']}
         </a>
       </aside>

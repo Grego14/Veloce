@@ -1,4 +1,5 @@
 import { atom } from 'nanostores'
+import { FirebaseError } from 'firebase/app'
 import {
   onAuthStateChanged,
   signInAnonymously,
@@ -12,6 +13,7 @@ import {
   updateProfile,
   updatePassword,
   signOut as firebaseSignOut,
+  signInWithCredential,
   type User,
 } from 'firebase/auth'
 import { auth } from '@lib/firebase'
@@ -42,10 +44,31 @@ export async function loginWithGoogle(): Promise<User | null> {
   const currentUser = auth.currentUser
 
   try {
-    if (currentUser && currentUser.isAnonymous) {
-      const credential = await linkWithPopup(currentUser, provider)
-      trackEvent('login', { method: 'google' })
-      return credential.user
+    if (currentUser?.isAnonymous) {
+      try {
+        const credential = await linkWithPopup(currentUser, provider)
+        trackEvent('login', { method: 'google' })
+        return credential.user
+      } catch (e) {
+        if (
+          e instanceof FirebaseError &&
+          e.code === 'auth/credential-already-in-use'
+        ) {
+          const credentialFromError = GoogleAuthProvider.credentialFromError(e)
+
+          if (credentialFromError) {
+            const userCredential = await signInWithCredential(
+              auth,
+              credentialFromError
+            )
+            trackEvent('login', { method: 'google' })
+
+            return userCredential.user
+          }
+        }
+
+        throw e
+      }
     }
 
     const credential = await signInWithPopup(auth, provider)
