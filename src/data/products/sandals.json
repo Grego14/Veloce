@@ -13,16 +13,8 @@
     "image": "../../assets/images/sandals/sandals_001.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "grey",
-      "purple"
-    ],
-    "tags": [
-      "hiking",
-      "outdoor",
-      "adjustable",
-      "sport"
-    ],
+    "colors": ["grey", "purple"],
+    "tags": ["hiking", "outdoor", "adjustable", "sport"],
     "rating": 4.6
   },
   {
@@ -39,16 +31,8 @@
     "image": "../../assets/images/sandals/sandals_002.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "beige",
-      "black"
-    ],
-    "tags": [
-      "sport",
-      "casual",
-      "outdoor",
-      "strappy"
-    ],
+    "colors": ["beige", "black"],
+    "tags": ["sport", "casual", "outdoor", "strappy"],
     "rating": 4.4
   },
   {
@@ -65,15 +49,8 @@
     "image": "../../assets/images/sandals/sandals_003.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "brown"
-    ],
-    "tags": [
-      "flip-flop",
-      "thong",
-      "leather",
-      "casual"
-    ],
+    "colors": ["brown"],
+    "tags": ["flip-flop", "thong", "leather", "casual"],
     "rating": 4.5
   },
   {
@@ -90,16 +67,8 @@
     "image": "../../assets/images/sandals/sandals_004.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "black",
-      "green"
-    ],
-    "tags": [
-      "flip-flop",
-      "beach",
-      "sport",
-      "synthetic"
-    ],
+    "colors": ["black", "green"],
+    "tags": ["flip-flop", "beach", "sport", "synthetic"],
     "rating": 4.3
   },
   {
@@ -116,15 +85,8 @@
     "image": "../../assets/images/sandals/sandals_005.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "brown"
-    ],
-    "tags": [
-      "closed-toe",
-      "hiking",
-      "water-shoe",
-      "outdoor"
-    ],
+    "colors": ["brown"],
+    "tags": ["closed-toe", "hiking", "water-shoe", "outdoor"],
     "rating": 4.8
   },
   {
@@ -141,15 +103,8 @@
     "image": "../../assets/images/sandals/sandals_006.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "red"
-    ],
-    "tags": [
-      "leather",
-      "strappy",
-      "artisanal",
-      "casual"
-    ],
+    "colors": ["red"],
+    "tags": ["leather", "strappy", "artisanal", "casual"],
     "rating": 4.7
   },
   {
@@ -166,16 +121,8 @@
     "image": "../../assets/images/sandals/sandals_007.png",
     "inStock": false,
     "category": "sandals",
-    "colors": [
-      "tan",
-      "brown"
-    ],
-    "tags": [
-      "comfort",
-      "suede",
-      "cross-strap",
-      "casual"
-    ],
+    "colors": ["tan", "brown"],
+    "tags": ["comfort", "suede", "cross-strap", "casual"],
     "rating": 4.5
   },
   {
@@ -192,15 +139,8 @@
     "image": "../../assets/images/sandals/sandals_008.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "black"
-    ],
-    "tags": [
-      "slide",
-      "crocodile-embossed",
-      "buckle",
-      "luxury"
-    ],
+    "colors": ["black"],
+    "tags": ["slide", "crocodile-embossed", "buckle", "luxury"],
     "rating": 4.7
   },
   {
@@ -217,15 +157,8 @@
     "image": "../../assets/images/sandals/sandals_009.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "brown"
-    ],
-    "tags": [
-      "leather",
-      "artisanal",
-      "slide",
-      "classic"
-    ],
+    "colors": ["brown"],
+    "tags": ["leather", "artisanal", "slide", "classic"],
     "rating": 4.6
   },
   {
@@ -242,15 +175,8 @@
     "image": "../../assets/images/sandals/sandals_010.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "beige"
-    ],
-    "tags": [
-      "flip-flop",
-      "suede",
-      "casual",
-      "beach"
-    ],
+    "colors": ["beige"],
+    "tags": ["flip-flop", "suede", "casual", "beach"],
     "rating": 4.8
   },
   {
@@ -267,16 +193,8 @@
     "image": "../../assets/images/sandals/sandals_011.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "grey",
-      "taupe"
-    ],
-    "tags": [
-      "hiking",
-      "outdoor",
-      "merrell",
-      "vibram"
-    ],
+    "colors": ["grey", "taupe"],
+    "tags": ["hiking", "outdoor", "merrell", "vibram"],
     "rating": 4.7
   },
   {
@@ -293,16 +211,8 @@
     "image": "../../assets/images/sandals/sandals_012.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "brown",
-      "pink"
-    ],
-    "tags": [
-      "hiking",
-      "teva",
-      "sport",
-      "water-friendly"
-    ],
+    "colors": ["brown", "pink"],
+    "tags": ["hiking", "teva", "sport", "water-friendly"],
     "rating": 4.6
   },
   {
@@ -319,15 +229,8 @@
     "image": "../../assets/images/sandals/sandals_013.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "brown"
-    ],
-    "tags": [
-      "chaco",
-      "toe-loop",
-      "hiking",
-      "strappy"
-    ],
+    "colors": ["brown"],
+    "tags": ["chaco", "toe-loop", "hiking", "strappy"],
     "rating": 4.8
   },
   {
@@ -344,16 +247,8 @@
     "image": "../../assets/images/sandals/sandals_014.png",
     "inStock": true,
     "category": "sandals",
-    "colors": [
-      "tan",
-      "brown"
-    ],
-    "tags": [
-      "fisherman",
-      "leather",
-      "huarache",
-      "casual"
-    ],
+    "colors": ["tan", "brown"],
+    "tags": ["fisherman", "leather", "huarache", "casual"],
     "rating": 4.5
   }
 ]

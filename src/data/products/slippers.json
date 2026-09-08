@@ -13,15 +13,8 @@
     "image": "../../assets/images/slippers/slippers_001.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "beige"
-    ],
-    "tags": [
-      "bath",
-      "terry",
-      "open-toe",
-      "beige"
-    ],
+    "colors": ["beige"],
+    "tags": ["bath", "terry", "open-toe", "beige"],
     "rating": 4.2
   },
   {
@@ -38,15 +31,8 @@
     "image": "../../assets/images/slippers/slippers_002.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "grey"
-    ],
-    "tags": [
-      "closed-toe",
-      "grey",
-      "cotton",
-      "house"
-    ],
+    "colors": ["grey"],
+    "tags": ["closed-toe", "grey", "cotton", "house"],
     "rating": 4.4
   },
   {
@@ -63,15 +49,8 @@
     "image": "../../assets/images/slippers/slippers_003.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "white"
-    ],
-    "tags": [
-      "spa",
-      "plush",
-      "white",
-      "fleece"
-    ],
+    "colors": ["white"],
+    "tags": ["spa", "plush", "white", "fleece"],
     "rating": 4.3
   },
   {
@@ -88,15 +67,8 @@
     "image": "../../assets/images/slippers/slippers_004.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "green"
-    ],
-    "tags": [
-      "plaid",
-      "faux-fur",
-      "cozy",
-      "winter"
-    ],
+    "colors": ["green"],
+    "tags": ["plaid", "faux-fur", "cozy", "winter"],
     "rating": 4.7
   },
   {
@@ -113,16 +85,8 @@
     "image": "../../assets/images/slippers/slippers_005.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "green",
-      "blue"
-    ],
-    "tags": [
-      "bicolor",
-      "pastel",
-      "rubber-sole",
-      "casual"
-    ],
+    "colors": ["green", "blue"],
+    "tags": ["bicolor", "pastel", "rubber-sole", "casual"],
     "rating": 4.5
   },
   {
@@ -139,16 +103,8 @@
     "image": "../../assets/images/slippers/slippers_006.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "grey",
-      "white"
-    ],
-    "tags": [
-      "gingham",
-      "plaid",
-      "cotton",
-      "lightweight"
-    ],
+    "colors": ["grey", "white"],
+    "tags": ["gingham", "plaid", "cotton", "lightweight"],
     "rating": 4.1
   },
   {
@@ -165,15 +121,8 @@
     "image": "../../assets/images/slippers/slippers_007.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "brown"
-    ],
-    "tags": [
-      "felt",
-      "shearling",
-      "warm",
-      "clog"
-    ],
+    "colors": ["brown"],
+    "tags": ["felt", "shearling", "warm", "clog"],
     "rating": 4.8
   },
   {
@@ -190,15 +139,8 @@
     "image": "../../assets/images/slippers/slippers_008.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "grey"
-    ],
-    "tags": [
-      "fur",
-      "knit",
-      "slide",
-      "grey"
-    ],
+    "colors": ["grey"],
+    "tags": ["fur", "knit", "slide", "grey"],
     "rating": 4.6
   },
   {
@@ -215,16 +157,8 @@
     "image": "../../assets/images/slippers/slippers_009.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "pink",
-      "brown"
-    ],
-    "tags": [
-      "fluffy",
-      "plush",
-      "dusty-rose",
-      "soft"
-    ],
+    "colors": ["pink", "brown"],
+    "tags": ["fluffy", "plush", "dusty-rose", "soft"],
     "rating": 4.7
   },
   {
@@ -241,16 +175,8 @@
     "image": "../../assets/images/slippers/slippers_010.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "brown",
-      "beige"
-    ],
-    "tags": [
-      "suede",
-      "shearling",
-      "moccasin",
-      "premium"
-    ],
+    "colors": ["brown", "beige"],
+    "tags": ["suede", "shearling", "moccasin", "premium"],
     "rating": 4.9
   },
   {
@@ -267,17 +193,8 @@
     "image": "../../assets/images/slippers/slippers_011.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "grey",
-      "white"
-    ],
-    "tags": [
-      "knit",
-      "fleece",
-      "cozy",
-      "winter",
-      "grey"
-    ],
+    "colors": ["grey", "white"],
+    "tags": ["knit", "fleece", "cozy", "winter", "grey"],
     "rating": 3.8
   },
   {
@@ -294,17 +211,8 @@
     "image": "../../assets/images/slippers/slippers_012.png",
     "inStock": true,
     "category": "slippers",
-    "colors": [
-      "grey",
-      "black"
-    ],
-    "tags": [
-      "felt",
-      "rubber-sole",
-      "closed-toe",
-      "black",
-      "grey"
-    ],
+    "colors": ["grey", "black"],
+    "tags": ["felt", "rubber-sole", "closed-toe", "black", "grey"],
     "rating": 2.9
   }
 ]

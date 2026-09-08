@@ -1,7 +1,8 @@
 ---
 description: "Guide for setting up and using Firebase Authentication. Use this skill when the user's app requires user sign-in, user management, or secure data access using auth rules."
-metadata: {"category":"Identity"}
+metadata: { 'category': 'Identity' }
 ---
+
 ## Prerequisites
 
 - **Firebase Project**: Created via

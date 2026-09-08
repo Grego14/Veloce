@@ -1,7 +1,8 @@
 ---
 description: "Manages Firebase Remote Config templates, feature flags, loading strategies, and SDKs (Android, iOS). Use when downloading/deploying remoteconfig JSON templates, managing version history/feature flags, setting in-app defaults, fetchAndActivate(), real-time listeners, or SDK setup. Don't use for Firebase Hosting, Auth, Firestore, Data Connect, Crashlytics, or App Hosting."
-metadata: {"category":"ApplicationDevelopment"}
+metadata: { 'category': 'ApplicationDevelopment' }
 ---
+
 # Remote Config
 
 This skill provides a complete guide for getting started with Remote Config on
@@ -96,11 +97,11 @@ history through the terminal:
     local JSON to the Remote Config service:
 
   ```json
-    { "remoteconfig": { "template": "remote_config.json" } }
+  { "remoteconfig": { "template": "remote_config.json" } }
   ```
 
   - Deploy: Execute the partial deployment command
-    
+
     ```bash
     npx -y firebase-tools@latest deploy --only remoteconfig
     ```

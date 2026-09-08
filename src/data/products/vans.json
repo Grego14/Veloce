@@ -13,18 +13,8 @@
     "image": "../../assets/images/vans/vans_001.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "green",
-      "blue",
-      "black"
-    ],
-    "tags": [
-      "era",
-      "polka-dots",
-      "skate",
-      "casual",
-      "canvas"
-    ],
+    "colors": ["green", "blue", "black"],
+    "tags": ["era", "polka-dots", "skate", "casual", "canvas"],
     "rating": 4.1
   },
   {
@@ -41,17 +31,8 @@
     "image": "../../assets/images/vans/vans_002.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "black",
-      "pink",
-      "white"
-    ],
-    "tags": [
-      "authentic",
-      "floral",
-      "low-top",
-      "canvas"
-    ],
+    "colors": ["black", "pink", "white"],
+    "tags": ["authentic", "floral", "low-top", "canvas"],
     "rating": 3.2
   },
   {
@@ -68,16 +49,8 @@
     "image": "../../assets/images/vans/vans_003.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "blue",
-      "white"
-    ],
-    "tags": [
-      "old-skool",
-      "sidestripe",
-      "suede",
-      "teal"
-    ],
+    "colors": ["blue", "white"],
+    "tags": ["old-skool", "sidestripe", "suede", "teal"],
     "rating": 4.6
   },
   {
@@ -94,16 +67,8 @@
     "image": "../../assets/images/vans/vans_004.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "blue",
-      "white"
-    ],
-    "tags": [
-      "old-skool",
-      "royal-blue",
-      "skate",
-      "classic"
-    ],
+    "colors": ["blue", "white"],
+    "tags": ["old-skool", "royal-blue", "skate", "classic"],
     "rating": 2.7
   },
   {
@@ -120,16 +85,8 @@
     "image": "../../assets/images/vans/vans_005.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "red",
-      "white"
-    ],
-    "tags": [
-      "revenge-x-storm",
-      "lightning",
-      "red",
-      "streetwear"
-    ],
+    "colors": ["red", "white"],
+    "tags": ["revenge-x-storm", "lightning", "red", "streetwear"],
     "rating": 4.3
   },
   {
@@ -146,16 +103,8 @@
     "image": "../../assets/images/vans/vans_006.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "white",
-      "red"
-    ],
-    "tags": [
-      "old-skool",
-      "leather",
-      "white",
-      "red"
-    ],
+    "colors": ["white", "red"],
+    "tags": ["old-skool", "leather", "white", "red"],
     "rating": 3.9
   },
   {
@@ -172,17 +121,8 @@
     "image": "../../assets/images/vans/vans_007.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "blue",
-      "white"
-    ],
-    "tags": [
-      "authentic",
-      "pro",
-      "50th-anniversary",
-      "ultracush",
-      "navy"
-    ],
+    "colors": ["blue", "white"],
+    "tags": ["authentic", "pro", "50th-anniversary", "ultracush", "navy"],
     "rating": 4.8
   },
   {
@@ -199,18 +139,8 @@
     "image": "../../assets/images/vans/vans_008.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "blue",
-      "red",
-      "white"
-    ],
-    "tags": [
-      "era",
-      "pro",
-      "bicolor",
-      "50th-anniversary",
-      "ultracush"
-    ],
+    "colors": ["blue", "red", "white"],
+    "tags": ["era", "pro", "bicolor", "50th-anniversary", "ultracush"],
     "rating": 2.4
   },
   {
@@ -227,17 +157,8 @@
     "image": "../../assets/images/vans/vans_009.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "blue",
-      "white"
-    ],
-    "tags": [
-      "mid-skool",
-      "mid-top",
-      "pro",
-      "50th-anniversary",
-      "blue"
-    ],
+    "colors": ["blue", "white"],
+    "tags": ["mid-skool", "mid-top", "pro", "50th-anniversary", "blue"],
     "rating": 4.5
   },
   {
@@ -254,17 +175,8 @@
     "image": "../../assets/images/vans/vans_010.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "black",
-      "white"
-    ],
-    "tags": [
-      "style-36",
-      "retro",
-      "black",
-      "suede",
-      "canvas"
-    ],
+    "colors": ["black", "white"],
+    "tags": ["style-36", "retro", "black", "suede", "canvas"],
     "rating": 3.4
   },
   {
@@ -281,17 +193,8 @@
     "image": "../../assets/images/vans/vans_011.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "black",
-      "white"
-    ],
-    "tags": [
-      "sk8-hi",
-      "high-top",
-      "checkerboard",
-      "suede",
-      "canvas"
-    ],
+    "colors": ["black", "white"],
+    "tags": ["sk8-hi", "high-top", "checkerboard", "suede", "canvas"],
     "rating": 4.7
   },
   {
@@ -308,17 +211,8 @@
     "image": "../../assets/images/vans/vans_012.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "black",
-      "white"
-    ],
-    "tags": [
-      "old-skool",
-      "classic",
-      "black",
-      "white",
-      "skate"
-    ],
+    "colors": ["black", "white"],
+    "tags": ["old-skool", "classic", "black", "white", "skate"],
     "rating": 2.8
   },
   {
@@ -335,17 +229,8 @@
     "image": "../../assets/images/vans/vans_013.png",
     "inStock": true,
     "category": "sneakers",
-    "colors": [
-      "blue",
-      "white"
-    ],
-    "tags": [
-      "old-skool",
-      "navy",
-      "blue",
-      "suede",
-      "classic"
-    ],
+    "colors": ["blue", "white"],
+    "tags": ["old-skool", "navy", "blue", "suede", "classic"],
     "rating": 3.6
   }
 ]

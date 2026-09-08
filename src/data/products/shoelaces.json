@@ -13,15 +13,8 @@
     "image": "../../assets/images/shoelaces/shoelaces_001.png",
     "inStock": true,
     "category": "shoelaces",
-    "colors": [
-      "black"
-    ],
-    "tags": [
-      "round",
-      "thin",
-      "black",
-      "classic"
-    ],
+    "colors": ["black"],
+    "tags": ["round", "thin", "black", "classic"],
     "rating": 4.5
   },
   {
@@ -38,15 +31,8 @@
     "image": "../../assets/images/shoelaces/shoelaces_002.png",
     "inStock": true,
     "category": "shoelaces",
-    "colors": [
-      "white"
-    ],
-    "tags": [
-      "flat",
-      "white",
-      "sneaker",
-      "cotton"
-    ],
+    "colors": ["white"],
+    "tags": ["flat", "white", "sneaker", "cotton"],
     "rating": 4.6
   },
   {
@@ -63,15 +49,8 @@
     "image": "../../assets/images/shoelaces/shoelaces_003.png",
     "inStock": true,
     "category": "shoelaces",
-    "colors": [
-      "beige"
-    ],
-    "tags": [
-      "flat",
-      "beige",
-      "natural",
-      "cotton"
-    ],
+    "colors": ["beige"],
+    "tags": ["flat", "beige", "natural", "cotton"],
     "rating": 4.4
   },
   {
@@ -88,15 +67,8 @@
     "image": "../../assets/images/shoelaces/shoelaces_004.png",
     "inStock": true,
     "category": "shoelaces",
-    "colors": [
-      "black"
-    ],
-    "tags": [
-      "round",
-      "thick",
-      "black",
-      "boots"
-    ],
+    "colors": ["black"],
+    "tags": ["round", "thick", "black", "boots"],
     "rating": 4.7
   },
   {
@@ -113,15 +85,8 @@
     "image": "../../assets/images/shoelaces/shoelaces_005.png",
     "inStock": true,
     "category": "shoelaces",
-    "colors": [
-      "brown"
-    ],
-    "tags": [
-      "heavy-duty",
-      "brown",
-      "hiking",
-      "boots"
-    ],
+    "colors": ["brown"],
+    "tags": ["heavy-duty", "brown", "hiking", "boots"],
     "rating": 4.8
   }
 ]

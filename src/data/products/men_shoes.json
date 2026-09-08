@@ -13,15 +13,8 @@
     "image": "../../assets/images/men_shoes/men_shoes_001.png",
     "inStock": true,
     "category": "men_shoes",
-    "colors": [
-      "black"
-    ],
-    "tags": [
-      "dance",
-      "patent-leather",
-      "formal",
-      "lace-up"
-    ],
+    "colors": ["black"],
+    "tags": ["dance", "patent-leather", "formal", "lace-up"],
     "rating": 4.6
   },
   {
@@ -38,15 +31,8 @@
     "image": "../../assets/images/men_shoes/men_shoes_002.png",
     "inStock": true,
     "category": "men_shoes",
-    "colors": [
-      "brown"
-    ],
-    "tags": [
-      "derby",
-      "casual",
-      "textured-leather",
-      "everyday"
-    ],
+    "colors": ["brown"],
+    "tags": ["derby", "casual", "textured-leather", "everyday"],
     "rating": 4.5
   },
   {
@@ -63,15 +49,8 @@
     "image": "../../assets/images/men_shoes/men_shoes_003.png",
     "inStock": true,
     "category": "men_shoes",
-    "colors": [
-      "brown"
-    ],
-    "tags": [
-      "oxford",
-      "brogue",
-      "formal",
-      "leather"
-    ],
+    "colors": ["brown"],
+    "tags": ["oxford", "brogue", "formal", "leather"],
     "rating": 4.9
   },
   {
@@ -88,15 +67,8 @@
     "image": "../../assets/images/men_shoes/men_shoes_004.png",
     "inStock": true,
     "category": "men_shoes",
-    "colors": [
-      "black"
-    ],
-    "tags": [
-      "slip-on",
-      "loafer",
-      "formal",
-      "minimalist"
-    ],
+    "colors": ["black"],
+    "tags": ["slip-on", "loafer", "formal", "minimalist"],
     "rating": 4.7
   },
   {
@@ -113,15 +85,8 @@
     "image": "../../assets/images/men_shoes/men_shoes_005.png",
     "inStock": false,
     "category": "men_shoes",
-    "colors": [
-      "brown"
-    ],
-    "tags": [
-      "boots",
-      "chukka",
-      "dress-boots",
-      "leather"
-    ],
+    "colors": ["brown"],
+    "tags": ["boots", "chukka", "dress-boots", "leather"],
     "rating": 4.6
   },
   {
@@ -138,15 +103,8 @@
     "image": "../../assets/images/men_shoes/men_shoes_006.png",
     "inStock": true,
     "category": "men_shoes",
-    "colors": [
-      "brown"
-    ],
-    "tags": [
-      "blucher",
-      "smart-casual",
-      "leather",
-      "classic"
-    ],
+    "colors": ["brown"],
+    "tags": ["blucher", "smart-casual", "leather", "classic"],
     "rating": 4.8
   },
   {
@@ -163,15 +121,8 @@
     "image": "../../assets/images/men_shoes/men_shoes_007.png",
     "inStock": true,
     "category": "men_shoes",
-    "colors": [
-      "black"
-    ],
-    "tags": [
-      "driver",
-      "loafer",
-      "textured",
-      "luxury"
-    ],
+    "colors": ["black"],
+    "tags": ["driver", "loafer", "textured", "luxury"],
     "rating": 4.4
   },
   {
@@ -188,16 +139,8 @@
     "image": "../../assets/images/men_shoes/men_shoes_008.png",
     "inStock": true,
     "category": "men_shoes",
-    "colors": [
-      "brown",
-      "cognac"
-    ],
-    "tags": [
-      "artisanal",
-      "square-toe",
-      "cognac",
-      "vintage"
-    ],
+    "colors": ["brown", "cognac"],
+    "tags": ["artisanal", "square-toe", "cognac", "vintage"],
     "rating": 4.8
   },
   {
@@ -214,16 +157,8 @@
     "image": "../../assets/images/men_shoes/men_shoes_009.png",
     "inStock": true,
     "category": "men_shoes",
-    "colors": [
-      "brown",
-      "cognac"
-    ],
-    "tags": [
-      "blucher",
-      "minimalist",
-      "cognac",
-      "dress"
-    ],
+    "colors": ["brown", "cognac"],
+    "tags": ["blucher", "minimalist", "cognac", "dress"],
     "rating": 4.7
   },
   {
@@ -240,15 +175,8 @@
     "image": "../../assets/images/men_shoes/men_shoes_010.png",
     "inStock": true,
     "category": "men_shoes",
-    "colors": [
-      "red"
-    ],
-    "tags": [
-      "boat-shoe",
-      "suede",
-      "casual",
-      "nautical"
-    ],
+    "colors": ["red"],
+    "tags": ["boat-shoe", "suede", "casual", "nautical"],
     "rating": 4.5
   }
 ]

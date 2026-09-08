@@ -1,7 +1,8 @@
 ---
 description: "Sets up, manages, queries, and configures Cloud Firestore databases (Standard/Enterprise edition), including data modeling, security rules, indexes, and SDK integrations (Web, Python, iOS, Android, Flutter). Use when creating/listing Firestore databases, defining data models/indexes, writing SDK queries, or integrating Firestore SDKs. Don't use for Firebase Hosting, Data Connect, Auth, Storage/GCS, Crashlytics, Functions, or BigQuery."
-metadata: {"category":"Databases"}
+metadata: { 'category': 'Databases' }
 ---
+
 # Cloud Firestore Database and Operations
 
 Before setting up dependencies, writing data models, or configuring security
@@ -36,7 +37,7 @@ Once the location is determined, create the database:
 
 Proceed with using the guides under `references/enterprise/`.
 
-______________________________________________________________________
+---
 
 ## 2. Specialized Guides
 
