@@ -1,0 +1,15 @@
+---
+import { categories } from '@i18n/utils'
+import CategoryView from '@views/CategoryView.astro'
+
+export function getStaticPaths() {
+  return categories.map(category => ({
+    params: { category },
+    props: { lang: 'en' as const, category },
+  }))
+}
+
+const { category } = Astro.props
+---
+
+<CategoryView lang='en' category={category} />
