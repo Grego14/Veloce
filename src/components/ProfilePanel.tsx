@@ -1,5 +1,5 @@
 import { useStore } from '@nanostores/preact'
-import { useState } from 'preact/hooks'
+import { useEffect, useReducer } from 'preact/hooks'
 
 import {
   $user,
@@ -8,110 +8,182 @@ import {
   logout,
   updateUserProfile,
 } from '@stores/authStore'
+import { $dictionary, setLanguage } from '@stores/i18nStore'
 
 interface Props {
   lang: 'es' | 'en'
 }
 
+interface State {
+  email: string
+  loginPassword: string
+  name: string
+  password: string
+  message: string
+  error: boolean
+  loading: boolean
+}
+
+type Action =
+  | {
+      type: 'field'
+      field: 'email' | 'loginPassword' | 'name' | 'password'
+      value: string
+    }
+  | { type: 'message'; message: string; error?: boolean }
+  | { type: 'loading'; loading: boolean }
+
+const initialState: State = {
+  email: '',
+  loginPassword: '',
+  name: '',
+  password: '',
+  message: '',
+  error: false,
+  loading: false,
+}
+
+function reducer(state: State, action: Action): State {
+  if (action.type === 'field') return { ...state, [action.field]: action.value }
+  if (action.type === 'message')
+    return { ...state, message: action.message, error: action.error ?? false }
+  return { ...state, loading: action.loading }
+}
+
 export default function ProfilePanel({ lang }: Props) {
   const user = useStore($user)
-  const isEnglish = lang === 'en'
-  const [email, setEmail] = useState('')
-  const [loginPassword, setLoginPassword] = useState('')
-  const [name, setName] = useState('')
-  const [password, setPassword] = useState('')
-  const [message, setMessage] = useState('')
-  const [messageIsError, setMessageIsError] = useState(false)
-
+  const dictionary = useStore($dictionary)
+  const [state, dispatch] = useReducer(reducer, initialState)
   const signedIn = Boolean(user && !user.isAnonymous)
-  const setError = (text: string) => {
-    setMessage(text)
-    setMessageIsError(true)
+
+  useEffect(() => {
+    if (!$dictionary.get()) setLanguage(lang)
+  }, [lang])
+
+  useEffect(() => {
+    if (user)
+      dispatch({ type: 'field', field: 'name', value: user.displayName ?? '' })
+  }, [user])
+
+  if (!dictionary) {
+    return (
+      <div
+        class="min-h-[34rem] animate-pulse border-2 border-zinc-100 bg-zinc-50"
+        aria-busy="true"
+      />
+    )
   }
 
   const submitEmail = async (createAccount: boolean) => {
-    const result = await loginWithEmail(email, loginPassword, createAccount)
-    if (!result) {
-      setError(
-        isEnglish
-          ? 'Unable to sign in with those credentials.'
-          : 'No se pudo iniciar sesión con esas credenciales.'
-      )
-    }
+    dispatch({ type: 'loading', loading: true })
+    const result = await loginWithEmail(
+      state.email,
+      state.loginPassword,
+      createAccount
+    )
+    dispatch({ type: 'loading', loading: false })
+    if (!result)
+      dispatch({
+        type: 'message',
+        message: dictionary['profile.loginError'] as string,
+        error: true,
+      })
   }
 
   const saveProfile = async (event: Event) => {
     event.preventDefault()
+    dispatch({ type: 'loading', loading: true })
     try {
-      await updateUserProfile(name, password)
-      setMessage(isEnglish ? 'Profile updated' : 'Perfil actualizado')
-      setMessageIsError(false)
-      setPassword('')
+      await updateUserProfile(state.name, state.password)
+      dispatch({ type: 'field', field: 'password', value: '' })
+      dispatch({
+        type: 'message',
+        message: dictionary['profile.saved'] as string,
+      })
     } catch (error) {
       console.error('Unable to update profile:', error)
-      setError(
-        isEnglish
-          ? 'Unable to update the profile. Sign in again and try once more.'
-          : 'No se pudo actualizar el perfil. Inicia sesión de nuevo e inténtalo otra vez.'
-      )
+      dispatch({
+        type: 'message',
+        message: dictionary['profile.updateError'] as string,
+        error: true,
+      })
+    } finally {
+      dispatch({ type: 'loading', loading: false })
     }
   }
 
   return (
-    <section class="border-2 border-zinc-950 p-6 sm:p-8">
-      <h2>{isEnglish ? 'My profile' : 'Mi perfil'}</h2>
-      <p class="mt-3 text-lg">
-        {isEnglish
-          ? 'Sign in to sync your cart and manage your profile.'
-          : 'Inicia sesión para sincronizar tu carrito y administrar tu perfil.'}
-      </p>
+    <section class="min-h-[34rem] border-2 border-zinc-950 p-6 sm:p-8">
+      <h2>{dictionary['profile.title']}</h2>
+      <p class="mt-3 text-lg">{dictionary['profile.loginPrompt']}</p>
+      {state.loading ? (
+        <p class="mt-4 text-sm font-semibold uppercase">
+          {dictionary['profile.loading']}
+        </p>
+      ) : null}
 
       {!signedIn ? (
         <>
           <button
             type="button"
-            class="mt-8 w-full bg-zinc-950 px-4 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-zinc-700"
-            onClick={() => void loginWithGoogle()}
+            class="mt-8 w-full bg-zinc-950 px-4 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-zinc-950"
+            onClick={async () => {
+              await loginWithGoogle()
+            }}
           >
-            {isEnglish ? 'Continue with Google' : 'Continuar con Google'}
+            {dictionary['login.google']}
           </button>
           <form
             class="mt-5 space-y-3"
-            onSubmit={(event) => {
+            onSubmit={async (event) => {
               event.preventDefault()
-              void submitEmail(false)
+              await submitEmail(false)
             }}
           >
             <input
               class="w-full border-2 border-zinc-950 px-3 py-3"
               type="email"
-              placeholder={isEnglish ? 'Email' : 'Correo electrónico'}
-              value={email}
-              onInput={(event) => setEmail(event.currentTarget.value)}
+              placeholder={dictionary['login.email'] as string}
+              value={state.email}
+              onInput={(event) =>
+                dispatch({
+                  type: 'field',
+                  field: 'email',
+                  value: event.currentTarget.value,
+                })
+              }
               required
             />
             <input
               class="w-full border-2 border-zinc-950 px-3 py-3"
               type="password"
-              placeholder={isEnglish ? 'Password' : 'Contraseña'}
-              value={loginPassword}
-              onInput={(event) => setLoginPassword(event.currentTarget.value)}
+              placeholder={dictionary['login.password'] as string}
+              value={state.loginPassword}
+              onInput={(event) =>
+                dispatch({
+                  type: 'field',
+                  field: 'loginPassword',
+                  value: event.currentTarget.value,
+                })
+              }
               minLength={6}
               required
             />
             <div class="flex gap-3">
               <button
                 type="submit"
-                class="flex-1 border-2 border-zinc-950 px-3 py-3 text-sm font-semibold uppercase"
+                class="flex-1 border-2 border-zinc-950 px-3 py-3 text-sm font-semibold uppercase transition-colors hover:bg-zinc-950 hover:text-white"
               >
-                {isEnglish ? 'Sign in with email' : 'Iniciar sesión con correo'}
+                {dictionary['login.emailAction']}
               </button>
               <button
                 type="button"
-                class="flex-1 border-2 border-zinc-950 px-3 py-3 text-sm font-semibold uppercase"
-                onClick={() => void submitEmail(true)}
+                class="flex-1 border-2 border-zinc-950 px-3 py-3 text-sm font-semibold uppercase transition-colors hover:bg-zinc-950 hover:text-white"
+                onClick={async () => {
+                  await submitEmail(true)
+                }}
               >
-                {isEnglish ? 'Create account' : 'Crear cuenta'}
+                {dictionary['login.createAccount']}
               </button>
             </div>
           </form>
@@ -119,21 +191,33 @@ export default function ProfilePanel({ lang }: Props) {
       ) : (
         <form class="mt-8 space-y-5" onSubmit={saveProfile}>
           <label class="block text-sm font-semibold uppercase tracking-wide">
-            {isEnglish ? 'Name' : 'Nombre'}
+            {dictionary['profile.name']}
             <input
               class="mt-2 w-full border-2 border-zinc-950 px-3 py-3 font-normal"
-              value={name || user?.displayName || ''}
-              onInput={(event) => setName(event.currentTarget.value)}
+              value={state.name}
+              onInput={(event) =>
+                dispatch({
+                  type: 'field',
+                  field: 'name',
+                  value: event.currentTarget.value,
+                })
+              }
               required
             />
           </label>
           <label class="block text-sm font-semibold uppercase tracking-wide">
-            {isEnglish ? 'New password' : 'Nueva contraseña'}
+            {dictionary['profile.password']}
             <input
               class="mt-2 w-full border-2 border-zinc-950 px-3 py-3 font-normal"
               type="password"
-              value={password}
-              onInput={(event) => setPassword(event.currentTarget.value)}
+              value={state.password}
+              onInput={(event) =>
+                dispatch({
+                  type: 'field',
+                  field: 'password',
+                  value: event.currentTarget.value,
+                })
+              }
               minLength={6}
             />
           </label>
@@ -141,23 +225,25 @@ export default function ProfilePanel({ lang }: Props) {
             type="submit"
             class="w-full border-2 border-zinc-950 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition-colors hover:bg-zinc-950 hover:text-white"
           >
-            {isEnglish ? 'Save changes' : 'Guardar cambios'}
+            {dictionary['profile.save']}
           </button>
           <button
             type="button"
             class="w-full text-sm font-semibold uppercase tracking-wide underline"
-            onClick={() => void logout()}
+            onClick={async () => {
+              await logout()
+            }}
           >
-            {isEnglish ? 'Sign out' : 'Cerrar sesión'}
+            {dictionary['login.signOut']}
           </button>
         </form>
       )}
 
-      {message ? (
+      {state.message ? (
         <p
-          class={`mt-4 text-sm ${messageIsError ? 'text-rose-600' : 'text-emerald-700'}`}
+          class={`mt-4 text-sm ${state.error ? 'text-rose-600' : 'text-emerald-700'}`}
         >
-          {message}
+          {state.message}
         </p>
       ) : null}
     </section>

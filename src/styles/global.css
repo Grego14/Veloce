@@ -19,21 +19,28 @@ body {
 }
 
 h1 {
-  @apply font-bold text-4xl sm:text-5xl md:text-6xl
+  @apply font-bold text-4xl sm:text-5xl md:text-6xl;
 }
 
 h2 {
-  @apply text-2xl sm:text-3xl md:text-4xl
+  @apply text-2xl sm:text-3xl md:text-4xl;
+}
+
+h3 {
+  @apply text-xl sm:text-2xl md:text-3xl;
 }
 
 p {
-  @apply font-light
+  @apply font-light;
 }
 
 h2,
-h3,
 h4,
 h5,
 h6 {
   font-weight: 500;
+}
+
+button {
+  @apply cursor-pointer;
 }

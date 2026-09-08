@@ -6,15 +6,3 @@ const lang = getLangFromUrl(Astro.url)
 ---
 
 <CartDrawer client:only='preact' lang={lang} />
-
-<style>
-  .cart-drawer:not(.is-open) {
-    box-shadow: none;
-    transform: translateX(100%);
-  }
-
-  .cart-drawer.is-open {
-    box-shadow: -1rem 0 2rem -1.5rem rgb(0 0 0 / 0.35);
-    transform: translateX(0);
-  }
-</style>

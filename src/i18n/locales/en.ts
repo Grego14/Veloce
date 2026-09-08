@@ -66,6 +66,10 @@ export const en: Record<TranslationKeys, string | string[]> = {
   'profile.save': 'Save changes',
   'profile.loginPrompt': 'Sign in to sync your cart and manage your profile.',
   'profile.saved': 'Profile updated',
+  'profile.loginError': 'Unable to sign in with those credentials.',
+  'profile.updateError':
+    'Unable to update the profile. Sign in again and try once more.',
+  'profile.loading': 'Loading profile...',
   'buy.title': 'Checkout',
   'buy.discountCode': 'Discount code',
   'buy.apply': 'Apply',
@@ -73,4 +77,5 @@ export const en: Record<TranslationKeys, string | string[]> = {
   'buy.purchase': 'Buy',
   'buy.usedCode': 'This code has already been used.',
   'buy.success': 'Purchase completed successfully',
+  'buy.remove': 'Remove',
 }

@@ -1,7 +1,7 @@
 import { atom } from 'nanostores'
 import type { TranslationKeys } from '@i18n/locales/es'
 
-export type Dictionary = Record<TranslationKeys, string>
+export type Dictionary = Record<TranslationKeys, string | string[]>
 
 export const $dictionary = atom<Dictionary | null>(null)
 
