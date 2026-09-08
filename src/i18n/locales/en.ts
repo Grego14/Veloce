@@ -1,6 +1,6 @@
-import type { TranslationKeys } from './es'
+import type { Dictionary } from '../types'
 
-export const en: Record<TranslationKeys, string | string[]> = {
+export const en = {
   'nav.catalog': 'Catalog',
   'nav.catalogDescription':
     'Explore selected footwear and accessories to keep you moving in style.',
@@ -14,6 +14,7 @@ export const en: Record<TranslationKeys, string | string[]> = {
   'nav.language': 'Language',
   'nav.profile': 'Profile',
   'profile.title': 'My profile',
+  'profile.config': 'Settings',
   'footer.createdBy': 'Created by',
   'category.boots': 'Boots',
   'category.converse': 'Converse',
@@ -78,4 +79,4 @@ export const en: Record<TranslationKeys, string | string[]> = {
   'buy.usedCode': 'This code has already been used.',
   'buy.success': 'Purchase completed successfully',
   'buy.remove': 'Remove',
-}
+} satisfies Dictionary

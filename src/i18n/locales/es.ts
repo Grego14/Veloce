@@ -19,6 +19,7 @@ export const es = {
   'nav.language': 'Idioma',
   'nav.profile': 'Perfil',
   'profile.title': 'Mi perfil',
+  'profile.config': 'Configuración',
   'footer.createdBy': 'Creado por',
   'category.boots': 'Botas',
   'category.converse': 'Converse',
