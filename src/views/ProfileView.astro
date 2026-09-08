@@ -1,0 +1,16 @@
+---
+import Layout from '@layouts/Layout.astro'
+import ProfilePanel from '@components/ProfilePanel'
+
+interface Props {
+  lang: 'es' | 'en'
+}
+
+const { lang } = Astro.props
+---
+
+<Layout slogan={lang === 'en' ? 'My profile' : 'Mi perfil'}>
+  <main class='mx-auto w-full max-w-2xl'>
+    <ProfilePanel client:only='preact' lang={lang} />
+  </main>
+</Layout>

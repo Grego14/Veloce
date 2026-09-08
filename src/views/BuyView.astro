@@ -1,0 +1,17 @@
+---
+import Layout from '@layouts/Layout.astro'
+import BuyPanel from '@components/BuyPanel'
+
+interface Props {
+  lang: 'es' | 'en'
+}
+
+const { lang } = Astro.props
+---
+
+<Layout slogan={lang === 'en' ? 'Checkout' : 'Finalizar compra'}>
+  <main class='mx-auto w-full max-w-3xl'>
+    <h2>{lang === 'en' ? 'Checkout' : 'Finalizar compra'}</h2>
+    <BuyPanel client:only='preact' lang={lang} />
+  </main>
+</Layout>
