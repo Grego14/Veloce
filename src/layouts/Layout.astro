@@ -35,8 +35,8 @@ const languageHref =
     <meta name="generator" content={Astro.generator} />
     <title>{appName}</title>
   </head>
-  <body class='p-4 flex-col items-center'>
-    <header class='mb-4 px-4 py-2 sm:px-6 md:px-8'>
+  <body class='w-full p-4'>
+    <header class='mb-4 w-full px-4 py-2 sm:px-6 md:px-8'>
       <div class='flex items-center'>
         <a href={lang === 'es' ? '/' : '/en/'} class="flex items-center max-w-fit">
           <Logo class='w-7 h-7 sm:w-10 sm:h-10 md:w-12 md:h-12' />
@@ -51,6 +51,13 @@ const languageHref =
           >
             {otherLang}
           </a>
+          <a
+            href={lang === 'es' ? '/profile' : '/en/profile'}
+            class='px-2 py-1 text-sm font-semibold uppercase tracking-wider transition-colors hover:bg-zinc-100'
+            aria-label={dict['profile.title']}
+          >
+            {dict['nav.profile']}
+          </a>
           <MenuDrawer />
         </div>
       </div>
@@ -61,7 +68,7 @@ const languageHref =
     <slot />
     <CartDrawer />
 
-    <footer class='mt-16 border-t-2 border-zinc-950 px-4 py-6 text-center text-sm sm:px-6 md:px-8'>
+    <footer class='mt-16 w-full border-t-2 border-zinc-950 px-4 py-6 text-center text-sm sm:px-6 md:px-8'>
       <p>
         {dict['footer.createdBy']}
         <a

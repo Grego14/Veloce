@@ -1,0 +1,20 @@
+---
+import Layout from '@layouts/Layout.astro'
+import BuyPanel from '@components/BuyPanel'
+import { es } from '@i18n/locales/es'
+import { en } from '@i18n/locales/en'
+
+interface Props {
+  lang: 'es' | 'en'
+}
+
+const { lang } = Astro.props
+const dictionary = lang === 'en' ? en : es
+---
+
+<Layout slogan={dictionary['buy.title']}>
+  <main class='mx-auto w-full max-w-3xl'>
+    <h2>{dictionary['buy.title']}</h2>
+    <BuyPanel client:only='preact' lang={lang} />
+  </main>
+</Layout>

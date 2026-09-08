@@ -24,6 +24,15 @@ service cloud.firestore {
       allow update, delete: if false;
     }
 
+    match /promoCodes/{code} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated()
+        && code == 'VELOCE26'
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.used == true;
+      allow update, delete: if false;
+    }
+
     match /{document=**} {
       allow read, write: if false;
     }

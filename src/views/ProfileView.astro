@@ -1,0 +1,19 @@
+---
+import Layout from '@layouts/Layout.astro'
+import ProfilePanel from '@components/ProfilePanel'
+import { es } from '@i18n/locales/es'
+import { en } from '@i18n/locales/en'
+
+interface Props {
+  lang: 'es' | 'en'
+}
+
+const { lang } = Astro.props
+const dictionary = lang === 'en' ? en : es
+---
+
+<Layout slogan={dictionary['profile.title']}>
+  <main class='mx-auto w-full max-w-2xl'>
+    <ProfilePanel client:only='preact' lang={lang} />
+  </main>
+</Layout>

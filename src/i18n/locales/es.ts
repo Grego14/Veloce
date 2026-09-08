@@ -17,6 +17,8 @@ export const es = {
   'nav.item': 'artículo',
   'nav.itemsAvailable': 'artículos disponibles',
   'nav.language': 'Idioma',
+  'nav.profile': 'Perfil',
+  'profile.title': 'Mi perfil',
   'footer.createdBy': 'Creado por',
   'category.boots': 'Botas',
   'category.converse': 'Converse',
@@ -52,6 +54,29 @@ export const es = {
   'product.outOfStock': 'Sin stock',
 
   'login.google': 'Continuar con Google',
+  'login.email': 'Correo electrónico',
+  'login.password': 'Contraseña',
+  'login.emailAction': 'Iniciar sesión con correo',
+  'login.createAccount': 'Crear cuenta',
+  'login.signOut': 'Cerrar sesión',
+  'profile.name': 'Nombre',
+  'profile.password': 'Nueva contraseña',
+  'profile.save': 'Guardar cambios',
+  'profile.loginPrompt':
+    'Inicia sesión para sincronizar tu carrito y administrar tu perfil.',
+  'profile.saved': 'Perfil actualizado',
+  'profile.loginError': 'No se pudo iniciar sesión con esas credenciales.',
+  'profile.updateError':
+    'No se pudo actualizar el perfil. Inicia sesión de nuevo e inténtalo otra vez.',
+  'profile.loading': 'Cargando perfil...',
+  'buy.title': 'Finalizar compra',
+  'buy.discountCode': 'Código de descuento',
+  'buy.apply': 'Aplicar',
+  'buy.discount': 'Descuento',
+  'buy.purchase': 'Comprar',
+  'buy.usedCode': 'Este código ya fue utilizado.',
+  'buy.success': 'Compra realizada con éxito',
+  'buy.remove': 'Eliminar',
 }
 
 export type TranslationKeys = keyof typeof es

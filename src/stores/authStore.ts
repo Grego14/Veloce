@@ -3,12 +3,19 @@ import {
   onAuthStateChanged,
   signInAnonymously,
   signInWithPopup,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  EmailAuthProvider,
+  linkWithCredential,
   GoogleAuthProvider,
   linkWithPopup,
+  updateProfile,
+  updatePassword,
   signOut as firebaseSignOut,
-  type User
+  type User,
 } from 'firebase/auth'
 import { auth } from '@lib/firebase'
+import { trackEvent } from '@lib/firebase'
 
 export const $user = atom<User | null>(null)
 export const $authLoading = atom<boolean>(true)
@@ -37,15 +44,54 @@ export async function loginWithGoogle(): Promise<User | null> {
   try {
     if (currentUser && currentUser.isAnonymous) {
       const credential = await linkWithPopup(currentUser, provider)
+      trackEvent('login', { method: 'google' })
       return credential.user
     }
 
     const credential = await signInWithPopup(auth, provider)
+    trackEvent('login', { method: 'google' })
     return credential.user
   } catch (error) {
     console.error('Error signing in with Google:', error)
     return null
   }
+}
+
+export async function loginWithEmail(
+  email: string,
+  password: string,
+  createAccount = false
+): Promise<User | null> {
+  try {
+    const currentUser = auth.currentUser
+    const credential = EmailAuthProvider.credential(email, password)
+    if (currentUser?.isAnonymous) {
+      const linked = await linkWithCredential(currentUser, credential)
+      trackEvent('sign_up', { method: 'password' })
+      return linked.user
+    }
+    const result = createAccount
+      ? await createUserWithEmailAndPassword(auth, email, password)
+      : await signInWithEmailAndPassword(auth, email, password)
+    trackEvent(createAccount ? 'sign_up' : 'login', { method: 'password' })
+    return result.user
+  } catch (error) {
+    console.error('Error signing in with email:', error)
+    return null
+  }
+}
+
+export async function updateUserProfile(
+  name: string,
+  password?: string
+): Promise<void> {
+  const user = auth.currentUser
+  if (!user) throw new Error('You must be signed in to update your profile')
+
+  if (name.trim() && name.trim() !== user.displayName) {
+    await updateProfile(user, { displayName: name.trim() })
+  }
+  if (password) await updatePassword(user, password)
 }
 
 export async function logout(): Promise<void> {
