@@ -56,6 +56,7 @@ export const en = {
   'product.rating': 'Rating',
   'product.color': 'color',
   'product.colors': 'colors',
+  'product.inStock': 'In stock',
   'product.outOfStock': 'Out of stock',
 
   'login.google': 'Continue with Google',

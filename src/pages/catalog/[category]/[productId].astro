@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content'
+import { categories } from '@i18n/utils'
+import ProductView from '@views/ProductView.astro'
+
+export async function getStaticPaths() {
+  const products = await getCollection('products')
+
+  return categories.flatMap(category => {
+    const categoryProducts = products.find(entry => entry.id === category)?.data ?? []
+
+    return categoryProducts.map(product => ({
+      params: { category, productId: product.id },
+      props: { lang: 'es' as const, category, product },
+    }))
+  })
+}
+
+const { category, product } = Astro.props
+---
+
+<ProductView lang='es' category={category} product={product} />
