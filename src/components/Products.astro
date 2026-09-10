@@ -22,8 +22,8 @@ const products =
 ---
 
 <section
-  class='grid gap-8 sm:grid-cols-2 lg:grid-cols-3'
-  aria-label={lang === 'es' ? 'Productos' : 'Products'}
+  class='grid gap-8 place-items-center sm:grid-cols-2 md:grid-cols-3'
+  aria-label={t['products']}
 >
 {products && products.map(product => {
     const url = product.id.split('_')[0]
@@ -32,7 +32,7 @@ const products =
     const tags = products.tags && products.tags.slice(0, 3)
 
     return (
-      <article class='group flex max-w-sm flex-col'>
+      <article class='group flex max-w-[22rem] md:max-w-xs flex-col'>
         <a
           class='block'
           href={getRelativeLocaleUrl(lang, `catalog/${url}/${product.id}`)}
@@ -56,7 +56,7 @@ const products =
               </span>
             ) : null}
           </div>
-          <h3 class='line-clamp-2 min-h-[2.75rem] text-lg font-medium leading-tight group-hover:underline'>
+          <h3 class='line-clamp-2 md:line-clamp-3 min-h-[2.75rem] text-lg font-medium leading-tight group-hover:underline'>
             {product.name[lang]}
           </h3>
         </a>
