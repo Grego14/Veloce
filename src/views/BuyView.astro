@@ -13,8 +13,5 @@ const dictionary = lang === 'en' ? en : es
 ---
 
 <Layout slogan={dictionary['buy.title']}>
-  <main class='mx-auto w-full max-w-3xl'>
-    <h2>{dictionary['buy.title']}</h2>
-    <BuyPanel client:only='preact' lang={lang} />
-  </main>
+  <BuyPanel client:only='preact' lang={lang} />
 </Layout>
