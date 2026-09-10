@@ -1,5 +1,7 @@
 import { useStore } from '@nanostores/preact'
 import { useEffect, useReducer } from 'preact/hooks'
+import GoogleIcon from '@icons/Google'
+import LogOut from '@icons/LogOut'
 
 import {
   $user,
@@ -51,6 +53,8 @@ export default function ProfilePanel() {
   const dictionary = useStore($dictionary)
   const [state, dispatch] = useReducer(reducer, initialState)
   const signedIn = Boolean(user && !user.isAnonymous)
+
+  const loading = state.loading
 
   useEffect(() => {
     if (user)
@@ -109,9 +113,20 @@ export default function ProfilePanel() {
     }
   }
 
+  const handleGoogleSignIn = async () => {
+    try {
+      dispatch({ type: 'loading', loading: true })
+      await loginWithGoogle()
+    } finally {
+      dispatch({ type: 'loading', loading: false })
+    }
+  }
+
+  const usedGoogle = user?.providerData?.[0]?.providerId === 'google.com'
+
   return (
-    <section class="min-h-[34rem] border-2 border-zinc-950 p-6 sm:p-8">
-      <h2>{dictionary[user ? 'profile.config' : 'profile.title']}</h2>
+    <section class="min-h-[34rem] border-2 border-zinc-950 p-6 sm:p-8 max-w-xl mx-auto">
+      <h2>{dictionary[signedIn ? 'profile.config' : 'profile.enter']}</h2>
 
       {!user && <p class="mt-3 text-lg">{dictionary['profile.loginPrompt']}</p>}
 
@@ -120,19 +135,18 @@ export default function ProfilePanel() {
         aria-live="polite"
         role="status"
       >
-        {state.loading ? dictionary['profile.loading'] : null}
+        {loading ? dictionary['profile.loading'] : null}
       </p>
 
       {!signedIn ? (
         <>
           <button
             type="button"
-            class="mt-8 btn-primary"
-            onClick={async () => {
-              await loginWithGoogle()
-            }}
-            disabled={state.loading}
+            class="mt-8 btn-primary flex items-center justify-center gap-4"
+            onClick={handleGoogleSignIn}
+            disabled={loading}
           >
+            <GoogleIcon />
             {dictionary['login.google']}
           </button>
           <form
@@ -147,6 +161,7 @@ export default function ProfilePanel() {
               type="email"
               placeholder={dictionary['login.email'] as string}
               value={state.email}
+              disabled={loading}
               onInput={(event) =>
                 dispatch({
                   type: 'field',
@@ -161,6 +176,7 @@ export default function ProfilePanel() {
               type="password"
               placeholder={dictionary['login.password'] as string}
               value={state.loginPassword}
+              disabled={loading}
               onInput={(event) =>
                 dispatch({
                   type: 'field',
@@ -172,11 +188,7 @@ export default function ProfilePanel() {
               required
             />
             <div class="flex gap-3">
-              <button
-                type="submit"
-                class="btn-secondary"
-                disabled={state.loading}
-              >
+              <button type="submit" class="btn-secondary" disabled={loading}>
                 {dictionary['login.emailAction']}
               </button>
               <button
@@ -185,7 +197,7 @@ export default function ProfilePanel() {
                 onClick={async () => {
                   await submitEmail(true)
                 }}
-                disabled={state.loading}
+                disabled={loading}
               >
                 {dictionary['login.createAccount']}
               </button>
@@ -209,22 +221,24 @@ export default function ProfilePanel() {
               required
             />
           </label>
-          <label class="block text-sm font-semibold uppercase tracking-wide">
-            {dictionary['profile.password']}
-            <input
-              class="mt-2 w-full border-2 border-zinc-950 px-3 py-3 font-normal"
-              type="password"
-              value={state.password}
-              onInput={(event) =>
-                dispatch({
-                  type: 'field',
-                  field: 'password',
-                  value: event.currentTarget.value,
-                })
-              }
-              minLength={6}
-            />
-          </label>
+          {!usedGoogle && (
+            <label class="block text-sm font-semibold uppercase tracking-wide">
+              {dictionary['profile.password']}
+              <input
+                class="mt-2 w-full border-2 border-zinc-950 px-3 py-3 font-normal"
+                type="password"
+                value={state.password}
+                onInput={(event) =>
+                  dispatch({
+                    type: 'field',
+                    field: 'password',
+                    value: event.currentTarget.value,
+                  })
+                }
+                minLength={6}
+              />
+            </label>
+          )}
           <button
             type="submit"
             class="w-full border-2 border-zinc-950 px-4 py-3 text-sm font-semibold uppercase tracking-wide transition-colors hover:bg-zinc-950 hover:text-white"
@@ -233,12 +247,15 @@ export default function ProfilePanel() {
           </button>
           <button
             type="button"
-            class="w-full text-sm font-semibold uppercase tracking-wide underline"
+            class="text-sm font-semibold uppercase tracking-wide underline flex gap-2 items-center group"
             onClick={async () => {
               await logout()
             }}
           >
             {dictionary['login.signOut']}
+            <span class="transition-transform group-hover:translate-x-1">
+              <LogOut />
+            </span>
           </button>
         </form>
       )}
