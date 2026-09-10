@@ -7,6 +7,7 @@ import { es } from '@i18n/locales/es'
 import { en } from '@i18n/locales/en'
 
 import AddToCart from './AddToCart'
+import Star from '@icons/Star'
 
 type Product = CollectionEntry<'products'>['data'][number]
 
@@ -29,7 +30,8 @@ const products =
     const url = product.id.split('_')[0]
     const colorCount = product.colors?.length ?? 0
     const colorLabel = colorCount === 1 ? t['product.color'] : t['product.colors']
-    const tags = products.tags && products.tags.slice(0, 3)
+    const tags = product.tags?.slice(0, 3)
+    const ratingStars = Math.round(product.rating)
 
     return (
       <article class='group flex max-w-[22rem] md:max-w-xs flex-col'>
@@ -70,7 +72,18 @@ const products =
           </div>
 
           <div class='mt-3 flex items-center justify-between border-t border-zinc-700 pt-2 text-xs text-zinc-300'>
-            <span>{t['product.rating']} {product.rating.toFixed(1)}</span>
+            <span
+              class='flex items-center gap-0.5 text-amber-400'
+              aria-label={`${t['product.rating']}: ${product.rating.toFixed(1)}`}
+            >
+              {
+                Array.from({ length: 5 }, (_, index) => (
+                  <Star
+                    className={`h-4 w-4 ${index < ratingStars ? 'fill-current' : 'text-zinc-600'}`}
+                  />
+                ))
+              }
+            </span>
             <span>{colorCount} {colorLabel}</span>
           </div>
 
