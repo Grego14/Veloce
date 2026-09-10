@@ -11,26 +11,8 @@ service cloud.firestore {
       return isAuthenticated() && request.auth.uid == userId;
     }
 
-    // users carts
-    match /users/{userId}/cart/{document=**} {
+    match /users/{userId} {
       allow read, write: if isOwner(userId);
-    }
-
-    // users orders
-    match /users/{userId}/orders/{orderId} {
-      allow read, create: if isOwner(userId);
-
-      // users can't modify or delete orders when created
-      allow update, delete: if false;
-    }
-
-    match /promoCodes/{code} {
-      allow read: if isAuthenticated();
-      allow create: if isAuthenticated()
-        && code == 'VELOCE26'
-        && request.resource.data.uid == request.auth.uid
-        && request.resource.data.used == true;
-      allow update, delete: if false;
     }
 
     match /{document=**} {
