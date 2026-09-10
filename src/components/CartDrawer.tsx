@@ -1,6 +1,9 @@
 import { useStore } from '@nanostores/preact'
-import { ShoppingCart, Trash2, X } from 'lucide-preact'
 import { useEffect } from 'preact/hooks'
+
+import ShoppingCart from '@icons/ShoppingCart'
+import Trash from '@icons/Trash'
+import X from '@icons/X'
 
 import {
   cartItems,
@@ -65,7 +68,7 @@ export default function CartDrawer({ lang }: Props) {
         aria-expanded={open}
         onClick={() => isCartOpen.set(true)}
       >
-        <ShoppingCart size={24} strokeWidth={2} aria-hidden="true" />
+        <ShoppingCart />
         {summary.count ? (
           <span class="absolute -right-1 -top-1 min-w-5 rounded-full bg-rose-600 px-1.5 py-0.5 text-center text-xs font-bold text-white">
             {summary.count}
@@ -91,7 +94,7 @@ export default function CartDrawer({ lang }: Props) {
             aria-label={dictionary['cart.close']}
             onClick={() => isCartOpen.set(false)}
           >
-            <X size={22} strokeWidth={2} aria-hidden="true" />
+            <X />
           </button>
         </div>
         <div class="mt-8 flex-1 overflow-y-auto">
@@ -115,7 +118,7 @@ export default function CartDrawer({ lang }: Props) {
                       aria-label={`${dictionary['cart.remove']} ${item.name[lang]}`}
                       onClick={() => removeItem(item)}
                     >
-                      <Trash2 size={19} strokeWidth={2} aria-hidden="true" />
+                      <Trash />
                     </button>
                   </div>
                   <p class="mt-2 text-sm text-zinc-500">
