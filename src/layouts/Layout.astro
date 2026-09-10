@@ -35,7 +35,7 @@ const languageHref =
     <meta name="generator" content={Astro.generator} />
     <title>{appName}</title>
   </head>
-  <body class='w-full p-4'>
+  <body class='w-screen p-4 min-h-screen flex flex-col'>
     <header class='mb-4 w-full px-4 py-2 sm:px-6 md:px-8'>
       <div class='flex items-center'>
         <a href={lang === 'es' ? '/' : '/en/'} class="flex items-center max-w-fit">
@@ -65,7 +65,10 @@ const languageHref =
       <h2 class='mt-4 text-5xl text-left'>{headerSlogan}</h2>
     </header>
 
-    <slot />
+    <main class='flex-1'>
+      <slot />
+    </main>
+
     <CartDrawer />
 
     <footer class='mt-16 w-full border-t-2 border-zinc-950 px-4 py-6 text-center text-sm sm:px-6 md:px-8'>
