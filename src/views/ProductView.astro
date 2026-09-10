@@ -5,6 +5,7 @@ import { getRelativeLocaleUrl } from 'astro:i18n'
 import AddToCart from '@components/AddToCart'
 import Star from '@icons/Star'
 import Layout from '@layouts/Layout.astro'
+
 import { es } from '@i18n/locales/es'
 import { en } from '@i18n/locales/en'
 
@@ -16,10 +17,12 @@ interface Props {
 
 const { lang, category, product } = Astro.props
 const t = lang === 'es' ? es : en
+
 const colorCount = product.colors?.length ?? 0
 const colorLabel = colorCount === 1 ? t['product.color'] : t['product.colors']
+
 const tags = product.tags?.slice(0, 3)
-const ratingStars = Math.round(product.rating)
+const ratingStars = Math.floor(product.rating)
 ---
 
 <Layout slogan={product.name[lang]}>

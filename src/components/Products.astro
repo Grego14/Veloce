@@ -31,7 +31,7 @@ const products =
     const colorCount = product.colors?.length ?? 0
     const colorLabel = colorCount === 1 ? t['product.color'] : t['product.colors']
     const tags = product.tags?.slice(0, 3)
-    const ratingStars = Math.round(product.rating)
+    const ratingStars = Math.floor(product.rating)
 
     return (
       <article class='group flex max-w-[22rem] md:max-w-xs flex-col'>
