@@ -19,7 +19,7 @@ import {
 import { auth } from '@lib/firebase'
 import { trackEvent } from '@lib/firebase'
 
-export const $user = atom<User | null>(null)
+export const $user = atom<User | null>(auth.currentUser)
 export const $authLoading = atom<boolean>(true)
 
 onAuthStateChanged(auth, (user) => {
@@ -48,6 +48,7 @@ export async function loginWithGoogle(): Promise<User | null> {
       try {
         const credential = await linkWithPopup(currentUser, provider)
         trackEvent('login', { method: 'google' })
+
         return credential.user
       } catch (e) {
         if (
@@ -72,6 +73,7 @@ export async function loginWithGoogle(): Promise<User | null> {
     }
 
     const credential = await signInWithPopup(auth, provider)
+
     trackEvent('login', { method: 'google' })
     return credential.user
   } catch (error) {
@@ -88,15 +90,20 @@ export async function loginWithEmail(
   try {
     const currentUser = auth.currentUser
     const credential = EmailAuthProvider.credential(email, password)
+
     if (currentUser?.isAnonymous) {
       const linked = await linkWithCredential(currentUser, credential)
+
       trackEvent('sign_up', { method: 'password' })
       return linked.user
     }
+
     const result = createAccount
       ? await createUserWithEmailAndPassword(auth, email, password)
       : await signInWithEmailAndPassword(auth, email, password)
+
     trackEvent(createAccount ? 'sign_up' : 'login', { method: 'password' })
+
     return result.user
   } catch (error) {
     console.error('Error signing in with email:', error)

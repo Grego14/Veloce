@@ -1,8 +1,8 @@
 import { useStore } from '@nanostores/preact'
-import { addToCart, type CartItem } from '@stores/cartStore'
+import type { CartItem } from '@stores/cartStore'
 import { $dictionary } from '@stores/i18nStore'
 
-import { ShoppingCart } from 'lucide-preact'
+import ShoppingCart from '@icons/ShoppingCart'
 
 import { trackEvent } from '@lib/firebase'
 
@@ -16,11 +16,12 @@ export default function AddToCart({ product, lang }: AddToCartProps) {
 
   if (!product || !product.name || !dict) return null
 
-  const { id, name, price, inStock } = product
-  const productName = name[lang]
+  const handleAddToCart = async () => {
+    const { id, name, price } = product
+    const productName = name[lang]
 
-  const handleAddToCart = () => {
-    addToCart(product)
+    const { addToCart } = await import('@stores/cartStore')
+    addToCart(product, lang)
 
     trackEvent('add_to_cart', {
       currency: 'USD',
@@ -41,9 +42,9 @@ export default function AddToCart({ product, lang }: AddToCartProps) {
       type="button"
       onClick={handleAddToCart}
       className="mt-4 flex w-full items-center justify-center gap-2 border-2 border-white px-3 py-2 text-sm font-semibold uppercase tracking-wide bg-black text-white rounded-md transition-colors hover:bg-white hover:text-zinc-950 disabled:cursor-not-allowed disabled:border-zinc-600 disabled:text-zinc-500"
-      disabled={!inStock}
+      disabled={!product.inStock}
     >
-      <ShoppingCart size={17} strokeWidth={2} aria-hidden="true" />
+      <ShoppingCart />
       {dict['cart.add']}
     </button>
   )

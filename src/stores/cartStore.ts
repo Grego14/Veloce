@@ -1,7 +1,11 @@
 import { atom, map } from 'nanostores'
 import type { CollectionEntry } from 'astro:content'
-import { doc, getDoc, setDoc } from 'firebase/firestore'
-import { auth, db, trackEvent } from '@lib/firebase'
+import {
+  syncRemoteCart,
+  fetchRemoteCart,
+  logAddToCartEvent,
+} from '@lib/cartSync'
+import { auth } from '@lib/firebase'
 import { ensureAnonymousUser } from '@stores/authStore'
 
 export type ProductData = CollectionEntry<'products'>['data'][number]
@@ -12,7 +16,21 @@ export interface CartItem extends ProductData {
 
 export const isCartOpen = atom(false)
 
-export const cartItems = map<Record<string, CartItem | undefined>>({})
+function getInitialCart(): Record<string, CartItem> {
+  if (typeof localStorage === 'undefined') return {}
+
+  const saved = localStorage.getItem('veloce-cart')
+  if (!saved) return {}
+
+  try {
+    return JSON.parse(saved)
+  } catch {
+    return {}
+  }
+}
+
+export const cartItems =
+  map<Record<string, CartItem | undefined>>(getInitialCart())
 
 const storageKey = 'veloce-cart'
 
@@ -21,50 +39,25 @@ function persistLocal() {
   localStorage.setItem(storageKey, JSON.stringify(cartItems.get()))
 }
 
-async function persistRemote() {
-  const user = auth.currentUser
-  if (!user) return
+export async function hydrateRemoteCart(): Promise<void> {
+  const remote = await fetchRemoteCart<CartItem>()
 
-  const items = Object.fromEntries(
-    Object.entries(cartItems.get()).filter(([, item]) => item !== undefined)
-  )
-
-  await setDoc(doc(db, 'users', user.uid, 'cart', 'items'), { items })
-}
-
-export async function hydrateCart() {
-  if (typeof localStorage !== 'undefined') {
-    const local = localStorage.getItem(storageKey)
-
-    if (local) {
-      try {
-        const parsed = JSON.parse(local) as Record<string, CartItem>
-        cartItems.set(parsed)
-      } catch (error) {
-        console.error('Unable to restore local cart:', error)
-      }
-    }
-  }
-
-  const user = auth.currentUser
-  if (!user) return
-
-  const snapshot = await getDoc(doc(db, 'users', user.uid, 'cart', 'items'))
-
-  if (snapshot.exists()) {
-    const remote = snapshot.data().items as Record<string, CartItem>
+  if (remote) {
     cartItems.set(remote)
-
     persistLocal()
   } else {
-    await persistRemote()
+    await syncRemoteCart(cartItems.get())
   }
 }
 
-export async function addToCart(product: ProductData) {
+export async function addToCart(
+  product: ProductData,
+  lang: 'es' | 'en'
+): Promise<void> {
   const productId = product?.id
   const currentItems = cartItems.get()
   const existingItem = currentItems[productId]
+  const productName = product.name[lang]
 
   if (existingItem) {
     cartItems.setKey(productId, {
@@ -81,29 +74,27 @@ export async function addToCart(product: ProductData) {
   persistLocal()
 
   const user = auth.currentUser ?? (await ensureAnonymousUser())
-  if (user) await persistRemote()
 
-  trackEvent('add_to_cart', {
-    currency: 'USD',
-    value: product.price,
-    items: [
-      { item_id: product.id, item_name: product.name.en, price: product.price },
-    ],
-  })
+  if (user) {
+    await syncRemoteCart(cartItems.get())
+    logAddToCartEvent({
+      name: productName,
+      id: product.id,
+      price: product.price,
+    })
+  }
 }
 
-export async function removeFromCart(productId: string) {
+export async function removeFromCart(productId: string): Promise<void> {
   cartItems.setKey(productId, undefined)
   persistLocal()
 
-  await persistRemote()
+  await syncRemoteCart(cartItems.get())
 }
 
-export async function clearCart() {
+export async function clearCart(): Promise<void> {
   cartItems.set({})
   persistLocal()
 
-  await persistRemote()
+  await syncRemoteCart(cartItems.get())
 }
-
-if (typeof window !== 'undefined') hydrateCart()
