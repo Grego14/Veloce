@@ -51,7 +51,7 @@
     "category": "crocs",
     "colors": ["red"],
     "tags": ["clogs", "croslite", "red", "outdoor"],
-    "rating": 4.8
+    "rating": 3.9
   },
   {
     "id": "crocs_004",
@@ -141,7 +141,7 @@
     "category": "crocs",
     "colors": ["white"],
     "tags": ["clogs", "croslite", "white", "professional"],
-    "rating": 4.8
+    "rating": 2.8
   },
   {
     "id": "crocs_009.png",
@@ -159,6 +159,6 @@
     "category": "crocs",
     "colors": ["brown", "beige"],
     "tags": ["clogs", "lined", "fleece", "winter", "cozy"],
-    "rating": 4.9
+    "rating": 3.5
   }
 ]

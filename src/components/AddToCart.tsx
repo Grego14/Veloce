@@ -41,10 +41,10 @@ export default function AddToCart({ product, lang }: AddToCartProps) {
     <button
       type="button"
       onClick={handleAddToCart}
-      className="mt-4 flex w-full items-center justify-center gap-2 border-2 border-white px-3 py-2 text-sm font-semibold uppercase tracking-wide bg-black text-white rounded-md transition-colors hover:bg-white hover:text-zinc-950 disabled:cursor-not-allowed disabled:border-zinc-600 disabled:text-zinc-500"
+      className="mt-3 flex w-full items-center justify-center gap-2 rounded-md border border-zinc-950 bg-zinc-950 px-2.5 py-2 text-xs font-semibold uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-zinc-950 disabled:cursor-not-allowed disabled:border-zinc-300 disabled:text-zinc-400"
       disabled={!product.inStock}
     >
-      <ShoppingCart />
+      <ShoppingCart className="h-4 w-4" />
       {dict['cart.add']}
     </button>
   )
