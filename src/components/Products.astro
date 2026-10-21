@@ -23,23 +23,23 @@ const products =
 ---
 
 <section
-  class='grid gap-8 place-items-center sm:grid-cols-2 md:grid-cols-3'
+  class='grid grid-cols-2 items-stretch gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4'
   aria-label={t['products']}
 >
 {products && products.map(product => {
     const url = product.id.split('_')[0]
     const colorCount = product.colors?.length ?? 0
     const colorLabel = colorCount === 1 ? t['product.color'] : t['product.colors']
-    const tags = product.tags?.slice(0, 3)
+    const tags = product.tags?.slice(0, 2)
     const ratingStars = Math.floor(product.rating)
 
     return (
-      <article class='group flex max-w-[22rem] md:max-w-xs flex-col'>
+      <article class='group flex min-w-0 flex-col overflow-hidden rounded-lg border border-zinc-200 bg-white transition-colors hover:border-zinc-400'>
         <a
           class='block'
           href={getRelativeLocaleUrl(lang, `catalog/${url}/${product.id}`)}
         >
-          <div class='relative mb-3 aspect-square overflow-hidden bg-zinc-100'>
+          <div class='relative aspect-[4/3] overflow-hidden bg-zinc-100'>
             <Image
               src={product.image}
               alt={product.description[lang]}
@@ -51,46 +51,47 @@ const products =
             />
             {!product.inStock ? (
               <span
-                class='absolute right-3 top-3 bg-rose-600 px-2.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-white'
+                class='absolute right-2 top-2 bg-rose-600 px-2 py-1 text-[0.65rem] font-semibold uppercase tracking-wide text-white'
                 role='alert'
               >
                 {t['product.outOfStock']}
               </span>
             ) : null}
           </div>
-          <h3 class='line-clamp-2 md:line-clamp-3 min-h-[2.75rem] text-lg font-medium leading-tight group-hover:underline'>
+          <h3 class='line-clamp-2 min-h-10 px-3 pt-3 text-sm font-medium leading-tight group-hover:underline sm:text-base'>
             {product.name[lang]}
           </h3>
         </a>
 
-        <div class='mt-3 border-2 border-zinc-950 bg-zinc-950 p-3 text-white'>
-          <div class='flex items-start justify-between gap-4'>
-            <span class='text-2xl font-semibold tracking-tight'>${product.price.toFixed(2)}</span>
-            <span class='text-right text-xs font-medium uppercase tracking-[0.16em] text-zinc-400'>
+        <div class='flex flex-1 flex-col px-3 pb-3 pt-2'>
+          <div class='flex items-center justify-between gap-2'>
+            <span class='text-lg font-semibold tracking-tight sm:text-xl'>${product.price.toFixed(2)}</span>
+            <span class='truncate text-right text-[0.6rem] font-medium uppercase tracking-[0.12em] text-zinc-500 sm:text-[0.65rem]'>
               {product.category}
             </span>
           </div>
 
-          <div class='mt-3 flex items-center justify-between border-t border-zinc-700 pt-2 text-xs text-zinc-300'>
+          <div class='mt-2 flex items-center justify-between gap-1 border-t border-zinc-200 pt-2 text-[0.65rem] text-zinc-600'>
             <span
-              class='flex items-center gap-0.5 text-amber-400'
+              class='flex items-center gap-1 text-amber-500'
               aria-label={`${t['product.rating']}: ${product.rating.toFixed(1)}`}
             >
               {
                 Array.from({ length: 5 }, (_, index) => (
                   <Star
-                    className={`h-4 w-4 ${index < ratingStars ? 'fill-current' : 'text-zinc-600'}`}
+                    className={`h-3.5 w-3.5 ${index < ratingStars ? 'fill-current' : 'text-zinc-300'}`}
                   />
                 ))
               }
+              <span class='font-medium text-zinc-700'>{product.rating.toFixed(1)}</span>
             </span>
-            <span>{colorCount} {colorLabel}</span>
+            <span class='truncate text-right'>{colorCount} {colorLabel}</span>
           </div>
 
           {Array.isArray(tags) ? (
-            <div class='mt-3 flex flex-wrap gap-1.5'>
+            <div class='mt-2 flex min-h-5 flex-wrap gap-1'>
               {tags.map(tag => (
-                <span class='border border-zinc-700 px-1.5 py-0.5 text-[0.65rem] uppercase tracking-wider text-zinc-400'>
+                <span class='border border-zinc-200 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-zinc-500'>
                   #{tag}
                 </span>
               ))}

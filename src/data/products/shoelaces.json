@@ -33,7 +33,7 @@
     "category": "shoelaces",
     "colors": ["white"],
     "tags": ["flat", "white", "sneaker", "cotton"],
-    "rating": 4.6
+    "rating": 3.9
   },
   {
     "id": "shoelaces_003",
@@ -69,7 +69,7 @@
     "category": "shoelaces",
     "colors": ["black"],
     "tags": ["round", "thick", "black", "boots"],
-    "rating": 4.7
+    "rating": 2.7
   },
   {
     "id": "shoelaces_005",

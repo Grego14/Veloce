@@ -33,7 +33,7 @@
     "category": "converse",
     "colors": ["orange", "black"],
     "tags": ["sneakers", "canvas", "high-top", "streetwear"],
-    "rating": 4.7
+    "rating": 3.8
   },
   {
     "id": "converse_003",
@@ -87,7 +87,7 @@
     "category": "converse",
     "colors": ["black", "red", "white"],
     "tags": ["sneakers", "canvas", "high-top"],
-    "rating": 4.7
+    "rating": 3.2
   },
   {
     "id": "converse_006",

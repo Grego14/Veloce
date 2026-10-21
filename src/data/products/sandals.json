@@ -51,7 +51,7 @@
     "category": "sandals",
     "colors": ["brown"],
     "tags": ["flip-flop", "thong", "leather", "casual"],
-    "rating": 4.5
+    "rating": 3.8
   },
   {
     "id": "sandals_004",
@@ -141,7 +141,7 @@
     "category": "sandals",
     "colors": ["black"],
     "tags": ["slide", "crocodile-embossed", "buckle", "luxury"],
-    "rating": 4.7
+    "rating": 3
   },
   {
     "id": "sandals_009",
@@ -231,7 +231,7 @@
     "category": "sandals",
     "colors": ["brown"],
     "tags": ["chaco", "toe-loop", "hiking", "strappy"],
-    "rating": 4.8
+    "rating": 3.6
   },
   {
     "id": "sandals_014",
