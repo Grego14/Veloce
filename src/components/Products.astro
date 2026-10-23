@@ -58,18 +58,16 @@ const products =
               </span>
             ) : null}
           </div>
-          <h3 class='line-clamp-2 h-13 px-3 pt-3 text-sm font-medium leading-tight group-hover:underline sm:text-base'>
+          <p class='px-3 pt-3 text-[0.6rem] font-medium uppercase tracking-[0.12em] text-zinc-500 sm:text-[0.65rem]'>
+            {product.category}
+          </p>
+          <h3 class='line-clamp-2 px-3 pt-1 text-base font-medium leading-tight group-hover:underline sm:text-lg'>
             {product.name[lang]}
           </h3>
         </a>
 
         <div class='flex flex-1 flex-col px-3 pb-3 pt-2'>
-          <div class='flex items-center justify-between gap-2'>
-            <span class='text-lg font-semibold tracking-tight sm:text-xl'>${product.price.toFixed(2)}</span>
-            <span class='truncate text-right text-[0.6rem] font-medium uppercase tracking-[0.12em] text-zinc-500 sm:text-[0.65rem]'>
-              {product.category}
-            </span>
-          </div>
+          <span class='text-lg font-semibold tracking-tight sm:text-xl'>${product.price.toFixed(2)}</span>
 
           <div class='mt-2 flex items-center justify-between gap-1 border-t border-zinc-200 pt-2 text-[0.65rem] text-zinc-600'>
             <span
@@ -91,8 +89,8 @@ const products =
           {Array.isArray(tags) ? (
             <div class='mt-2 flex min-h-5 flex-wrap gap-1'>
               {tags.map(tag => (
-                <span class='border border-zinc-200 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-zinc-500'>
-                  #{tag}
+                <span class='border border-zinc-200 bg-zinc-100 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-zinc-500'>
+                  {tag.replace(/^#/, '')}
                 </span>
               ))}
             </div>

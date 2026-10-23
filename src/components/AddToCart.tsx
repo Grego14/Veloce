@@ -41,7 +41,7 @@ export default function AddToCart({ product, lang }: AddToCartProps) {
     <button
       type="button"
       onClick={handleAddToCart}
-      className="mt-3 flex w-full items-center justify-center gap-2 rounded-md border border-zinc-950 bg-zinc-950 px-2.5 py-2 text-xs font-semibold uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-zinc-950 disabled:cursor-not-allowed disabled:border-zinc-300 disabled:text-zinc-400"
+      className="mt-3 flex w-full items-center justify-center gap-2 rounded-md border border-zinc-950 bg-zinc-950 px-2.5 py-2 text-xs font-semibold uppercase tracking-wide text-white transition-colors hover:border-veloce-rose hover:bg-veloce-rose disabled:cursor-not-allowed disabled:border-zinc-300 disabled:bg-zinc-300 disabled:text-zinc-500"
       disabled={!product.inStock}
     >
       <ShoppingCart className="h-4 w-4" />

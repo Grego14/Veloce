@@ -1,7 +1,7 @@
 import { useStore } from '@nanostores/preact'
 import { useEffect } from 'preact/hooks'
 
-import ShoppingCart from '@icons/ShoppingCart'
+import ArrowRight from '@icons/ArrowRight'
 import Trash from '@icons/Trash'
 import X from '@icons/X'
 
@@ -54,27 +54,24 @@ export default function CartDrawer({ lang }: Props) {
 
   const removeItem = async (item: CartItem) => await removeFromCart(item.id)
 
-  if (!dictionary)
-    return (
-      <div class="fixed bottom-6 right-6 z-30 h-14 w-14 animate-pulse bg-zinc-200" />
-    )
+  if (!dictionary) return null
 
   return (
     <>
-      <button
-        type="button"
-        class="fixed bottom-6 right-6 z-30 flex h-14 w-14 items-center justify-center bg-zinc-950 text-white shadow-lg transition-transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2"
-        aria-label={dictionary['cart.open']}
-        aria-expanded={open}
-        onClick={() => isCartOpen.set(true)}
-      >
-        <ShoppingCart />
-        {summary.count ? (
-          <span class="absolute -right-1 -top-1 min-w-5 rounded-full bg-rose-600 px-1.5 py-0.5 text-center text-xs font-bold text-white">
+      {summary.products.length ? (
+        <button
+          type="button"
+          class="fixed right-0 top-1/2 z-30 flex h-16 w-12 -translate-y-1/2 items-center justify-center rounded-l-md border border-r-0 border-veloce-rose bg-white text-veloce-rose shadow-lg transition-all hover:-translate-x-1 hover:bg-veloce-rose hover:text-white focus:outline-none focus:ring-2 focus:ring-veloce-rose focus:ring-offset-2"
+          aria-label={dictionary['cart.open']}
+          aria-expanded={open}
+          onClick={() => isCartOpen.set(true)}
+        >
+          <ArrowRight className="h-5 w-5 rotate-180" />
+          <span class="absolute -left-2 -top-2 min-w-5 rounded-full bg-veloce-rose px-1.5 py-0.5 text-center text-xs font-bold text-white">
             {summary.count}
           </span>
-        ) : null}
-      </button>
+        </button>
+      ) : null}
       {open ? (
         <div
           class="fixed inset-0 z-40 bg-zinc-950/50"
@@ -97,7 +94,7 @@ export default function CartDrawer({ lang }: Props) {
             <X />
           </button>
         </div>
-        <div class="mt-8 flex-1 overflow-y-auto">
+        <div class="mt-8 flex-1 overflow-y-auto pr-3">
           {summary.products.length ? (
             summary.products.map((item) => (
               <article
@@ -111,7 +108,9 @@ export default function CartDrawer({ lang }: Props) {
                 />
                 <div class="min-w-0 flex-1">
                   <div class="flex items-start justify-between gap-2">
-                    <h3 class="font-medium leading-tight">{item.name[lang]}</h3>
+                    <h3 class="text-sm font-medium leading-tight">
+                      {item.name[lang]}
+                    </h3>
                     <button
                       type="button"
                       class="shrink-0 text-zinc-500 transition-colors hover:text-rose-600"
@@ -135,7 +134,10 @@ export default function CartDrawer({ lang }: Props) {
           <span>{dictionary['cart.total']}</span>
           <span>${summary.total.toFixed(2)}</span>
         </div>
-        <a href={lang === 'en' ? '/en/buy' : '/buy'} class="btn-primary mt-4">
+        <a
+          href={lang === 'en' ? '/en/buy' : '/buy'}
+          class="mt-4 w-full border-2 border-veloce-rose bg-veloce-rose px-4 py-3 text-center text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-veloce-rose"
+        >
           {dictionary['buy.purchase']}
         </a>
       </aside>
