@@ -33,8 +33,8 @@ const ratingStars = Math.floor(product.rating)
     ← {t['nav.catalog']}
   </a>
 
-  <article class='grid gap-8 lg:grid-cols-2 lg:items-start'>
-    <div class='relative aspect-square overflow-hidden bg-zinc-100'>
+  <article class='grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-8'>
+    <div class='relative mx-auto aspect-square w-full max-w-[28rem] overflow-hidden bg-zinc-100'>
       <Image
         src={product.image}
         alt={product.description[lang]}

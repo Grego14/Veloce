@@ -54,27 +54,24 @@ export default function CartDrawer({ lang }: Props) {
 
   const removeItem = async (item: CartItem) => await removeFromCart(item.id)
 
-  if (!dictionary)
-    return (
-      <div class="fixed right-0 top-1/2 z-30 h-16 w-12 -translate-y-1/2 animate-pulse rounded-l-md bg-zinc-200" />
-    )
+  if (!dictionary) return null
 
   return (
     <>
-      <button
-        type="button"
-        class="fixed right-0 top-1/2 z-30 flex h-16 w-12 -translate-y-1/2 items-center justify-center rounded-l-md bg-rose-600 text-white shadow-lg transition-transform hover:-translate-x-1 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2"
-        aria-label={dictionary['cart.open']}
-        aria-expanded={open}
-        onClick={() => isCartOpen.set(true)}
-      >
-        <ArrowRight className="h-5 w-5 rotate-180" />
-        {summary.count ? (
-          <span class="absolute -left-2 -top-2 min-w-5 rounded-full bg-zinc-950 px-1.5 py-0.5 text-center text-xs font-bold text-white">
+      {summary.products.length ? (
+        <button
+          type="button"
+          class="fixed right-0 top-1/2 z-30 flex h-16 w-12 -translate-y-1/2 items-center justify-center rounded-l-md border border-r-0 border-veloce-rose bg-white text-veloce-rose shadow-lg transition-all hover:-translate-x-1 hover:bg-veloce-rose hover:text-white focus:outline-none focus:ring-2 focus:ring-veloce-rose focus:ring-offset-2"
+          aria-label={dictionary['cart.open']}
+          aria-expanded={open}
+          onClick={() => isCartOpen.set(true)}
+        >
+          <ArrowRight className="h-5 w-5 rotate-180" />
+          <span class="absolute -left-2 -top-2 min-w-5 rounded-full bg-veloce-rose px-1.5 py-0.5 text-center text-xs font-bold text-white">
             {summary.count}
           </span>
-        ) : null}
-      </button>
+        </button>
+      ) : null}
       {open ? (
         <div
           class="fixed inset-0 z-40 bg-zinc-950/50"

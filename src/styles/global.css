@@ -1,5 +1,14 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-veloce-rose: #e11d48;
+}
+
+:root {
+  --header-title-size: clamp(1.5rem, 5vw, 3.1875rem);
+  --header-slogan-size: clamp(1.5rem, 4.25vw, 2.55rem);
+}
+
 @font-face {
   font-family: 'Saira';
   src:
