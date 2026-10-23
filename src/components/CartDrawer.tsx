@@ -94,7 +94,7 @@ export default function CartDrawer({ lang }: Props) {
             <X />
           </button>
         </div>
-        <div class="mt-8 flex-1 overflow-y-auto">
+        <div class="mt-8 flex-1 overflow-y-auto pr-3">
           {summary.products.length ? (
             summary.products.map((item) => (
               <article
@@ -108,7 +108,9 @@ export default function CartDrawer({ lang }: Props) {
                 />
                 <div class="min-w-0 flex-1">
                   <div class="flex items-start justify-between gap-2">
-                    <h3 class="font-medium leading-tight">{item.name[lang]}</h3>
+                    <h3 class="text-sm font-medium leading-tight">
+                      {item.name[lang]}
+                    </h3>
                     <button
                       type="button"
                       class="shrink-0 text-zinc-500 transition-colors hover:text-rose-600"
@@ -132,7 +134,10 @@ export default function CartDrawer({ lang }: Props) {
           <span>{dictionary['cart.total']}</span>
           <span>${summary.total.toFixed(2)}</span>
         </div>
-        <a href={lang === 'en' ? '/en/buy' : '/buy'} class="btn-primary mt-4">
+        <a
+          href={lang === 'en' ? '/en/buy' : '/buy'}
+          class="mt-4 w-full border-2 border-veloce-rose bg-veloce-rose px-4 py-3 text-center text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-veloce-rose"
+        >
           {dictionary['buy.purchase']}
         </a>
       </aside>
