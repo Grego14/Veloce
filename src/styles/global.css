@@ -2,6 +2,7 @@
 
 @theme {
   --color-veloce-rose: #e11d48;
+  --text-product-price: 2.15625rem;
 }
 
 :root {
