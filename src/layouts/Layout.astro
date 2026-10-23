@@ -40,7 +40,9 @@ const languageHref =
       <div class='flex items-center'>
         <a href={lang === 'es' ? '/' : '/en/'} class="flex items-center max-w-fit">
           <Logo class='w-7 h-7 sm:w-10 sm:h-10 md:w-12 md:h-12' />
-          <h1 class='ml-2 tracking-[0.12em] uppercase'>{appName}</h1>
+          <h1 class='ml-2 text-[1.9125rem] tracking-[0.12em] uppercase sm:text-[2.55rem] md:text-[3.1875rem]'>
+            {appName}
+          </h1>
         </a>
 
         <div class='ml-auto flex items-center gap-4'>
@@ -62,7 +64,7 @@ const languageHref =
         </div>
       </div>
 
-      <h2 class='mt-4 text-5xl text-left'>{headerSlogan}</h2>
+      <h2 class='mt-4 text-[2.55rem] text-left'>{headerSlogan}</h2>
     </header>
 
     <main class='flex-1'>

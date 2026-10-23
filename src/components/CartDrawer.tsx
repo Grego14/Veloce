@@ -1,7 +1,7 @@
 import { useStore } from '@nanostores/preact'
 import { useEffect } from 'preact/hooks'
 
-import ShoppingCart from '@icons/ShoppingCart'
+import ArrowRight from '@icons/ArrowRight'
 import Trash from '@icons/Trash'
 import X from '@icons/X'
 
@@ -56,21 +56,21 @@ export default function CartDrawer({ lang }: Props) {
 
   if (!dictionary)
     return (
-      <div class="fixed bottom-6 right-6 z-30 h-14 w-14 animate-pulse bg-zinc-200" />
+      <div class="fixed right-0 top-1/2 z-30 h-16 w-12 -translate-y-1/2 animate-pulse rounded-l-md bg-zinc-200" />
     )
 
   return (
     <>
       <button
         type="button"
-        class="fixed bottom-6 right-6 z-30 flex h-14 w-14 items-center justify-center bg-zinc-950 text-white shadow-lg transition-transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2"
+        class="fixed right-0 top-1/2 z-30 flex h-16 w-12 -translate-y-1/2 items-center justify-center rounded-l-md bg-rose-600 text-white shadow-lg transition-transform hover:-translate-x-1 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2"
         aria-label={dictionary['cart.open']}
         aria-expanded={open}
         onClick={() => isCartOpen.set(true)}
       >
-        <ShoppingCart />
+        <ArrowRight className="h-5 w-5 rotate-180" />
         {summary.count ? (
-          <span class="absolute -right-1 -top-1 min-w-5 rounded-full bg-rose-600 px-1.5 py-0.5 text-center text-xs font-bold text-white">
+          <span class="absolute -left-2 -top-2 min-w-5 rounded-full bg-zinc-950 px-1.5 py-0.5 text-center text-xs font-bold text-white">
             {summary.count}
           </span>
         ) : null}
