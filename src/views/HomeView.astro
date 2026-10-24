@@ -1,12 +1,12 @@
 ---
 import Layout from '@layouts/Layout.astro'
+import { getCollection } from 'astro:content'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
 import { es } from '@i18n/locales/es'
 import { en } from '@i18n/locales/en'
 import AnnouncementsBar from '@components/AnnouncementsBar.astro'
 import Products from '@components/Products.astro'
-import { ArrowUpRight } from 'lucide-preact'
 
 interface Props {
   lang: 'es' | 'en'
@@ -15,6 +15,9 @@ interface Props {
 const { lang = 'es' } = Astro.props
 const t = lang === 'es' ? es : en
 const announcements = t['header.announcements']
+const bestSellers = (await getCollection('products'))
+  .flatMap(entry => entry.data)
+  .filter(product => product.isBestSeller)
 ---
 
 <Layout slogan={t['header.slogan']}>
@@ -23,18 +26,23 @@ const announcements = t['header.announcements']
       announcements={Array.isArray(announcements) ? announcements : [announcements]}
     />
 
-    <div class='mb-8'>
+    <section class='mb-8' aria-labelledby='best-sellers-title'>
+      <h2 id='best-sellers-title' class='mb-5 text-2xl font-semibold tracking-tight sm:text-3xl'>
+        {t['home.bestSellers.title']}
+      </h2>
+      <Products lang={lang} products={bestSellers} showAddToCart={false} />
+    </section>
+
+    <div class='mx-auto max-w-2xl py-4 text-center'>
+      <p class='text-sm leading-relaxed text-zinc-600 sm:text-base'>
+        {t['home.bestSellers.description']}
+      </p>
       <a
-        class='group inline-flex items-center gap-1.5 font-medium hover:underline'
+        class='mt-4 inline-flex items-center justify-center rounded-md bg-zinc-900 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-zinc-700'
         href={getRelativeLocaleUrl(lang, 'catalog')}
       >
-        {t['nav.catalog']}
-        <span class='transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5'>
-          <ArrowUpRight size={18} strokeWidth={2.5} aria-hidden='true' />
-        </span>
+        {t['home.bestSellers.viewCollection']}
       </a>
     </div>
-
-    <Products lang={lang} />
   </div>
 </Layout>

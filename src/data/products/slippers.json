@@ -177,7 +177,8 @@
     "category": "slippers",
     "colors": ["brown", "beige"],
     "tags": ["suede", "shearling", "moccasin", "premium"],
-    "rating": 4.9
+    "rating": 4.9,
+    "isBestSeller": true
   },
   {
     "id": "slippers_011",

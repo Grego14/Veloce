@@ -15,7 +15,8 @@
     "category": "boots",
     "colors": ["black"],
     "tags": ["tactical", "leather", "work", "heavy-duty"],
-    "rating": 4.8
+    "rating": 4.8,
+    "isBestSeller": true
   },
   {
     "id": "boots_002",

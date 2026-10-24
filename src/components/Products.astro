@@ -14,9 +14,10 @@ type Product = CollectionEntry<'products'>['data'][number]
 interface Props {
   lang: 'es' | 'en'
   products?: Product[]
+  showAddToCart?: boolean
 }
 
-const { lang, products: providedProducts } = Astro.props
+const { lang, products: providedProducts, showAddToCart = true } = Astro.props
 const t = lang === 'es' ? es : en
 const products =
   providedProducts ?? (await getCollection('products')).flatMap(entry => entry.data)
@@ -96,7 +97,7 @@ const products =
             </div>
           ) : null}
 
-          <AddToCart client:idle lang={lang} product={product} />
+          {showAddToCart ? <AddToCart client:idle lang={lang} product={product} /> : null}
         </div>
       </article>
     )
