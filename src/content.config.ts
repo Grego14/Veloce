@@ -16,6 +16,7 @@ const productSchema = (image: SchemaContext['image']) =>
     price: z.number().positive('The price must be a positive number.'),
     image: image(),
     inStock: z.boolean().default(true),
+    isBestSeller: z.boolean().optional(),
     category: z.string(),
     colors: z.array(z.string()).optional(),
     tags: z.array(z.string()).optional(),

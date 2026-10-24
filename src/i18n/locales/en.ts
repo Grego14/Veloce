@@ -52,6 +52,10 @@ export const en = {
   'cart.remove': 'Remove from cart',
   'cart.total': 'Total',
   'nav.home': 'Home',
+  'home.bestSellers.title': 'Best sellers',
+  'home.bestSellers.description':
+    'Discover footwear selected to keep you moving, from comfortable everyday styles to designs that stand out.',
+  'home.bestSellers.viewCollection': 'View collection',
   products: 'Products',
   'product.rating': 'Rating',
   'product.color': 'color',

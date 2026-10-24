@@ -105,7 +105,8 @@
     "category": "louboutin",
     "colors": ["black"],
     "tags": ["mesh", "crystals", "stiletto", "evening"],
-    "rating": 4.9
+    "rating": 4.9,
+    "isBestSeller": true
   },
   {
     "id": "louboutin_007",

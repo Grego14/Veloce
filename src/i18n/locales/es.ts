@@ -50,6 +50,10 @@ export const es = {
   'cart.remove': 'Eliminar del carrito',
   'cart.total': 'Total',
   'nav.home': 'Inicio',
+  'home.bestSellers.title': 'Más vendidos',
+  'home.bestSellers.description':
+    'Descubre calzado seleccionado para acompañarte en cada paso, desde modelos urbanos y cómodos hasta diseños que destacan.',
+  'home.bestSellers.viewCollection': 'Ver colección',
   products: 'Productos',
   'product.rating': 'Valoración',
   'product.color': 'color',
